@@ -1,0 +1,6 @@
+{ "deportistas": 
+	{ "deportista": 
+		[{ "deporte": {"-tipo" : "Atletismo"}, "nombre": "Jesse Owens" },
+		 { "deporte": {"-tipo" : "Natación"}, "nombre": "Mark Spitz" }]
+  }
+}

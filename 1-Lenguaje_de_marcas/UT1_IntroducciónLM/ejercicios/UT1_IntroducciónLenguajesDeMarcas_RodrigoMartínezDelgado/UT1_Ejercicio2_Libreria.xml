@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <libro>
+    <capitulo>
+		<titulo>1.El bosque</titulo>    
+    </capitulo>
+    <capitulo>
+		<titulo>2.La cosecha</titulo>
+        <subcapitulo>
+			<titulo>2.1.Fértil</titulo>
+        </subcapitulo>
+		<subcapitulo>
+			<titulo>2.2.Tormenta</titulo>
+		</subcapitulo>		
+    </capitulo>  
+    <capitulo>
+		<titulo>3.Caminando</titulo>   
+    </capitulo>  
+  </libro>

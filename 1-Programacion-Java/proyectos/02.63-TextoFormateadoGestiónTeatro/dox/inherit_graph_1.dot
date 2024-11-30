@@ -1,0 +1,10 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="jcolonia.daw2023.teatrillo.gestión.Cotizable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interfacejcolonia_1_1daw2023_1_1teatrillo_1_1gesti_xC3_xB3n_1_1_cotizable.html",tooltip="Sujeto compatible con Nominilla."];
+}

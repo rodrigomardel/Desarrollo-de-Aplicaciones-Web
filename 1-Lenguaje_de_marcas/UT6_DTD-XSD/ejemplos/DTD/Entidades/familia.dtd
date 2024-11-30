@@ -1,0 +1,16 @@
+<!ELEMENT familia (((padre,madre?)
+    |(madre?,padre)|(padre?,madre)
+    |(madre,padre?)|(padre,padre)|(madre,madre)),hijos)>
+    <!ENTITY % info "(nombre,apellido+,dni?,edad?)">
+<!ATTLIST familia codigo ID #REQUIRED>
+    <!ELEMENT madre %info;>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT dni (#PCDATA)>
+        <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT padre %info;>
+    <!ELEMENT hijos (hijo*)>
+        <!ELEMENT hijo %info;>
+        <!ATTLIST hijo 
+            pos NMTOKEN #REQUIRED
+            foto CDATA #REQUIRED>

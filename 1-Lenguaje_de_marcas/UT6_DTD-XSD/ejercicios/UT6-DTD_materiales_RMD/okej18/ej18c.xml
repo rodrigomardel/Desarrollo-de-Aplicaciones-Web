@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cosasPorHacer [
+ <!ELEMENT cosasPorHacer (cosa+)>
+    <!ELEMENT cosa (#PCDATA)>
+    <!ATTLIST cosa fecha CDATA #REQUIRED>
+    <!ATTLIST cosa fechaLimite CDATA #REQUIRED>
+]>
+<!-- El elemento cosasPorHacer contiene mas de una cosa, cosa no es un elemento vacío y 
+    asunto no está definido -->
+<cosasPorHacer>
+ <cosa fecha="20 de febrero de 2021" fechaLimite="1 de marzo de 2021">
+ Preparar ejercicios de DTDs</cosa>
+ <cosa fecha="21 de febrero de 2021" fechaLimite="5 de marzo de 2021">
+ Preparar tema XSLT</cosa>
+</cosasPorHacer> 

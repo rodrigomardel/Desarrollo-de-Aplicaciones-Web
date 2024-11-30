@@ -1,0 +1,34 @@
+table ,tr, td{ 
+    border: 1px solid black; 
+} 
+#titulo{
+    color: teal;
+}
+p strong,tfoot th {
+    color: red;
+}
+#subtitulo,caption{
+    color: blue;
+}
+.destacado,th.especial,td strong{
+    color: orange;
+}
+#adicional{
+    color: olive;
+}
+#especial{
+    color: fuchsia;
+}
+tbody, #adicional a{
+    color: green;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    color: red;
+}
+body > *:hover{
+    background-color: lightgrey;    
+}
+

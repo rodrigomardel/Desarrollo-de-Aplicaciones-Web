@@ -1,0 +1,5 @@
+{"programas":
+	[{"programa": {"-nombre": "Firefox"}, "licencia1": "GPL", "licencia2": "MPL"},
+	 {"programa": {"-nombre": "OpenOffice.org"}, "licencia": "LGPL"},
+	 {"programa": {"-nombre": "Inkscape"}, "licencia": "GPL"}]
+}

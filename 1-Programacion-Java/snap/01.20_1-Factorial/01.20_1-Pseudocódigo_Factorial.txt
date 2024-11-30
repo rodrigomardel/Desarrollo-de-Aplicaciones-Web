@@ -1,0 +1,14 @@
+PROGRAMA Factorial5
+VARIABLES
+	n, i, factorial: enteros
+	mensaje: texto
+ALGORITMO
+	ASIGNAR a n valor 5
+	ASIGNAR a factorial valor 1
+
+	PARA i DESDE n HASTA 1 VARIANDO -1
+		ASIGNAR A factorial VALOR factorial × i
+	FIN-PARA
+
+	ASIGNAR A mensaje VALOR	"El factorial de __ es __" CON n, factorial
+	ESCRIBIR mensaje	

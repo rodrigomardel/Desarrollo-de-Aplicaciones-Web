@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h2>La notificación está a la derecha</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+      aspernatur quam ex eaque inventore quod voluptatem adipisci omnis nemo
+      nulla fugit iste numquam ducimus cumque minima porro ea quidem maxime
+      necessitatibus beatae labore soluta voluptatum magnam consequatur sit
+      laboriosam velit excepturi laborum sequi eos placeat et quia deleniti?
+      Corrupti velit impedit autem et obcaecati fuga debitis nemo ratione iste
+      veniam amet dicta hic ipsam unde cupiditate incidunt aut iure ipsum
+      officiis soluta temporibus. Tempore dicta ullam delectus numquam
+      consectetur quisquam explicabo culpa excepturi placeat quo sequi molestias
+      reprehenderit hic at nemo cumque voluptates quidem repellendus maiores
+      unde earum molestiae ad.
+    </p>
+
+    <script>
+      /*
+      Escribir una función showNotification(options) que cree una notificación: <div class="notification"> con el contenido dado. 
+        La notificación debería desaparecer automáticamente despues de 1.5 segundos.
+
+      Ejemplo:
+      // muestra un elemento con el texto "Hello" cerca de la parte superior de la ventana
+      showNotification({
+        top: 10, // 10px desde la parte superior de la ventana (por defecto es 0px)
+        right: 10, // 10px desde el borde derecho de la ventana (por defecto es 0px)
+        html: "Hello!", // el HTML de la notificación
+        className: "welcome" // una clase adicional para el "div" (opcional)
+      });
+      */
+
+      function showNotification({ top = 0, right = 0, className, html }) {
+        let div = document.createElement("div");
+
+        div.style.top = top + "px";
+        div.style.right = right + "px";
+        div.classList.add("notification", className); //añadir nombre clases CSS
+        div.innerHTML = html;
+
+        document.body.append(div);
+      }
+
+      //ejecutar funcion
+      let i = 0;
+      setInterval(() => {
+        showNotification({
+          top: 10,
+          right: 10,
+          html: "Hello " + i++,
+          className: "welcome",
+        });
+      }, 1500);
+
+      //borrar div creado
+      setInterval(() => {
+        let div = document.getElementsByTagName("div")[0];
+        div.remove();
+      }, 1800);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+tarjetasvuelos{
+    counter-reset: cont1;
+}
+
+vuelo{
+    counter-increment: cont1;
+    display: block;
+}
+
+numero::before{
+    content: counter(cont1) ". Vuelo:";
+}
+
+numero{
+    font-size: 2em;
+}
+
+avion, ruta, pilotos, PNC{
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+estadisticas{
+    display: table;
+}
+
+estadisticas tipo{
+    display: table-row;
+}
+
+estadisticas nombre, cantidad{
+    display: table-cell;
+    border: 1px solid black;
+
+}

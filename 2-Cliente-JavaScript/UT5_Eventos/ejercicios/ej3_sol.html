@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      #field {
+        width: 200px;
+        height: 150px;
+        border: 10px solid black;
+        background-color: #00ff00;
+        overflow: hidden;
+
+        position: relative;
+      }
+
+      #ball {
+        position: absolute;
+        transition: 1s;
+      }
+    </style>
+  </head>
+
+  <body style="height: 2000px">
+    Haz click en un lugar del campo para mover el balón allí.
+    <br />
+    El balón nunca debe abandonar el campo.
+
+    <div id="field">
+      <img src="https://en.js.cx/clipart/ball.svg" id="ball" /> . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . .
+    </div>
+    <div id="coordenadas"></div>
+    <script>
+      /*
+      Agrega el código JavaScript al ejercicio 3 para que, al hacer clic en algún lugar del campo, el balón se mueva a ese lugar.
+        •	El balón debe quedar centrado donde se ha hecho click, si es posible.
+        •	El balón no debería salir del campo.
+        •	Si la página se desplaza, el balón debería seguir correctamente colocado.
+      */
+      let balon = document.getElementById("ball");
+      let campo = document.getElementById("field");
+      let coordenadas = document.getElementById("coordenadas");
+      campo.addEventListener("click", mover);
+
+      function mover(e) {
+        // ancho y alto del elemento: borde + padding + contenido
+        let anchoBalon = balon.offsetWidth;
+        let altoBalon = balon.offsetHeight;
+
+        // .getBoundingClientRect(): coordenadas del objeto
+        let coordsCampo = campo.getBoundingClientRect();
+
+        // .clientLeft: borde izquierdo
+        // .clientTop: borde derecho
+        let posX =
+          e.clientX - coordsCampo.left - campo.clientLeft - anchoBalon / 2;
+        let posY =
+          e.clientY - coordsCampo.top - campo.clientTop - altoBalon / 2;
+
+        // clientWidth: contenido y padding
+        let maxX = campo.clientWidth - balon.clientWidth;
+        let maxY = campo.clientHeight - balon.clientHeight;
+        let minX = 0;
+        let minY = 0;
+
+        posX = posX > maxX ? maxX : posX;
+        posX = posX < minX ? minX : posX;
+
+        posY = posY > maxY ? maxY : posY;
+        posY = posY < minY ? minY : posY;
+
+        balon.style.top = posY + "px";
+        balon.style.left = posX + "px";
+      }
+    </script>
+  </body>
+</html>

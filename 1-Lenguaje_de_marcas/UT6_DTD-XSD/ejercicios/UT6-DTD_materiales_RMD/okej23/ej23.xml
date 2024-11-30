@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE report SYSTEM "ej23.dtd">
+
+<report>
+    <title>About the customs of Spain</title>
+    <section>
+        <title>Burgos Festivals</title>
+        <para>Anyone anywhere</para>
+    </section>
+</report>
+
+<!--
+<report security="low">
+    <title>
+        <keyword>R.1-1</keyword>
+        About the customs of Spain
+        <graphic file="" />
+    </title>
+    <section>
+        <title>
+            <code type="C-SP">01</code> 
+            Burgos Festivals
+        </title>
+        <para>Anyone anywhere</para>
+        <list>
+            <item>
+                <para>EEUU</para>
+            </item>
+        </list>
+    </section>
+    <shortsect>
+        <title>SP-BU</title>
+        <note>To conclude</note>
+        <example>
+            <para>All</para>
+        </example>
+    </shortsect>
+</report>
+-->

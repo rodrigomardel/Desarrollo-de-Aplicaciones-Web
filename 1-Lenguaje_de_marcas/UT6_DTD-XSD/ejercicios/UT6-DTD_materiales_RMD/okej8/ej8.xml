@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE menu SYSTEM "ej8.dtd">
+<menu>
+	<denominacion> Menu del día</denominacion>
+	<precio>8,50</precio>
+	<fecha>12/04/2010</fecha>
+	<plato>
+		<entrantes> Sepia a la plancha</entrantes>
+	</plato>
+	<plato>
+		<primero>Lubina al horno</primero>
+	</plato>
+	<plato>
+		<primero>Solomillo con patatas</primero>
+	</plato>
+	<plato>
+		<postre> Flan con nata</postre>
+	</plato>
+	<bebida/>
+</menu>

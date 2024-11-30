@@ -1,0 +1,17 @@
+<!ENTITY % up "unidadDeProduccion (1|2|3) #REQUIRED">
+<!ELEMENT empresa (empleados, maquinaria)>
+    <!ELEMENT empleados (empleado+)>
+        <!ELEMENT empleado (nombre, apellidos)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT maquinaria (modelo)>
+            <!ELEMENT modelo EMPTY>
+
+
+        <!ATTLIST empleado 
+            %up;
+            categoria CDATA #REQUIRED>
+        <!ATTLIST modelo 
+            %up;
+            tipo CDATA #REQUIRED>
+                

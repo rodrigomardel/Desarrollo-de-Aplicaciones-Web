@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "ejExElementos-Attr.dtd">
+<catalogo>
+    <producto nombre="cortadora de cesped - CR01" categoria="tienda-profesional" numpart="12" fabrica="Valladolid" inventario="nodisponible">
+        <especificaciones potencia="500w" peso="41kg">Trabajos del hogar</especificaciones>
+        <especificaciones potencia="2m/seg">Freno manual</especificaciones>
+        <precio moneda="euros" gastosdeenvio="no">119,95</precio>
+    </producto>
+    <producto nombre="tijera" categoria="herramienta" fabrica="Palencia" inventario="enstock">
+        <especificaciones potencia="muscular">Podado manual</especificaciones>
+        <opciones adaptador="noincluido">Extensor</opciones>
+        <precio moneda="dolares">14,95/ud</precio>
+        <precio moneda="dolares">12,95(pack 12uds.)</precio>
+        <notas>* Cambio de fabricante * 12/12/2024 *</notas>
+    </producto>
+    <producto nombre="pasador cortadora - CR01">
+        <especificaciones potencia="--">--</especificaciones>
+        <precio>--</precio>
+        <notas>Descatalogado</notas>
+    </producto>
+</catalogo>

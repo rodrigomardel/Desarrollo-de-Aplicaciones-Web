@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio8-RMD-20240920</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      let edad;
+
+      do {
+        edad = prompt("Introduzca su edad");
+        if (edad >= 1 && edad <= 12) {
+          alert("¡Pero si eres un niño!");
+        } else if (edad >= 13 && edad <= 26) {
+          alert("¡Jooooven!");
+        } else if (edad >= 26 && edad <= 60) {
+          alert("¡Ya eres un adulto!");
+        } else if (edad > 60) {
+          alert("¡Ya estás jubilado!");
+        } else if (edad != undefined && (edad <= 0 || isNaN(edad))) {
+          alert("Debe introducir un valor válido");
+        }
+      } while (edad != undefined);
+      alert("** FIN PROGRAMA **");
+    </script>
+  </body>
+</html>

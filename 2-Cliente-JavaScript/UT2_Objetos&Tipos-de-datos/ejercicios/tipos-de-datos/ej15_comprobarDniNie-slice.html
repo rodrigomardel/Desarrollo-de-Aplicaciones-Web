@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ15-RMD-20241006</title>
+  </head>
+  <body>
+    <script>
+      /*
+          15.	dni_nie
+              Crea una función para comprobar si un DNI o NIE es correcto, es decir, que contiene 8 dígitos y una letra, y que la letra es correcta.
+              En el caso del DNI:
+                      Se toma el nº del DNI
+                      Se divide por 23.
+                      Cogemos el resto (tiene que ser un número comprendido entre el 0 y el 22)
+                      A cada número entre el 0 y el 22 le corresponde una letra de control de acuerdo con la tabla de asignación de abajo:
+                          0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22
+                          T	R	W	A	G	M	Y	F	P	D	X	B	N	J	Z	S	Q	V	H	L	C	K	E
+
+              Para el NIE: tienen una letra (X, Y, Z), 7 números y una letra de control. Para el cálculo de la letra de control, se sustituyen las letras iniciales (X, Y o Z) por los siguientes valores:
+                      X → 0
+                      Y → 1
+                      Z → 2
+              y se hacen los mismos pasos que para el DNI.
+              Ej. de documentos válidos:
+              •	DNI: 56221526G, 50127621H, 76069822J, 73126034H
+              •	NIF: 12313207L, 74997547K, 98319066T, 70454006S
+              •	NIE: Y6478436V, X5997109C, Y7492239A, X3412471F
+      */
+
+      const numDNI = "50127621H";
+      const numNIE = "Y6478436V";
+
+      const letrasDeControl = [
+        "T",
+        "R",
+        "W",
+        "A",
+        "G",
+        "M",
+        "Y",
+        "F",
+        "P",
+        "D",
+        "X",
+        "B",
+        "N",
+        "J",
+        "Z",
+        "S",
+        "Q",
+        "V",
+        "H",
+        "L",
+        "C",
+        "K",
+        "E",
+      ];
+
+      function comprobarDNI(numDNI) {
+        let letraDNI = numDNI[numDNI.length - 1];
+        let dniSinLetra = numDNI.slice(0, 8);
+        let resto = dniSinLetra % 23;
+        let letraControlDNI = letrasDeControl[resto];
+        let mensaje;
+
+        if (letraDNI == letraControlDNI) {
+          mensaje = `${numDNI} - DNI válido`;
+        } else {
+          mensaje = `${numDNI} - DNI NO válido`;
+        }
+        return console.log(mensaje);
+      }
+
+      function comprobarNIE(numNIE) {
+        let ultimaLetraNIE = numNIE[numNIE.length - 1];
+        let primeraLetraNIE = numNIE[0];
+        let mensaje;
+
+        if (primeraLetraNIE == "X") {
+          primeraLetraNIE = 0;
+        } else if (primeraLetraNIE == "Y") {
+          primeraLetraNIE = 1;
+        } else if (primeraLetraNIE == "Z") {
+          primeraLetraNIE = 2;
+        }
+
+        let nieSinLetra = numNIE.slice(1, 8);
+        let nieTemp = primeraLetraNIE + nieSinLetra; //NIE numérico para comprobar
+
+        let resto = nieTemp % 23;
+        let letraControlNIE = letrasDeControl[resto];
+
+        if (ultimaLetraNIE == letraControlNIE) {
+          mensaje = `${numNIE} - NIE válido`;
+        } else {
+          mensaje = `${numNIE} - NIE NO válido`;
+        }
+        return console.log(mensaje);
+      }
+
+      comprobarDNI(numDNI);
+      comprobarNIE(numNIE);
+    </script>
+  </body>
+</html>

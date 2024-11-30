@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejemploXSD.xsd">
+    <producto id="0">
+        <nombre>Camiseta</nombre>
+        <precio moneda="USD">20.00</precio>
+        <descripcion>Talla M, color blanco</descripcion>
+    </producto>
+    <producto id="2">
+        <nombre>Pantalón</nombre>
+        <precio moneda="USD">35.50</precio>
+        <descripcion>Talla L, color azul</descripcion>
+    </producto>
+    <producto id="3">
+        <nombre>Zapatos</nombre>
+        <precio moneda="USD">50.00</precio>
+        <descripcion>Talla 42, color negro</descripcion>
+    </producto>
+</productos>

@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="clase" type="tipoClase"/>
+
+    <xs:complexType name="tipoClase">
+        <xs:sequence>
+            <xs:element name="alumno" type="datos" maxOccurs="unbounded"/>
+            <xs:element name="profesor" type="datos" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+        
+    <xs:complexType name="datos">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="edad" type="xs:nonNegativeInteger"/>
+            <xs:element name="direccion" type="xs:string"/>
+            <xs:element name="cp" type="codigoPostal"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="codigoPostal">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:pattern value="[0-9]{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

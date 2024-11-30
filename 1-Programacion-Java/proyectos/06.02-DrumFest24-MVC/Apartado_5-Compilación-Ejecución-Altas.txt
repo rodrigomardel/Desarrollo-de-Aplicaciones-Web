@@ -1,0 +1,163 @@
+
+(JDK21) D:\PROG\Mis proyectos\06.02 DrumFest24-MVC> compilar.cmd
+jcolonia.daw2024.rmd.drumfest.DrumFest24-MVC
+---
+
+Verificando «lib\junit-platform-console-standalone-1.10.2.jar» …
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+ El volumen de la unidad D es DATOS_MAÑANA
+ El número de serie del volumen es: B42B-91C5
+
+ Directorio de D:\PROG\Mis proyectos\06.02 DrumFest24-MVC\bin\jcolonia\daw2024\rmd\drumfest
+
+29/04/2024  08:51             1.947 Banda.class
+29/04/2024  08:51             8.886 BandaTest.class
+29/04/2024  08:51             4.370 ControlBandas.class
+29/04/2024  08:51             2.725 Exportación.class
+29/04/2024  08:51             4.080 Festival.class
+29/04/2024  08:51             6.692 FestivalTest.class
+29/04/2024  08:51             2.162 Importación.class
+29/04/2024  08:51             1.481 Relevancia.class
+29/04/2024  08:51             1.149 VistaAltaRelevancia.class
+29/04/2024  08:51             1.985 VistaAltasBandas.class
+29/04/2024  08:51             1.929 VistaGeneral.class
+29/04/2024  08:51             2.166 VistaListado.class
+29/04/2024  08:51             1.791 VistaMenú.class
+              13 archivos         41.363 bytes
+
+     Total de archivos en la lista:
+              13 archivos         41.363 bytes
+               0 dirs  110.099.353.600 bytes libres
+
+Presione una tecla para continuar . . .
+
+(JDK21) D:\PROG\Mis proyectos\06.02 DrumFest24-MVC> ejecutar.cmd
+jcolonia.daw2024.rmd.drumfest.ControlBandas
+---
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+~ DrumFest'24 ~
+===============
+1.- Introducir bandas
+2.- Listar bandas
+3.- Exportar bandas
+4.- Importar bandas
+5.- Borrar bandas
+6.- Acerca de...
+7.- Salir
+Seleccione la opción deseada:
+1
+Introduzca la banda deseada:
+----------------------------
+Nombre:Red Hot Chili Peppers
+Género:Funk-Rock
+Relevancia Artista
+1.- cabeza_cartel
+2.- invitada
+3.- telonera
+4.- principal
+Seleccione la opción deseada:
+1
+Número de miembros:4
+Nombre Baterista:Chad Smith
+¡Banda registrada correctamente!
+→ Registro de nueva entrada ←
+¿Desea continuar? (S/N)
+S
+Nombre:Muse
+Género:Art-Rock
+Relevancia Artista
+1.- cabeza_cartel
+2.- invitada
+3.- telonera
+4.- principal
+Seleccione la opción deseada:
+4
+Número de miembros:6
+Nombre Baterista:Dominic Howard
+¡Banda registrada correctamente!
+→ Registro de nueva entrada ←
+¿Desea continuar? (S/N)
+N
+
+~ DrumFest'24 ~
+===============
+1.- Introducir bandas
+2.- Listar bandas
+3.- Exportar bandas
+4.- Importar bandas
+5.- Borrar bandas
+6.- Acerca de...
+7.- Salir
+Seleccione la opción deseada:
+2
+                                      • Cartel DrumFest'24 •
+                                      ----------------------
+
+          Nombre               Género             Relevancia       Miembros         Baterista
+1.    Red Hot Chili        Funk-Rock            CABEZA_CARTEL         4         Chad Smith
+2.    Muse                 Art-Rock             PRINCIPAL             6         Dominic Howard
+
+~ DrumFest'24 ~
+===============
+1.- Introducir bandas
+2.- Listar bandas
+3.- Exportar bandas
+4.- Importar bandas
+5.- Borrar bandas
+6.- Acerca de...
+7.- Salir
+Seleccione la opción deseada:
+1
+Introduzca la banda deseada:
+----------------------------
+Nombre:Desakato
+Género:Hard Punk-Rock
+Relevancia Artista
+1.- cabeza_cartel
+2.- invitada
+3.- telonera
+4.- principal
+Seleccione la opción deseada:
+3
+Número de miembros:5
+Nombre Baterista:Nano Dangelo
+¡Banda registrada correctamente!
+→ Registro de nueva entrada ←
+¿Desea continuar? (S/N)
+N
+
+~ DrumFest'24 ~
+===============
+1.- Introducir bandas
+2.- Listar bandas
+3.- Exportar bandas
+4.- Importar bandas
+5.- Borrar bandas
+6.- Acerca de...
+7.- Salir
+Seleccione la opción deseada:
+2
+                                      • Cartel DrumFest'24 •
+                                      ----------------------
+
+          Nombre               Género             Relevancia       Miembros         Baterista
+1.    Red Hot Chili        Funk-Rock            CABEZA_CARTEL         4         Chad Smith
+2.    Muse                 Art-Rock             PRINCIPAL             6         Dominic Howard
+3.    Desakato             Hard Punk-Rock       TELONERA              5         Nano Dangelo
+
+~ DrumFest'24 ~
+===============
+1.- Introducir bandas
+2.- Listar bandas
+3.- Exportar bandas
+4.- Importar bandas
+5.- Borrar bandas
+6.- Acerca de...
+7.- Salir
+Seleccione la opción deseada:
+7
+** SESIÓN FINALIZADA **

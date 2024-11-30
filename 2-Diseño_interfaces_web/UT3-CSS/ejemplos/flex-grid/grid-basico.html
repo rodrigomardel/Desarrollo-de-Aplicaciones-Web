@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    main {
+      display: grid;
+      /*grid-template-rows: 250px 75px 250px 50px 50px 50px;
+      grid-template-columns: 250px 250px 250px 250px;
+      grid-template-columns: 1fr 2fr 3fr; fraccion restante, ocupa el 100% del ancho*/
+      /*grid-template-columns: 150px repeat(3, minmax(150px, 250px)); primera a 150px y repite tres columnas a 250px de max y min de 150px*/
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-rows: 250px 75px 250px repeat(3, 50px);
+    }
+    main div {
+      border: 1px solid black;
+      /* height: 100px;
+      width: 250px; */
+    }
+  </style>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

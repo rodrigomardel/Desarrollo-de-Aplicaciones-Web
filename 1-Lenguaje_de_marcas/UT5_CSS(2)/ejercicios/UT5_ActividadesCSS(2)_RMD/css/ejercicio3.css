@@ -1,0 +1,49 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    font-size: 50px;
+}
+.contenedor{
+    background-color: rgba(255, 255, 200, 0.9);
+    padding: 5%;
+    margin: 0 10%;
+}
+h1,h2,h3{
+    padding: 1rem;
+    border-bottom: dotted 5px #e74c3c;
+    background-color: lightsalmon;
+}
+a{
+    margin-top: 1em;
+    padding: 1em;
+    border: solid 5px #2ecc71;
+}
+ul{
+    margin: 1.5em 0;
+    padding: 1.5em 0;
+    list-style-type: square;
+    list-style-position: inside;
+}
+li{
+    margin: 0.2em;
+    padding: 1em;
+    border: solid 1px orange;
+}
+li:first-child{
+    margin: 2px;
+    padding: 20px;
+}
+p *{
+    border-top: 2px dashed cornflowerblue;
+    border-bottom: 2px dashed cornflowerblue;
+    background-color: aliceblue;
+}
+blockquote{
+    margin: 1em 0em 1em 0em;
+    padding: 0.8em;
+    border: double 4px #e67e22;
+    
+}
+/* Si modificamos el tamaño de la fuente en body, el primer elemento de la lista
+ no se modifica ya que su margen y relleno están definidos en px y su tamaño no 
+ es relativo al contenedor. */

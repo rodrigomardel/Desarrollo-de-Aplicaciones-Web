@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMD-20240925</title>
+  </head>
+  <body>
+    <script>
+      /*
+          Crea un programa que “simule” una calculadora.
+
+          •	Presentará al usuario un menú (con un prompt) para elegir la operación a realizar, o la opción de terminar.
+          Comprobará que se ha seleccionado una de las siguientes operaciones: +, -, *, / o la opción de terminar.
+          En caso de que no fuera una selección válida, volverá a pedir que seleccione una opción.
+          En caso de que sea una operación,
+          o	Pedirá dos números. SI no son números válidos, volverá a pedirlos hasta que ean números válidos.
+          o	Realizará la operación
+          o	Mostrará el resultado
+          o	Volverá a presentar el menú.
+
+          En caso de que se seleccione terminar, el programa termina.
+          •	Para hacer el menú, se valorará que se utilice un switch para seleccionar la operación a realizar.
+          •	Se valorará que se utilice una función distinta para cada operación (sumar, restar, multiplicar, dividir)
+               y que sea una función flecha.
+          •	Se valorará la claridad del código y que esté optimizado.
+        */
+
+      "use strict";
+
+      /*Función que se encarga de sumar dos valores*/
+      let sumar = (a, b) => a + b;
+
+      /*Función que se encarga de restar dos valores*/
+      let restar = (a, b) => a - b;
+
+      /*Función que se encarga de multipicar dos valores*/
+      let multipicar = (a, b) => a * b;
+
+      /*Función que se encarga de dividir dos valores*/
+      let dividir = (a, b) => a / b;
+
+      /*Función para comprobar que el número es válido*/
+      let pedirNumero = (mensaje) => {
+        let numero;
+        while (true) {
+          numero = +prompt(mensaje);
+          if (!isNaN(numero)) return numero;
+        }
+        alert("Por favor, ingrese un número valido");
+      };
+
+      /*Menú para realizar operaciones*/
+      while (true) {
+        let entrada = prompt(
+          "¿Qué operación desea realizar? \n+(Suma)\n- (Resta)\n* (Multiplicación)\n/ (División)\ns (Salir)"
+        );
+
+        if (entrada === "s") {
+          alert("** FIN PROGRAMA **");
+          break;
+        }
+
+        if (
+          entrada !== "+" &&
+          entrada !== "-" &&
+          entrada !== "*" &&
+          entrada !== "/"
+        ) {
+          alert("Opción no valida, intentelo de nuevo.");
+          continue;
+        }
+
+        let numero1 = pedirNumero("Ingrese el primer valor:");
+        let numero2 = pedirNumero("Ingrese el segundo valor:");
+
+        let resultado;
+
+        switch (entrada) {
+          case "+":
+            resultado = sumar(numero1, numero2);
+            alert(`El resultado es ${resultado}`);
+            break;
+
+          case "-":
+            resultado = restar(numero1, numero2);
+            alert(`El resultado es ${resultado}`);
+            break;
+
+          case "*":
+            resultado = multipicar(numero1, numero2);
+            alert(`El resultado es ${resultado}`);
+            break;
+
+          case "/":
+            resultado = dividir(numero1, numero2);
+            if (numero2 === 0) {
+              alert("No se puede dividir por 0. Intenta nuevamente.");
+              continue;
+            }
+            alert(`El resultado es ${resultado}`);
+            break;
+
+          default:
+            alert("Opción no válida");
+            continue;
+        }
+      }
+    </script>
+  </body>
+</html>

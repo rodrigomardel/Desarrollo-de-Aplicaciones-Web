@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mueble" type="tipoMueble"/>
+        <xs:simpleType name="tipoMueble">
+            <xs:union>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="mesa"/>
+                        <xs:enumeration value="silla"/>
+                        <xs:enumeration value="armario"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="100"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:union>
+        </xs:simpleType>       
+</xs:schema>

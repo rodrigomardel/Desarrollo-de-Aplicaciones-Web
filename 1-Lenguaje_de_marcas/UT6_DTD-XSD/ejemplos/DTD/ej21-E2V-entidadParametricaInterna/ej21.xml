@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "ej21.dtd">
+<empresa>
+    <empleados>
+        <empleado unidadDeProduccion="1" categoria="mantenimiento">
+            <nombre>Paco</nombre>
+            <apellidos>Perez</apellidos>
+        </empleado>
+    </empleados>
+    <maquinaria>
+        <modelo unidadDeProduccion="1" tipo="A"/>
+    </maquinaria>
+</empresa>

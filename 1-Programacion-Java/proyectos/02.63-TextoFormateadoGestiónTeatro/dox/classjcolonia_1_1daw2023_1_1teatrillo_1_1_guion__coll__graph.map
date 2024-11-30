@@ -1,0 +1,9 @@
+<map id="jcolonia.daw2023.teatrillo.Guion" name="jcolonia.daw2023.teatrillo.Guion">
+<area shape="rect" id="Node000001" title="Ensayo/comprobación de funcionalidad de las interfaces." alt="" coords="61,599,297,711"/>
+<area shape="rect" id="Node000002" href="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_personaje.html" title="Sujeto que interactúa saludando al resto de personajes, contabilizando el número de frases." alt="" coords="69,273,289,535"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,534,182,582,177,582,177,534"/>
+<area shape="rect" id="Node000003" href="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_actor.html" title="Individuo del que almacenamos datos de identificación básicos: nombre e identificador." alt="" coords="5,5,199,224"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,238,147,273,142,274,132,239"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="223,80,290,149"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="246,164,217,274,212,273,241,163"/>
+</map>

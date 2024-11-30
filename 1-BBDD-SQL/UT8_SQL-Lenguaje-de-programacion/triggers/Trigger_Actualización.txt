@@ -1,0 +1,13 @@
+create trigger trgPuntosConductores_ej2 on Infracciones
+after insert
+as
+declare @puntosRestados int,
+@DNIConductor varchar(10)
+begin
+select @DNIConductor=DNIConductor, @puntosRestados=PuntosRestados
+from inserted
+
+
+update Conductores set Puntos=Puntos-@puntosRestados
+where DNI=@DNIConductor
+end

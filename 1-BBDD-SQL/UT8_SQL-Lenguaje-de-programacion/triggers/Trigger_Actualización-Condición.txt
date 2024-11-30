@@ -1,0 +1,13 @@
+create trigger trgRevPuntosConduc_ej3 on Conductores
+after update
+as
+begin
+declare @dniConductor varchar(10),
+@puntosRestantes int
+
+select @puntosRestantes=Puntos, @dniConductor=DNI
+from conductores
+where Puntos<5
+
+print '**AVISO** Nº de puntos:' +cast(@puntosRestantes as varchar(10))  + 'DNI Conductor:'+ @dniConductor;
+end;

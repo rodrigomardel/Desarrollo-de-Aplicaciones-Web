@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ20-RMD-20241007</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Array. Filtrar elementos
+            Escribe una función filterRangeInPlace(arr, a, b) que recibe como parámetros un array y dos valores a, y b; 
+            y elimine de array todos los elementos excepto aquellos cuyo valor se encuentre entre a y b (tampoco debe eliminar a ni b).
+
+            Los elementos del array, a y b: son numéricos, pero no hay que comprobarlo.
+            La función solo debe modificar el array. No debe devolver nada.
+
+              Por ejemplo:
+              let arr = [5, 3, 8, 1];
+              filterRangeInPlace(arr, 1, 4); // elimina los números excepto aquellos entre 1 y 4
+              alert( arr ); // [3, 1]
+        */
+
+      let arr = [5, 3, 8, 1];
+
+      let filterRangeInPlace = (arr, a, b) => {
+        let subArray = arr.filter((item) => item >= a && item <= b);
+        subArray.forEach((item) => console.log(item));
+      };
+
+      filterRangeInPlace(arr, 1, 4);
+      //console.log(arr);
+    </script>
+  </body>
+</html>

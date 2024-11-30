@@ -1,0 +1,173 @@
+html{}
+:root{
+
+    font-size: 14px;
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    width: 1280px;
+    margin: auto;
+}
+header{
+    border-bottom: 1px solid black;
+}
+header nav{
+   margin:15px 0; 
+}
+header nav ul{
+    top:0;
+    left:0;
+}
+header nav ul li{
+    display:inline;
+    margin:0 5px;
+}
+header nav ul li:nth-child(4){
+    color:orange;
+    border: 1px solid blue;
+}
+
+header nav ul li:nth-child(4) a{
+    color:orange;
+}
+section#carrusel figure ~ figure{
+    display: none;
+}
+section#carrusel figure{
+    position: relative;
+}
+section#carrusel figure figcaption{
+    font-size: 30px;
+    background-color:rgba(0, 0, 0, 0.592);
+    color:white;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    position:absolute;
+    bottom:200px;
+    left: 300px;
+    z-index:100 ;
+}
+
+main{
+    
+}
+
+
+main h1{
+    margin: 10px 0;
+    font-size: 3rem;
+}
+main section#productos article{
+    box-sizing: border-box;
+    margin:1%;
+    padding:10px;
+    width:31.3%;
+    display: inline-block;
+ 
+}
+main section#productos article h2,main section#productos article img{
+margin-bottom: 10px;
+}
+main section#productos article a{
+    float:right;
+}
+main section#productos article a:link{
+    color:blue;
+    text-decoration: none;
+}
+main section#productos article a:visited{
+    color:orange;
+    text-decoration: underline;
+}
+main section#destacado{
+    background-color: blue;
+    border:2px solid black;
+    padding:15px;
+    margin-bottom: 5px;
+    
+    }
+    main section#destacado div:first-child{
+    width:59%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    }
+    main section#destacado div:first-child > h2 {
+        font-size: 34px;
+        color: white;
+        margin:10px 0;
+        font-weight: 300;
+    }
+    main section#destacado div:last-child{
+        width:40%;
+        display: inline-block;
+        box-sizing: border-box;
+        }
+        main section#destacado div:last-child > button{
+        background-color: white;
+        min-height: 35px;
+        min-width: 150px;
+        font-size: 24px;
+        float:right;
+        margin-top: 10px;
+        }   
+footer section{
+
+    background-color: #ddd;
+}
+footer>section{
+    margin:0px 0;
+    padding: 10px;
+}
+footer > section:first-child > img{
+height: 35px;
+width: auto;
+vertical-align: bottom;
+margin-right: 25px;
+}
+footer > section:first-child  > button{
+   min-height: 35px;
+   min-width: 150px; 
+   margin-right: 15px;
+   font-size: 22px;
+}
+
+footer > section:first-child  > button:hover{
+    background-color: blue;
+    color: white;
+}
+footer > section:first-child  > button:active{
+    background-color: orange;
+    border: 1px solid blue;
+
+}
+
+footer section:last-of-type >p{
+    width:85%;
+    display: inline-block;
+} 
+
+footer  section:last-of-type >img{
+    width:14%;
+    display: inline-block;
+} 
+footer nav{
+    background-color: black;
+}
+footer nav ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+footer nav ul li a{
+color:white
+}
+

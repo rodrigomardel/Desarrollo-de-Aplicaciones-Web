@@ -1,0 +1,64 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libreria" type="tipoLibreria"/>
+        <xs:complexType name="tipoLibreria">
+            <xs:sequence>
+                <xs:element name="codigo" type="xs:string"/>
+                <xs:element name="direccion" type="xs:string"/>
+                <xs:element name="telefono">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:length value="8"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="propietario">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="libro" type="tipoLibro" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="tipoLibro">
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="autores" type="tipoAutores"/>
+                <xs:element name="formato" type="tipoFormato"/>
+                <xs:element name="publicacion" type="xs:gYear"/>
+                <xs:element name="precio" type="tipoPrecio"/>
+            </xs:sequence>
+            <xs:attribute name="codigo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="c\d{3}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+
+        <xs:complexType name="tipoAutores" mixed="true">
+            <xs:sequence>
+                <xs:element name="autor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="tipoPrecio">
+            <xs:simpleContent>
+                <xs:extension base="xs:float">
+                    <xs:attribute name="oferta" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+
+        <xs:simpleType name="tipoFormato">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="bolsillo"/>
+                <xs:enumeration value="tapa blanda"/>
+                <xs:enumeration value="tapa dura"/>
+                <xs:enumeration value="rústica"/>
+            </xs:restriction>
+        </xs:simpleType>     
+</xs:schema>

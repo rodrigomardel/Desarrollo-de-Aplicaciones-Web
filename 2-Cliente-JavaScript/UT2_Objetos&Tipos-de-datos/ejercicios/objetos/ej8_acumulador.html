@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ8-RMD-20241002</title>
+  </head>
+  <body>
+    <script>
+      /*
+        8.	Crea una función constructora Accumulator(valorInicial).
+            El objeto que se crea debería:
+            •	Almacenar el valorInicial en la propiedad value.
+            •	Tendrá un método read() que se utiliza para pedir un valor y agregarlo a value.
+        */
+
+      function Accumulator(valorInicial) {
+        this.value = valorInicial;
+        this.read = function () {
+          this.value += prompt("Ingrese nuevo valor");
+        };
+      }
+    </script>
+  </body>
+</html>

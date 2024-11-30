@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ7-RMD-20241002</title>
+  </head>
+  <body>
+    <script>
+      /*
+      7.	Crea una función constructora Calculator que crea objetos con tres métodos:
+      •	read() pide dos valores y los almacena como propiedades de objeto, con nombres a y b.
+      •	sum() devuelve la suma de los valores almacenados.
+      •	mul() multiplica los valores almacenados y devuelve el resultado.
+      */
+
+      function Calculator() {
+        this.read = function () {
+          this.a = primerValor;
+          this.b = segundoValor;
+        };
+        this.suma = function () {
+          let suma = this.a + this.b;
+          return suma;
+        };
+        this.multiplicacion = function () {
+          let multiplicacion = this.a * this.b;
+          return multiplicacion;
+        };
+      }
+
+      let calculadora = new Calculator();
+      calculadora.read(4, 5);
+      calculadora.suma();
+      calculadora.multiplicacion();
+    </script>
+  </body>
+</html>

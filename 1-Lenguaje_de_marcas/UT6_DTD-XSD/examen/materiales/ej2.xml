@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tienda SYSTEM "ej2.dtd">
+   
+<tienda>
+    <datosTienda> <!--Tienda543. Calle Principal, 123. 123-456-789. info@tienda543.com-->
+        &Tienda543;
+        <observaciones>
+            <texto>Tienda 543</texto>
+            <imagen>imagen1.png</imagen>
+            <texto>¡No olvides revisar el documento adjunto para más detalles!</texto>
+            <texto>Adjuntamos el catálogo de productos para su referencia.</texto>
+            <imagen>imagen2.png</imagen>
+       </observaciones>
+    </datosTienda>
+    <item>
+        <producto id="p01" nombre="Producto A" categoria="mueble" inventario="en-stock">
+            <precio moneda="euro" oferta="no" codCupon="c2334">100.00</precio>
+            <nota>Este producto es muy resistente. Dispone de motor.</nota>
+            <marca>&ach;</marca> <!--ACH Muebles (Arte y Confort en el Hogar)-->
+        </producto>
+    </item>
+    <item>
+        <producto id="p02" nombre="Producto B" categoria="mueble"  inventario="en-stock">
+            <precio moneda="euro">50.00</precio>
+            <nota>Producto cómodo y elegante.Dispone de motor. </nota>
+            <marca>&ach;</marca>
+        </producto>
+    
+    </item>
+   <item>
+        <producto id="p03" nombre="Producto C" categoria="herramienta" inventario="agotado">
+            <precio moneda="euro" codCupon="c1234">200.00</precio>
+            <nota>Mejora el rendimiento respecto a la versión anterior.</nota>
+            <marca>&bnc;</marca>
+        </producto>
+   </item>
+</tienda>

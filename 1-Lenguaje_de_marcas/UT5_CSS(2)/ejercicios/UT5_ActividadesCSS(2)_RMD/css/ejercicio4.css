@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif, Verdana, Tahoma;
+}
+h1{
+    text-align: center;
+    color: burlywood;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+}
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+p{
+    width: 170px;
+    height: 200px;
+    border: dotted 2px burlywood;
+    text-align: justify;
+    margin: 20px;
+    padding: 10px;
+    font-style: italic;
+    background-color: rgb(242, 208, 171);
+}
+p::first-letter{
+    font-size: 3em;
+    font-style: normal;
+    color: burlywood;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    float: left;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Parte B</title>
+</head>
+<body>
+    <a href="../egipto.html">Volver</a>
+
+    <h1>Colabora con nosotros:</h1>
+
+    <form action="datos.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nom">Nombre:</label>
+                <input type="text" name="nombre" id="nom" maxlength="20" value="Introduce aqui tu nombre" required>
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" name="correoelectronico" id="mail" value="nombre@email.com" required>
+            </p>
+            <p>
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="telefono" id="tel" maxlength="8">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sobre la página</legend>
+            <p>Qué tipo de información te gustaria que apliáramos en esta pagina:</p>
+            <p>
+                <label for="egip">
+                    <input type="radio" name="información" id="egip">
+                    Egipto
+                </label>
+                <label for="meso">
+                    <input type="radio" name="información" id="meso">
+                    Mesopotamia
+                </label>
+                <label for="otras">
+                    <input type="radio" name="información" id="otras">
+                    Otras
+                </label>
+            </p>
+            <p>
+                <label for="noticias">
+                    <input type="checkbox" name="boletinnoticias" id="noticias" checked>
+                    Quiero suscribirme al boletín de noticias
+                </label>
+            </p>
+            <p>
+                <label for="comen">Tus comentarios: <br>
+                   <textarea name="comentarios" id="comen" cols="80" rows="10"></textarea>
+                </label>
+            </p>
+            <p>
+                <label for="listaweb">¿Cómo encontraste nuestra web?
+                    <select name="lista" id="listaweb">
+                        <option value="" selected>--selecciona--</option>
+                        <option value="otraweb">Desde otra web</option>
+                        <option value="google">Desde Google</option>
+                        <option value="otrositio">Desde otro sitio</option>
+                    </select>
+                </label>
+            </p>
+        </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>    
+</body>
+</html>

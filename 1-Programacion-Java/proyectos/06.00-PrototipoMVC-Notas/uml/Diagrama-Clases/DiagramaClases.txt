@@ -1,0 +1,43 @@
+@startuml
+skinparam classAttributeIconSize 0
+set separator none
+
+package "jcolonia.daw2024.mvc" <<Frame>>{
+
+class VistaGeneral{
+-nombre: String
+-scEntrada: Scanner
++VistaGeneral(nombre: String, in: Scanner)
++mostrarTítulo(): void
++getScEntrada(): Scanner
+}
+
+class VistaMenú{
+-listaOpciones: String[]
+-opción: int
+-nombre: String
++VistaMenú(nombre: String, listaOpciones: String[], entrada Scanner)
++pedirOpción(): int
++mostrarTítulo(): void
++mostrarMenú(): void
+}
+
+class BomboGenérico<E>{
+-bolsa: Vector<E>
++BomboGenérico(elementos: List<E>)
++{static}of <T> (elementos: List<T>): BomboGenérico<T>
++{static}of <T> (elementos: T[*]): BomboGenérico<T>
++{static}of (primero; int, último: int): BomboGenérico<Integer>
++{static}<N extends Enum<N>>(enumeración: Class<N>): BomboGenérico<N>
++getNúmBolas(): int
++getBandeja(): E
++sacarBola(): E
+}
+
+
+Bombo <|-- BomboString : es un
+Bombo <|-- BomboGenérico : es un
+
+}
+
+@enduml

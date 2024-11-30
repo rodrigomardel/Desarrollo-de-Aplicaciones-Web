@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "ej21.dtd">
+<empresa>
+    <empleados>
+        <empleado unidadDeProduccion="1" categoria="mantenimiento">
+            <nombre>Juan</nombre>
+            <apellidos>Pérez Rodriguez Delgado</apellidos>
+        </empleado>
+        <empleado unidadDeProduccion="2" categoria="limpieza">
+            <nombre>Carlos</nombre>
+            <apellidos>Pérez Rodriguez Delgado</apellidos>
+        </empleado>
+        <empleado unidadDeProduccion="3" categoria="produccion">
+            <nombre>José</nombre>
+            <apellidos>Pérez Rodriguez Delgado</apellidos>
+        </empleado>
+    </empleados>
+    <maquinaria>
+        <modelo unidadDeProduccion="1" tipo="A">J-KEE Cortadora de perfil</modelo>
+        <modelo unidadDeProduccion="2" tipo="B">J-KEE Cortadora de perfil</modelo>
+        <modelo unidadDeProduccion="3" tipo="C">J-KEE Cortadora de perfil</modelo>   
+    </maquinaria>
+</empresa>

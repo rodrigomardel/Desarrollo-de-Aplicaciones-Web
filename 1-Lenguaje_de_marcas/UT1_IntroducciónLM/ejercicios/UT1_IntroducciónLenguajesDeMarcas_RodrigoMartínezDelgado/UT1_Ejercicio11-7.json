@@ -1,0 +1,4 @@
+{"mediosDeTransporte":
+	[{"bicicleta":{ "-velocidad": "v<100Km/h"}},
+	{"patinete": {"-velocidadMaxima": "50Km/h"}}]
+}	

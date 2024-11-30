@@ -1,0 +1,6 @@
+{ "texto":
+	[{"titulo": "XML explicado a los niños", 
+	  "parrafo1": "El XML define cómo crear lenguajes de marcas",
+	  "parrafo2": "Las marcas se añaden a un documento de texto para añadir información.", 
+	  "http": "www.example.org"}]	
+}	

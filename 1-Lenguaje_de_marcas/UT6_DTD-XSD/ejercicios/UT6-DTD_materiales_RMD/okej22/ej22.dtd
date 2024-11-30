@@ -1,0 +1,20 @@
+<!ENTITY % text "(#PCDATA|code|keyword|graphic)*">
+<!ENTITY % block "(para|list)+">
+<!ENTITY % body "(%block;|example|note)+">
+<!ENTITY file "CDATA">
+<!ELEMENT report (title,(section|shortsect)+)>
+<!ELEMENT section (title,%body;,subsection*)>
+<!ELEMENT subsection (title,%body;,subsection*)>
+<!ELEMENT shortsect (title,%body;)>
+<!ELEMENT title %text;>
+<!ELEMENT para %text;>
+<!ELEMENT list (item)+>
+<!ELEMENT item (%block;)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT example (title?,%block;)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT graphic EMPTY>
+<!ATTLIST report security (high | medium | low ) "low">
+<!ATTLIST code type CDATA #IMPLIED>
+<!ATTLIST graphic file ENTITY #REQUIRED>

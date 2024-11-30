@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .contenedor{
+            font-size: 15px;
+            background-color: yellowgreen;
+            width: 80%;
+        }
+        .rem2{
+            font-size: 2rem;
+        }
+        .em2{
+            font-size: 2em;
+        }
+        .vw > h1{
+            font-size: 10vw;
+        }
+        .vw > p{
+            font-size: 16px;
+        }
+        #ultimo{
+            text-align: center;
+            text-decoration: underline dotted rgb(88, 155, 34);
+        }
+    </style>
+</head>
+<body>
+    <p>Elemento con font size 10px, fuera de div</p>
+    <div class="contenedor">
+        <p>Parrafo tamaño contenedor 15px;</p>
+        <p class="rem2">Parrafo con 2rem, relativo al tamaño elto raiz html 10px = 20px</p>
+        <p class="em2">Parrafo con 2em relativo al tamaño de letra del elemento 15px =30px</p>
+        <p class="em2">Parrafo con 2em relativo al tamaño de letra del elemento 15px=30px</p>
+        <p>Parrafo cuatro</p>
+        <p>Parrafo cinco</p>
+        <p>Parrafo seis</p>
+        <p title="Siete es un número impar" class="2rem">Parrafo siete</p>
+        <p id="ultimo">Parrafo ocho</p>  
+    </div> 
+    <h1>Texto con sombra</h1>
+    <div class="sombra">
+        <p>Contenedor con sombra</p>
+    </div>
+    <div class="vw">
+        <h1>Cabecera con 10 vw</h1>
+        <p>Parrafo con tamaño fijo 16px</p>
+    </div>
+</body>
+</html>

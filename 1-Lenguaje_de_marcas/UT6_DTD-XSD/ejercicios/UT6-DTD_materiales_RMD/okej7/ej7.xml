@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE libreria SYSTEM "ej7.dtd">
+<libreria>
+	<codigo>1263</codigo>
+	<direccion>C/ Juan de Juni 31</direccion>
+	<telefono>983555555</telefono>
+	<propietario>
+		<nombre>Juanito</nombre>
+	</propietario>
+	<libro>
+		<titulo> Cien años de soledad </titulo>
+		<autores> Gabriel García Márquez </autores>
+		<formato> Rústica </formato>
+		<publicacion>1967 </publicacion>
+		<precio>23,5</precio>
+	</libro>
+	<libro>
+		<titulo> Cocina de autor </titulo>
+		<autores> 
+			<autor>Pedro Pérez Pintor</autor>
+			<autor>Ana Alvarez Alba</autor>
+		</autores>
+		<formato> Bolsillo </formato>
+		<publicacion>2020 </publicacion>
+		<precio>20</precio>
+	</libro>
+</libreria>

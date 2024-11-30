@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 250px 300px 400px;
+      grid-template-areas:
+        "head head head"
+        "section1 section2 section3"
+        "main main main"
+        "footer footer footer";
+    }
+    .head {
+      background-color: rebeccapurple;
+      font-size: 24px;
+      grid-area: head;
+    }
+    .section1 {
+      background-color: blue;
+      font-size: 20px;
+      grid-area: section1;
+    }
+    .section2 {
+      background-color: palevioletred;
+      font-size: 20px;
+      grid-area: section2;
+    }
+    .section3 {
+      background-color: goldenrod;
+      font-size: 20px;
+      grid-area: section3;
+    }
+    main div {
+      border: 1px solid black;
+      /* height: 100px;
+      width: 250px; */
+    }
+  </style>
+  <body>
+    <main>
+      <div class="head">div1</div>
+      <div class="section1">div2</div>
+      <div class="section2">div3</div>
+      <div class="section3">div4</div>
+      <div>div5</div>
+      <div>div6</div>
+      <div>div7</div>
+      <div>div8</div>
+      <div>div9</div>
+      <div>div10</div>
+      <div>div11</div>
+      <div>div12</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE libro [
+    <!ELEMENT libro (titulo, disponible, autor, formato, publicacion, precio, descuento, enlacelibro)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT disponible EMPTY>
+        <!ATTLIST disponible 
+            tiempo CDATA #REQUIRED 
+            unidad CDATA #REQUIRED>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT formato (#PCDATA)>
+        <!ELEMENT publicacion (#PCDATA)>
+        <!ELEMENT precio EMPTY>
+        <!ATTLIST precio 
+            cantidad CDATA #REQUIRED
+            moneda CDATA #REQUIRED>
+        <!ELEMENT descuento EMPTY>
+        <!ATTLIST descuento 
+            cantidad CDATA #REQUIRED>
+        <!ELEMENT enlacelibro EMPTY>
+        <!ATTLIST enlacelibro
+            href CDATA #REQUIRED>   
+]>
+<libro>
+    <titulo> Cien años de soledad </titulo>
+    <disponible tiempo="24" unidad="horas"/>
+    <autor> Gabriel García Márquez </autor>
+    <formato> Rústica </formato>
+    <publicacion>1967 </publicacion>
+    <precio cantidad="9.99" moneda="euro"/>
+    <descuento cantidad="5"/>
+    <enlacelibro href="/exec/ISBN/84-473-0619-4"/>
+</libro>

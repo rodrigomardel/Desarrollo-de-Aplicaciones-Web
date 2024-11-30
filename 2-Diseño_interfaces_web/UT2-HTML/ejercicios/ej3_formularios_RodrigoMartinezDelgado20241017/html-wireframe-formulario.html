@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Estructura básica página HTML" />
+    <meta name="keywords" content="HTML,CSS,diseño web" />
+    <meta name="author" content="Rodrigo Mtz Delgado" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Formularios</title>
+  </head>
+
+  <body>
+
+    <!-- Cabecera con logo  -->
+    <header>
+      <img src="./img/logo.png" alt="logo-mi-web">
+    </header>
+    <hr>
+
+    <!-- Parte principal con artículo y formulario -->
+    <main>
+
+      <article>
+        <h1>Titulo 1</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <input type="image" name="img-play-video" src="image.jpg" alt="img-play-video">
+        <a href="video">Enlace a video</a>
+      </article>
+
+      <div class="formulario-registro">
+        <h3>Titulo formulario</h3>
+        <hr>
+        <button type="submit">Sign up with Google</button>
+
+        <form action="#" method="get" name="registro-web">
+           <fieldset>
+               <legend>Datos personales</legend>
+               <p>
+                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="2" maxlength="25" pattern="[A-Z][a-z]*" required>
+                 <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" pattern="([A-Z][a-z]+ ){3}[A-Z][a-z]+">
+               </p>
+
+               <p>
+                 <input type="number" name="edad" id="edad" min="1" max="150" placeholder="Edad">
+                 <input type="text" name="tlf" id="tlf" maxlength="12" placeholder="Teléfono">
+               </p>
+
+               <p>
+                Lugar de nacimiento 
+                <input type="text" list="provincia" name="provincia-usuario" placeholder="Lugar de nacimiento" tabindex="3">
+                <datalist id="provincia">
+                    <option value="Burgos">Burgos</option>
+                    <option value="Palencia">Palencia</option>
+                    <option value="Valladolid">Valladolid</option>
+                </datalist>
+                
+                Fecha de nacimiento 
+                <input type="date" name="fecha" id="fecha" max="2009-12-31" >
+               </p>
+
+               <p>
+                Foto
+                <input type="file" name="foto" id="foto" accept="image/*">
+
+                Sexo
+                <input type="radio" name="sexo" value="hombre" required>Hombre
+                <input type="radio" name="sexo" value="mujer" required>Mujer
+               </p>   
+           </fieldset>
+
+           <p>
+            <input type="email" name="email" id="email" placeholder="Dirección de email" required>
+           </p>
+           <p>
+            <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{7,16}" required><br>
+            Usa por lo menos una letra, un número y siete caracteres
+           </p>
+
+           <p>
+            <input type="checkbox" name="condiciones-de-uso" required> Aceptar condiciones
+           </p>
+           <button type="submit">Registro</button>
+        </form>
+      </div>
+
+      <!-- Seccion dentro del main con artículos -->
+      <section>
+        <article>
+          <img src="./img/img120x120.png" alt="img">
+          <p>
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </p>
+        </article>
+
+        <article>
+          <img src="./img/img120x120.png" alt="img">
+          <p>
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </p>
+        </article>
+
+        <article>
+          <img src="./img/img120x120.png" alt="img">
+          <p>
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </p>
+        </article>
+
+        <article>
+          <img src="./img/img120x120.png" alt="img">
+          <p>
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
+    
+  </body>
+</html>

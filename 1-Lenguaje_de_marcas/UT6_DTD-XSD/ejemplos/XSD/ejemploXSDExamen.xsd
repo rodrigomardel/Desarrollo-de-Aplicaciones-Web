@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="compra" type="tipoCompra"/>
+        <xs:complexType name="tipoCompra">
+            <xs:sequence>
+                <xs:group ref="grupoCompra"></xs:group>
+            </xs:sequence>
+            <xs:attribute name="codigo" type="xs:nonNegativeInteger"/>
+        </xs:complexType>
+ 
+    <xs:complexType name="tipoProgramas">
+        <xs:sequence>
+            <xs:element name="programa" type="tipoPrograma" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPrograma">
+        <xs:attributeGroup ref="grupoAttrPrograma"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibros">
+        <xs:sequence>
+            <xs:element name="libro" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="cod" type="xs:nonNegativeInteger"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoLicencia">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GPL"/>
+            <xs:enumeration value="LGPL"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:group name="grupoCompra">
+        <xs:sequence>
+            <xs:element name="programas" type="tipoProgramas" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="libros" type="tipoLibros"/>
+            <xs:element name="total" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="grupoAttrPrograma">
+            <xs:attribute name="name" type="xs:string"/>
+            <xs:attribute name="licencia" type="tipoLicencia"/>
+    </xs:attributeGroup>
+</xs:schema>

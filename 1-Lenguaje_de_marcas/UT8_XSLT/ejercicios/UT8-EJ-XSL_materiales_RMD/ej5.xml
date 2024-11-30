@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estudiantes>
+    <estudiante>
+        <nombre>Hugo</nombre>
+        <apellidos>García Fernández</apellidos>
+        <notas>
+            <eval1>6</eval1>
+            <eval2>7</eval2>
+            <eval3>8</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    
+    <estudiante>
+        <nombre>Bob</nombre>
+        <apellidos>Martínez García</apellidos>
+        <notas>
+            <eval1>6</eval1>
+            <eval2>8</eval2>
+            <eval3>5</eval3>
+        </notas>
+        <evaluacion_continua>no</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Carlos</nombre>
+        <apellidos>García Fernández</apellidos>
+        <notas>
+            <eval1>4</eval1>
+            <eval2>3</eval2>
+            <eval3>3</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>David</nombre>
+        <apellidos>Alvarez Fernández</apellidos>
+        <notas>
+            <eval1>3</eval1>
+            <eval2>4</eval2>
+            <eval3>5</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Javier</nombre>
+        <apellidos>Vargas Pérez</apellidos>
+        <notas>
+            <eval1>2</eval1>
+            <eval2>2</eval2>
+            <eval3>1</eval3>
+        </notas>
+        <evaluacion_continua>no</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Inés</nombre>
+        <apellidos>Moreno Pérez</apellidos>
+        <notas>
+            <eval1>3</eval1>
+            <eval2>4</eval2>
+            <eval3>5</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+
+    <estudiante>
+        <nombre>Eva</nombre>
+        <apellidos>López Martínez</apellidos>
+        <notas>
+            <eval1>8</eval1>
+            <eval2>7</eval2>
+            <eval3>6</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Fernando</nombre>
+        <apellidos>Ortega López</apellidos>
+        <notas>
+            <eval1>7</eval1>
+            <eval2>8</eval2>
+            <eval3>6</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Gloria</nombre>
+        <apellidos>Castro Martínez</apellidos>
+        <notas>
+            <eval1>9</eval1>
+            <eval2>9</eval2>
+            <eval3>9</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+    <estudiante>
+        <nombre>Alicia</nombre>
+        <apellidos>Delgado Fernández</apellidos>
+        <notas>
+            <eval1>8</eval1>
+            <eval2>9</eval2>
+            <eval3>7</eval3>
+        </notas>
+        <evaluacion_continua>si</evaluacion_continua>
+    </estudiante>
+</estudiantes>

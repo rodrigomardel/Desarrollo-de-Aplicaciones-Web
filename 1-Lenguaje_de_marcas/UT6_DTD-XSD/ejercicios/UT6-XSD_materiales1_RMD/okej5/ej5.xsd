@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="persona" type="tipoPersona"/>
+  <xs:complexType name="tipoPersona">
+    <xs:sequence>
+      <xs:element name="DNI" type="tipoDNI"/>
+      <xs:element name="direccion" type="tipoDireccion"/>
+    </xs:sequence>
+    <xs:attribute name="edad" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:int">
+          <xs:minInclusive value="16"/>
+          <xs:maxInclusive value="24"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="letra" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="A"/>
+          <xs:enumeration value="B"/>
+          <xs:enumeration value="C"/>
+          <xs:enumeration value="D"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="tipoDNI">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDireccion">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

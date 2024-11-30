@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Configuración BD</comment>
+<entry key="jdbc.password">1234</entry>
+<entry key="jdbc.user">Rodrigo</entry>
+<entry key="jdbc.url">jdbc:sqlite:world2.db</entry>
+</properties>

@@ -1,0 +1,21 @@
+Rodrigo Martínez Delgado
+
+1.consultaCurso
+select nombre, apellidos, direccion, nota_final
+from V1_alumnosYcursos
+where curso like 'ofimática'
+
+2.consultaHora
+select nombre, apellidos, direccion, poblacion
+from v2_profesoresYcursos
+where h_inicio like '18:00%'
+
+3.1. consultaNota
+select curso, cod_curso, Nombre_Profesor, Nombre_Alumno
+from V3_datosGenerales
+where curso like 'matemáticas' and Nota_final>6
+
+3.2.consultaFecha
+select curso, Nombre_Alumno, apellidos, fecha_inicio
+from V3_datosGenerales
+where fecha_inicio between '2021-01-01' and '2021-06-30'

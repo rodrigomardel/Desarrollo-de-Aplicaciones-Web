@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ16-RMD-20241018</title>
+  </head>
+  <body>
+    <script>
+      let user = {
+        name: "John",
+        years: 30,
+      };
+
+      /*
+             Escriba la asignación desestructurante que asigne las propiedades:
+            •	name en la variable name.
+            •	years en la variable age.
+            •	isAdmin en la variable isAdmin (false, si no existe tal propiedad)
+            Este es un ejemplo de los valores después de su asignación:
+            let user = { name: "John", years: 30 };
+            // escribe tu código al lado izquierdo:
+            // ... = user
+        */
+
+      let { name, years: age, isAdmin = false } = user;
+
+      alert(name); // John
+      alert(age); // 30
+      alert(isAdmin); // false
+    </script>
+  </body>
+</html>

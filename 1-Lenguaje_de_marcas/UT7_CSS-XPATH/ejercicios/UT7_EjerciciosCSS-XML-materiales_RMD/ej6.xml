@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej6.css" type="text/css"?>
+<elementos_quimicos>
+    <elemento>
+        <nombre>Hidrógeno</nombre>
+        <nomenclatura>H</nomenclatura>
+        <valencia>1</valencia>
+        <masa_atomica>1.008 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Oxígeno</nombre>
+        <nomenclatura>O</nomenclatura>
+        <valencia>-2</valencia>
+        <masa_atomica>15.999 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Sodio</nombre>
+        <nomenclatura>Na</nomenclatura>
+        <valencia>1</valencia>
+        <masa_atomica>22.990 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Carbono</nombre>
+        <nomenclatura>C</nomenclatura>
+        <valencia>4</valencia>
+        <masa_atomica>12.011 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Hierro</nombre>
+        <nomenclatura>Fe</nomenclatura>
+        <valencia>2, 3</valencia>
+        <masa_atomica>55.845 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Cloro</nombre>
+        <nomenclatura>Cl</nomenclatura>
+        <valencia>-1, 1, 3, 5, 7</valencia>
+        <masa_atomica>35.453 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Cobre</nombre>
+        <nomenclatura>Cu</nomenclatura>
+        <valencia>1, 2</valencia>
+        <masa_atomica>63.546 u</masa_atomica>
+    </elemento>
+    <elemento>
+        <nombre>Aluminio</nombre>
+        <nomenclatura>Al</nomenclatura>
+        <valencia>3</valencia>
+        <masa_atomica>26.982 u</masa_atomica>
+    </elemento>
+</elementos_quimicos>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imagen [
+    <!ENTITY logogif SYSTEM "imagenes/img1.jpg" NDATA jpg>
+    <!NOTATION gif SYSTEM "img/gif">
+    <!NOTATION jpg SYSTEM "img/jpg">
+    <!NOTATION png SYSTEM "img/png">
+        <!ELEMENT imagen (#PCDATA)>
+        <!ATTLIST imagen 
+            fecha CDATA #REQUIRED
+            fuente ENTITY #IMPLIED
+            tipo NOTATION (gif) #IMPLIED>
+]>
+<imagen fecha="11-3-2024" fuente="logogif" tipo="gif">asñldkjasñldja</imagen>

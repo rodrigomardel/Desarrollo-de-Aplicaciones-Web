@@ -1,0 +1,21 @@
+<!ENTITY xml "Extensible Markup Language">
+<!ENTITY sgml "Standard Generalized Markup Language">
+<!ENTITY pxa "Professional XML Authoring">
+<!ENTITY % text "(#PCDATA|code|keyword|quotation)*">
+<!ENTITY % block "(para|list)+">
+<!ENTITY % body "(%block;|example|note)+"> 
+<!ELEMENT report (title,(section|shortsect)+)>
+<!ELEMENT section (title,%body;,subsection*)>
+<!ELEMENT subsection (title,%body;,subsection*)>
+<!ELEMENT shortsect (title,%body;)>
+<!ELEMENT title %text;>
+<!ELEMENT para %text;>
+<!ELEMENT list (item)+>
+<!ELEMENT item (%block;)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT example (title?,%block;)>
+<!ELEMENT graphic EMPTY>	
+<!ATTLIST report security (high | medium | low ) "low">
+<!ATTLIST code type CDATA #IMPLIED>
+<!ATTLIST graphic file ENTITY #REQUIRED> 

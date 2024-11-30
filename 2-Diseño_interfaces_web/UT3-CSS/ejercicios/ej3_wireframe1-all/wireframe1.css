@@ -1,0 +1,241 @@
+/* La letra base del html debe ser 14px el resto de tamaños de letra les asignaremos usando esta medida */
+:root {
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  background-color: #2b78e4;
+}
+.boxed {
+  width: 1280px;
+  margin: auto;
+}
+header {
+  background-color: #2b78e4;
+}
+/* La parte del menu de arriba con el icono de la empresa debe ser pegajosa y desplazarse cuando haces scroll por la página. */
+html header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header * {
+  vertical-align: middle;
+}
+header > nav > ul {
+  display: inline-block;
+  margin-left: 300px;
+}
+header ul li {
+  display: inline;
+  margin: 25px;
+}
+header ul li a {
+  color: white;
+}
+header > img {
+  display: inline;
+  margin-left: 10px;
+}
+header > nav {
+  display: inline;
+}
+header > button {
+  float: right;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  width: 50px;
+}
+div#comboBox {
+  margin: 0 0 20px 25px;
+}
+div#comboBox > select {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+/* El texto del placeholder debe aparecer en color azul claro. */
+div#comboBox > input {
+  color: lightskyblue;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 80%;
+  margin-left: 20px;
+}
+section#busqueda > h1 {
+  font-size: 2.5rem;
+  margin: 10px 0px 10px 25px;
+  padding: 30px 0 0 0;
+}
+section#busqueda ul li {
+  display: inline;
+  margin: 25px;
+}
+section#busqueda ul li a {
+  color: white;
+}
+section#busqueda ul {
+  margin-bottom: 25px;
+}
+section#busqueda div#figures {
+  padding-top: 20px;
+}
+section#busqueda div#figures > figure {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 18%;
+  margin: 10px 10px 15px 5px;
+  padding: 10px 5px 5px 5px;
+}
+section#busqueda div#figures > figure > img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 35%;
+  vertical-align: middle;
+}
+section#busqueda div#figures > figure > figcaption {
+  display: inline-block;
+  width: 50%;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+/* Los elementos figure (5 elementos) deben tener fondo naranja (elementos impares) y 
+fondo amarillo (elementos pares), adapta también el color de texto para que se vea bien. */
+div#figures figure:nth-child(2n-1) {
+  /*odd*/
+  background-color: orange;
+}
+div#figures figure:nth-child(2n) {
+  /*even*/
+  background-color: rgb(228, 225, 15);
+}
+
+figure figcaption {
+  color: black;
+}
+section#tituloProductos {
+  overflow: hidden;
+}
+
+section#tituloProductos h2 {
+  font-size: 2rem;
+  padding: 20px 0 0 25px;
+}
+section#tituloProductos p {
+  font-size: 1.5rem;
+  padding-left: 25px;
+}
+main {
+  background-color: white;
+}
+/* El botón del main debe ser de color naranja y cambiar a amarillo cuando pasas por encima. */
+main > section#tituloProductos > button {
+  background-color: orange;
+  color: black;
+  float: right;
+  width: 10%;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  bottom: 89px;
+  right: 49px;
+}
+main > section#tituloProductos > button:hover {
+  background-color: yellow;
+}
+/* Si haces click en el botón se debe mostrar un recuadro amarillo. */
+main > section#tituloProductos > button:active {
+  background-color: green;
+}
+section#productos article {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20%;
+  margin: 10px 50px 15px 5px;
+  padding: 10px 5px 5px 5px;
+  max-height: 10%;
+}
+section#productos article h5 {
+  min-height: 68px;
+}
+section#productos {
+  padding: 0px 0px 40px 40px;
+  border-bottom: 1px solid black;
+}
+/* Los links de la sección productos ya visitados se pondrán de color naranja.  */
+section#productos a:visited {
+  color: orange;
+}
+section#noticias article {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40%;
+  padding: 10px 5px 5px 5px;
+  margin-right: 100px;
+}
+section#noticias {
+  padding: 50px 0 50px 150px;
+}
+
+/* Los span de la sección social tendrán un tamaño de 15px por 15 px y un recuadro negro. */
+footer section#social > figure {
+  display: inline-block;
+}
+footer section#social > button {
+  display: inline-block;
+  width: 10%;
+  padding: 5px 5px 5px 5px;
+}
+footer section#social > div {
+  display: inline-block;
+  margin-left: 25px;
+}
+.icon-social {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0px 4px 0px 4px;
+}
+/* El primer li de cada ul en la sección  links_navegacion estará en negrita.  */
+section#links_navegacion ul li:first-child {
+  font-weight: bold;
+}
+section#links_navegacion ul {
+  list-style-type: none;
+}
+section#links_navegacion > div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20%;
+  color: white;
+}
+section#links_navegacion {
+  margin: 10px 0 0 300px;
+}
+/* Los botones del footer deshabilitados tendrán un border amarillo y texto en blanco. */
+footer button[disabled] {
+  border: 1px yellow solid;
+  color: white;
+}
+footer nav {
+  padding: 10px 10px 10px 10px;
+  background-color: #073763;
+  border: 2px solid black;
+}
+footer nav ul {
+  margin-left: 50px;
+}
+footer nav ul li {
+  display: inline;
+  margin: 20px;
+}
+footer nav ul li a {
+  color: white;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ17-RMD-20241018</title>
+  </head>
+  <body>
+    <script>
+      let salaries = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+        Chris: 300,
+      };
+
+      /*
+        Crear la función topSalary(salaries) que devuelva el nombre de la persona mejor pagada.
+        •	Si salaries es vacío, debe devolver null.
+        •	Si hay varias personas con la mejor paga, devolver cualquiera de ellas.
+
+        PD: Utilice Object.entries y desestructuración para iterar sobre pares de claves/valores.
+        */
+
+      function topSalary(object) {
+        if (Object.keys(salaries).length === 0) {
+          return null;
+        }
+
+        let salarioMaximo = -Infinity;
+        let personaMaximoSalario;
+
+        for (let [nombre, salario] of Object.entries(object)) {
+          if (salario > salarioMaximo) {
+            salarioMaximo = salario;
+            personaMaximoSalario = nombre;
+          }
+        }
+        return personaMaximoSalario;
+      }
+
+      console.log(topSalary(salaries));
+    </script>
+  </body>
+</html>

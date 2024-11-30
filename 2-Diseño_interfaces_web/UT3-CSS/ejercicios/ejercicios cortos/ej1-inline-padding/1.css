@@ -1,0 +1,41 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#welcome {
+  background-color: rgb(24, 146, 187);
+  padding: 5px;
+}
+.boxed {
+  width: 1200px;
+  margin: auto;
+}
+.welcome-text {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+.welcome-text h1 {
+  padding: 10px 0;
+  font-size: 2rem;
+}
+.welcome-text p {
+  margin-bottom: 15px;
+  margin-right: 35px;
+  font-size: 1.3rem;
+}
+.welcome-text button {
+  padding: 15px 15px 15px 15px;
+}
+
+.image-placeholder {
+  display: inline-block;
+  width: 38%;
+}

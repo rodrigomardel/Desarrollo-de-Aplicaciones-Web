@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ5-RMD-20241017</title>
+  </head>
+  <body>
+    <script>
+      /*
+        5.	Sumar los valores de las propiedades
+            Hay un objeto salarios con un número arbitrario de salarios.
+            Escriba la función sumSalarios(salarios) que devuelva la suma de todos los salarios 
+            utilizando Object.values() y el bucle for..of.
+            Si salarios está vacío, entonces el resultado debe ser 0.
+        */
+
+      let salarios = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+      };
+
+      function sumSalarios(object) {
+        let suma = 0;
+        // Object.values(object) devuelve un array de los valores del objeto
+        for (const value of Object.values(object)) {
+          suma += value;
+        }
+        return suma;
+      }
+
+      alert(sumSalarios(salarios)); // 650
+    </script>
+  </body>
+</html>

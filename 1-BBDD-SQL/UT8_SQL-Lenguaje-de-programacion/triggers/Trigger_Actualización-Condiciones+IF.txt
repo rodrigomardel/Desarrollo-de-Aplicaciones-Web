@@ -1,0 +1,22 @@
+create trigger tg_numeroProyectos_ej6 on Asignaciones
+after insert
+as
+begin
+declare
+@idEmp int,
+@numeroProyectos int
+select @idEmp=idempleado from inserted
+
+select @numeroProyectos=COUNT(*)
+from asignaciones
+where idempleado=@idEmp
+
+if @numeroProyectos=2
+begin
+update nominas set sueldo=sueldo+200 where idempleado=@idEmp
+end
+else if @numeroProyectos=4
+begin
+update nominas set sueldo=sueldo+300 where idempleado=@idEmp
+end
+end;

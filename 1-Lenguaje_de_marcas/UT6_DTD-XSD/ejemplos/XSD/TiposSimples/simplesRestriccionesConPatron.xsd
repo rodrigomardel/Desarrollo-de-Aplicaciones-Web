@@ -1,0 +1,8 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="matricula" type="codigoCiudad"/>    
+        <xs:simpleType name="codigoCiudad">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{3}-[A-Z]{2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+</xs:schema>

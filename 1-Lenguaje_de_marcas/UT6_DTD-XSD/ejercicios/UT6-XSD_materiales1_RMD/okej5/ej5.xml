@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej5.xsd" edad="23" letra="B">
+    <DNI>12345678Z</DNI>
+    <direccion> Calle Falsa 123   Apt 4 </direccion>
+</persona>

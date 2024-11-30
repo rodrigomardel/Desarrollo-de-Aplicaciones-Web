@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #field {
+        width: 200px;
+        border: 10px groove black;
+        background-color: #00ff00;
+        position: relative;
+      }
+
+      #ball {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="field">
+      <img src="https://en.js.cx/clipart/ball.svg" id="ball" /> . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . .
+    </div>
+
+    <script>
+      /*
+    Utilizando JavaScritp (no CSS), coloca la pelota en el centro del campo verde.
+    El código debería funcionar con una pelota de cualquier tamaño y con cualquier tamaño de campo
+    */
+
+      function colocarPelota() {
+        let div = document.getElementById("field");
+        let img = document.getElementById("ball");
+
+        // Tamaños del campo y de la pelota
+        let fieldWidth = div.clientWidth;
+        let fieldHeight = div.clientHeight;
+
+        let ballWidth = img.offsetWidth;
+        let ballHeight = img.offsetHeight;
+
+        // Calcular posición para centrar
+        let centerX = Math.round((fieldWidth - ballWidth) / 2);
+        let centerY = Math.round((fieldHeight - ballHeight) / 2);
+
+        // Colocar la pelota
+        img.style.left = centerX + "px";
+        img.style.top = centerY + "px";
+      }
+
+      colocarPelota();
+    </script>
+  </body>
+</html>

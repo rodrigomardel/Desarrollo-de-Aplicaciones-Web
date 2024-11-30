@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4-RMD-20240919</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      function hashtagStair(num = 7) {
+        if (num < 0 || isNaN(num) == true) {
+          console.log();
+        }
+        for (let i = 1; i <= num; i++) {
+          let linea = "";
+          for (let j = 1; j <= i; j++) {
+            linea += "#";
+          }
+          console.log(linea);
+        }
+      }
+
+      hashtagStair();
+    </script>
+  </body>
+</html>

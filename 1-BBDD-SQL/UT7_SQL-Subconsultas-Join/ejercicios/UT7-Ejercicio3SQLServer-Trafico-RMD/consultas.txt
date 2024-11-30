@@ -1,0 +1,33 @@
+Rodrigo Martínez Delgado
+
+1.
+select *
+from V1_multasActuales
+where matricula in ('5665-AJT','2210-GTT') and fecha 
+between '2024-01-01' and '2024-04-30';
+
+
+2.
+select direccion, fecha_nacimiento
+from V2_propietariosSinVehiculo
+where nombre like 'esteban' and Apellido like 'cuesta'
+
+
+3.
+select count(identificador) as 'Nº multas - Ag.(16,18 y 10)'
+from v3_multasAgentes
+where codigo in ('16','18','10')
+
+3.1.
+select nombre
+from v3_multasAgentes
+where importe in (
+
+select max(importe)
+from v3_multasAgentes)
+
+
+4.
+select Nombre_Agen, Apellido_Agen, Fecha_Ingreso, Importe, Hora
+from V4union_multasTodasLasFechas
+where Importe>500 or Hora<'19:00'

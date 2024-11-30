@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej3.xsd">
+    <coche matricula="908GGT">
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <año>2020</año>
+        <caracteristicas>4 puertas</caracteristicas>
+        <disponible/>
+    </coche>
+    <coche matricula="8899FFT">
+        <marca>Ford</marca>
+        <modelo>Transit</modelo>
+        <año>2018</año>
+        <vendido/>
+    </coche>
+    <coche matricula="1111AAA">
+        <marca>12</marca>
+        <modelo>Civic</modelo>
+        <año>2019</año>
+    </coche>
+</concesionario>

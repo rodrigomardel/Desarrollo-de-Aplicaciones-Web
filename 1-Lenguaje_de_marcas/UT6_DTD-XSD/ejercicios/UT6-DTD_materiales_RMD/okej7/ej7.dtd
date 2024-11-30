@@ -1,0 +1,13 @@
+<!ELEMENT libreria (codigo+, direccion+, telefono+, propietario+,libro+)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT propietario (nombre+, telefonopro*)>
+        <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT libro (titulo, autores?, formato, publicacion, precio, cantidad?)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autores (#PCDATA | autor)*>
+            <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT formato (#PCDATA)>
+        <!ELEMENT publicacion (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>

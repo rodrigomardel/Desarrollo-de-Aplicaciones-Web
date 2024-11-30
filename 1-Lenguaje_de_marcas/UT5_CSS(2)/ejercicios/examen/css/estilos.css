@@ -1,0 +1,101 @@
+html{
+    font-family: 'Lucida Sans',sans-serif;
+}    
+body{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    margin-bottom: 5em;
+}
+header h1{
+    font-size:  5vw;
+    color: goldenrod;
+    text-transform: uppercase;
+    text-align: center;
+}
+header, main{
+    padding: 1em;
+}
+nav{
+    background-color: goldenrod;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}
+nav a{
+    color: white;
+}
+a:hover{
+    color: black;
+}
+a{
+    color: goldenrod;
+}
+section{
+    padding: 2em;
+}
+#fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#fotos img{
+    border: 2px solid black;
+    margin: 0.2em;
+}
+#fotos img:hover{
+    border: 2px solid goldenrod;
+}
+.bienvenida img{
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin-right: 1em;
+}
+.bienvenida p::first-letter{
+    color: goldenrod;
+    font-size: 2em;
+}
+h2{
+    font-style: italic;
+}
+@media screen and (max-width: 600px){
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+    header h1{
+        color: black;
+    }
+    .bienvenida img{
+        display: none;
+    }
+    header{
+        padding: 0.5em;
+    }
+    main{
+        padding: 0.5em;
+    }
+    .contenedor{
+        width: 92%;
+    }
+}

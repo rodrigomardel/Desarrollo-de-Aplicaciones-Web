@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="albumesMortadelo" type="tipoAlbumes"/>
+        <xs:complexType name="tipoAlbumes">
+            <xs:sequence>
+                <xs:element name="album" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="nombre" type="xs:string"/>
+                        <xs:attribute name="fecha">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:gYear">
+                                    <xs:minInclusive value="1969"/>
+                                    <xs:maxInclusive value="1974"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>        
+</xs:schema>

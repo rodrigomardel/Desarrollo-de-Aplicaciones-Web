@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ25-RMD-20241009</title>
+  </head>
+  <body>
+    <script>
+      /*
+        25.	Mapear a nombres
+
+            Tenemos un array de objetos users, y cada uno de los objetos tiene una propiedad name, que es una cadena, el nombre del usuario.
+            Escribe una función a la que pasamos el array users y devuelve un array con los nombres de los usuarios.
+
+            Ejemplo:
+            let john = { name: "John", age: 25 };
+            let pete = { name: "Pete", age: 30 };
+            let mary = { name: "Mary", age: 28 };
+
+            let users = [ john, pete, mary ];
+            let names = mapaANombres(users);
+            console.log( names ); // John, Pete, Mary
+
+        */
+
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let users = [john, pete, mary];
+
+      function mapaANombres(users) {
+        let arrayNombres;
+
+        users.forEach((element) => {
+          arrayNombres = users.map((element) => element.name);
+        });
+
+        return arrayNombres;
+      }
+
+      let names = mapaANombres(users);
+      console.log(names); // John, Pete, Mary
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Formulario de registro con los campos de
+        "Usuario" y "Contraseña", donde se valide que el nombre
+        de usuario tenga entre 5 y 15 caracteres y que la
+        contraseña tenga al menos 8 caracteres.
+        <form action="get">
+            <input type="text" name="usuario" id="usuario" minlength="5" maxlength="15" placeholder="Nombre de usuario">
+            <input type="password" name="pass" id="pass" minlength="8" placeholder="Contraseña">
+            <button type="submit">Enviar</button>
+        </form>
+    </p>
+    <br>
+
+
+    <p>Formulario que solicite la edad del usuario y que
+        sólo permita edades entre 18 y 65 años.
+        <form action="get">
+            <input type="number" name="edad" id="edad" min="18" max="65" placeholder="Edad">
+        </form>
+    </p>
+    <br>
+
+
+    <p>Formulario de suscripción donde los campos
+        "Nombre", "Correo" y "Aceptar términos y condiciones"
+        sean obligatorios.
+        <form action="get">
+            <input type="text" name="usuario" id="usuario" minlength="5" maxlength="15" placeholder="Nombre de usuario" required>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+            <p>
+                <input type="checkbox" name="condiciones-de-uso" required>Aceptar términos y condiciones
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </p>
+    <br>
+
+
+    <p> Formulario de reserva de cita que solicite una
+        fecha. La fecha debe ser posterior a la fecha actual.
+        <form action="get">
+            <input type="date" min="2024-10-15">
+        </form>
+    </p>
+   
+    
+</body>
+</html>

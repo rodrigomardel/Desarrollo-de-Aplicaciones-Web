@@ -1,0 +1,72 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="concesionario" type="tipoConcesionario"/>
+    <xs:complexType name="tipoConcesionario">
+        <xs:sequence>
+            <xs:element name="propietario" type="tipoPropietario" minOccurs="0" maxOccurs="4"/>
+            <xs:element name="coche" type="tipoCoche" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="furgoneta" type="tipoFurgoneta" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPropietario">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="porcentaje" default="100">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:nonNegativeInteger">
+                            <xs:minInclusive value="1"/>
+                            <xs:maxInclusive value="100"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoCoche">
+        <xs:group ref="elementosVehiculo"/>
+        <xs:attributeGroup ref="attrVehiculo"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFurgoneta">
+        <xs:group ref="elementosVehiculo"/>
+        <xs:attributeGroup ref="attrVehiculo"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoMarca">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Ford"/>
+                    <xs:enumeration value="Chevrolet"/>
+                    <xs:enumeration value="Toyota"/>
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="100"/>
+                </xs:restriction>
+            </xs:simpleType>   
+        </xs:union>
+    </xs:simpleType>
+
+    
+    <xs:group name="elementosVehiculo">
+        <xs:sequence>
+            <xs:element name="marca" type="tipoMarca"/>
+            <xs:element name="modelo" type="xs:string"/>
+            <xs:element name="año" type="xs:gYear"/>
+            <xs:element name="caracteristicas" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:choice>
+                <xs:element name="vendido" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="disponible" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="attrVehiculo">
+        <xs:attribute name="matricula" use="required"/>
+    </xs:attributeGroup>
+
+</xs:schema>

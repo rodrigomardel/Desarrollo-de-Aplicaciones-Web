@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ9-RMD-20241002</title>
+  </head>
+  <body>
+    <script>
+      /*
+        9.	Crea una función constructora denominada Vehículo que tenga estas propiedades, que se pasan a la función al crear los objetos:
+            •	matricula
+            •	precio
+            •	velocidad máxima
+
+            También deberá tener estos métodos:
+            •	comenzar() que mostrará el mensaje “Encender motor”,
+            •	parar() que mostrará “Apagar motor” 
+            •	distanciaMax() que recibirá un parámetro indicando el tiempo de funcionamiento y devolverá la distancia máxima que puede haber recorrido, 
+            que será el resultado de multiplicar la velocidad máxima por el tiempo.
+            •	toString(), para que cuando se utilice un objeto de tipo Vehiculo en un lugar donde se espere un string aparezca el texto 
+            “Coche con matricula  XXXXX” (siendo XXXXX la matrícula del coche).
+            •	valueof() para que cuando se utilice un objeto de tipo Vehiculo en un lugar donde se espere un número, tome el valor del precio del coche.
+        */
+
+      function Vehiculo(matricula, precio, velocidadMaxima) {
+        this.matricula = matricula;
+        this.precio = precio;
+        this.velocidadMaxima = velocidadMaxima;
+
+        this.comenzar = function () {
+          let mensaje = console.log("Encender motor");
+          return mensaje;
+        };
+
+        this.parar = function () {
+          let mensaje = console.log("Apagar motor");
+          return mensaje;
+        };
+
+        this.distanciaMax = function (tiempoFuncionamiento) {
+          let resultado = this.velocidadMaxima * tiempoFuncionamiento;
+          return resultado;
+        };
+
+        this.toString = function () {
+          let mensaje = console.log(`Coche con matricula → ${this.matricula}`);
+          return mensaje;
+        };
+
+        this.valueOf = function () {
+          let mensaje = console.log(`${this.precio}$`);
+          return mensaje;
+        };
+
+        let audi = new Vehiculo("8207BPL", 32000, 230);
+        console.log(audi.comenzar());
+        console.log(audi.parar());
+        console.log(audi.distanciaMax(10));
+        console.log(audi.toString());
+        console.log(audi.valueOf());
+      }
+    </script>
+  </body>
+</html>

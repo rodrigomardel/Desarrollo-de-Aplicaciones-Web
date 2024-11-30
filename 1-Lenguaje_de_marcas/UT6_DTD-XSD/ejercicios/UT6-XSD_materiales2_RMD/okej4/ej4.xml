@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej4.xsd"> 
+    <article author="kelvin" date="2009-09-09"> 
+        <headline>Apple's next big thing is Steve Jobs</headline> 
+        <body>On September 9, Steve Jobs returned to the public eye ...</body> 
+        <notes>Excellent analysis</notes> 
+        <notes>Insightful</notes> 
+    </article> 
+    <article author="tim" date="2000-01-07"> 
+        <headline>Exciting Announcement from Apple</headline> 
+        <lead>This is a groundbreaking development...</lead> 
+        <body>Read on for the full story</body> 
+    </article> 
+    <book author="peter" edition="2" date="2022-12-07">
+        <headline>The Mystery of the Lost Key</headline>
+        <lead>A thrilling adventure awaits...</lead> 
+        <isbn>978-3-16-148410-0</isbn>
+        <genre>Mystery</genre>
+    </book>
+</publication>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4-RMD-20240928</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea una función multiplyNumeric(obj) que multiplique todas las propiedades numéricas de obj por 2.
+        
+
+        multiplyNumeric(obj) no devuelve nada, modifica el valor de las propiedades de obj.
+
+        * Idea: puedes utilizar typeof para verificar si el valor de una propiedad es de tipo number.
+
+        Ej. de funcionamiento:
+        // Antes de la llamada
+        let menu = {
+        width: 200,
+        height: 300,
+        title: "Mi menú"
+        };
+
+        multiplyNumeric(menu);
+
+        // Después de la llamada
+        menu = {
+        width: 400,
+        height: 600,
+        title: "Mi menú"
+        };     
+        */
+
+      "use strict";
+
+      let menu = {
+        width: 200,
+        height: 300,
+        title: "Mi menú",
+      };
+
+      function multiplyNumeric(obj) {
+        for (let prop in obj) {
+          if (typeof obj[prop] === "number") {
+            obj[prop] *= 2;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

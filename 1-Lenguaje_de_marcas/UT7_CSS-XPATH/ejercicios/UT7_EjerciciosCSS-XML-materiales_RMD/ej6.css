@@ -1,0 +1,43 @@
+elementos_quimicos {
+    background-color: plum;
+}
+
+elemento {
+    display: inline-block;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 1.5rem;
+    width: 200px;
+    height: 60px;
+    position: relative;
+}
+
+nomenclatura {
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+elemento nombre {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+
+}
+
+elemento valencia {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 10px;
+
+}
+
+elemento masa_atomica {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+}

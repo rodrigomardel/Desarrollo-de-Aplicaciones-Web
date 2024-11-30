@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio3-RMD-20240928</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Tenemos un objeto que almacena los salarios de nuestro equipo de trabajo:
+
+            let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+            }
+
+        Escribe el código para sumar todos los salarios y almacenar el resultado en una variable sum. 
+        En el ejemplo de arriba nos debería dar 390. Si salaries está vacío, el valor de sum será 0.
+        */
+
+      "use strict";
+
+      let salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130,
+      };
+
+      function totalSalario(obj) {
+        let sum = 0;
+
+        for (let prop in obj) {
+          sum += obj[prop];
+        }
+
+        return console.log(`El salario total del equipo es de ${sum}`);
+      }
+
+      /*v2.0 usando método values de Object*/
+      function totalSalarioV2(obj) {
+        let sum = 0;
+        let valores = Object.values(obj);
+
+        for (let i = 0; i < valores.length; i++) {
+          sum += valores[i];
+        }
+        return console.log(`El salario total del equipo es de ${sum}`);
+      }
+
+      /*v3.0 usando método values de Object*/
+      function totalSalarioV3(obj) {
+        let sum = 0;
+        let valores = Object.values(obj);
+
+        for (let valor of valores) {
+          sum += valor;
+        }
+        return console.log(`El salario total del equipo es de ${sum}`);
+      }
+    </script>
+  </body>
+</html>

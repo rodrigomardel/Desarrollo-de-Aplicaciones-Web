@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cuatro_1.xslt"?>
+<raiz>
+    <AAA id="a1">
+        <BBB id="b1">Elto B</BBB>
+        <BBB id="b2">Elto </BBB>
+    </AAA>
+    <AAA id="a2">
+        <BBB id="b3">Elto B</BBB>
+        <BBB id="b4">Elto B</BBB>
+        <CCC id="c1">
+            <DDD id="d1">Elto D</DDD>
+        </CCC>
+        <BBB id="b5">
+            <CCC id="c2">Elto C</CCC>
+        </BBB>
+    </AAA>
+</raiz>

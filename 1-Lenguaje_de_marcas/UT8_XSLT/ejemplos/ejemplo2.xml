@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales>
+    <web>www.mundiales.com</web>
+    <pilotos>
+        <piloto pilotoId="P01">
+            <nombre>Fernando Alonso</nombre>
+            <nacionalidad>Española</nacionalidad>
+            <equipo>Alpine</equipo>
+            <titulos>
+                <titulo>2005</titulo>
+                <titulo>2006</titulo>
+            </titulos>
+        </piloto>
+        <piloto pilotoId="P02">
+            <nombre>Lewis Hamilton</nombre>
+            <nacionalidad>Británica</nacionalidad>
+            <equipo>Mercedes</equipo>
+            <titulos>
+                <titulo>2008</titulo>
+                <titulo>2014</titulo>
+                <titulo>2015</titulo>
+                <titulo>2017</titulo>
+                <titulo>2018</titulo>
+                <titulo>2019</titulo>
+                <titulo>2020</titulo>
+            </titulos>
+        </piloto>
+        <piloto pilotoId="P03">
+            <nombre>Max Verstappen</nombre>
+            <nacionalidad>Holandesa</nacionalidad>
+            <equipo>Red Bull</equipo>
+            <titulos>
+                <titulo>2021</titulo>
+                <titulo>2022</titulo>
+            </titulos>
+        </piloto>
+        <piloto pilotoId="P04">
+            <nombre>Valtteri Bottas</nombre>
+            <nacionalidad>Finesa</nacionalidad>
+            <equipo>Alfa Romeo</equipo>
+        </piloto>
+        <piloto pilotoId="P05">
+            <nombre>Charles Leclerc</nombre>
+            <nacionalidad>Monegasca</nacionalidad>
+            <equipo>Ferrari</equipo>
+            <titulos>
+                <titulo>2022</titulo>
+            </titulos>
+        </piloto>
+        <piloto pilotoId="P06">
+            <nombre>Carlos Sainz</nombre>
+            <nacionalidad>Española</nacionalidad>
+            <equipo>Ferrari</equipo>
+        </piloto>
+        <piloto pilotoId="P07">
+            <nombre>Sergio Pérez</nombre>
+            <nacionalidad>Mexicana</nacionalidad>
+            <equipo>Red Bull</equipo>
+        </piloto>
+    </pilotos>
+    <circuitos>
+        <circuito>
+            <nombre circuitoId="C01">Barcelona-Catalunya</nombre>
+            <pais>España</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C02">Silverstone</nombre>
+            <pais>Inglaterra</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C03">Monte Carlo</nombre>
+            <pais>Mónaco</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C04">Monza</nombre>
+            <pais>Italia</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C05">Spa-Francorchamps</nombre>
+            <pais>Bélgica</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C06">Suzuka</nombre>
+            <pais>Japón</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C07">Yas Marina</nombre>
+            <pais>Emiratos Árabes Unidos</pais>
+        </circuito>
+        <circuito>
+            <nombre circuitoId="C08">Circuito Urbano de Valencia</nombre>
+            <pais>España</pais>
+         </circuito>
+    </circuitos>
+    <escuderias>
+        <escuderia escuderiaId="E01">
+            <nombre>Ferrari</nombre>
+            <pais>Italia</pais>
+        </escuderia>
+        <escuderia escuderiaId="E02">
+            <nombre>Mercedes</nombre>
+            <pais>Alemania</pais>
+        </escuderia>
+        <escuderia escuderiaId="E03">
+            <nombre>Red Bull</nombre>
+            <pais>Austria</pais>
+        </escuderia>
+        <escuderia escuderiaId="E04">
+            <nombre>McLaren</nombre>
+            <pais>Inglaterra</pais>
+        </escuderia>
+        <escuderia escuderiaId="E05">
+            <nombre>Alpine</nombre>
+            <pais>Francia</pais>
+        </escuderia>
+        <escuderia escuderiaId="E06">
+            <nombre>Alfa Romeo</nombre>
+            <pais>Italia</pais>
+        </escuderia>
+        <escuderia escuderiaId="E07">
+            <nombre>Haas</nombre>
+            <pais>Estados Unidos</pais>
+        </escuderia>
+        <escuderia escuderiaId="E08">
+            <nombre>Williams</nombre>
+            <pais>Inglaterra</pais>
+        </escuderia>
+        <escuderia escuderiaId="E09">
+            <nombre>Aston Martin</nombre>
+            <pais>Inglaterra</pais>
+        </escuderia>
+        <escuderia escuderiaId="E10">
+            <nombre>AlphaTauri</nombre>
+            <pais>Italia</pais>
+        </escuderia>
+    </escuderias>
+    <campeonatos>
+        <campeonato año="2020">
+            <carreras>
+                <carrera>
+                    <nombre circuitoId="C01">Gran Premio de Australia</nombre>
+                    <resultado>
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="1" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="2" />
+                        <piloto pilotoId="P06" escuderiaId="E05" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C02">Gran Premio de Gran Bretaña</nombre>
+                    <resultado>
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="1" />
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="2" />
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C03">Gran Premio de Hungría</nombre>
+                    <resultado>
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="1" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="2" />
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="3" />
+                    </resultado>
+                </carrera>
+            </carreras>
+        </campeonato>
+
+        <campeonato año="2021">
+            <carreras>
+                <carrera>
+                    <nombre circuitoId="C01">Gran Premio de Australia</nombre>
+                    <resultado>
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="1" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="2" />
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C02">Gran Premio de Gran Bretaña</nombre>
+                    <resultado>
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="1" />
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="2" />
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C03">Gran Premio de Italia</nombre>
+                    <resultado>
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="1" />
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="2" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="3" />
+                    </resultado>
+                </carrera>
+            </carreras>
+        </campeonato>
+
+        <campeonato año="2022">
+            <carreras>
+                <carrera>
+                    <nombre circuitoId="C01">Gran Premio de España</nombre>
+                    <resultado>
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="1" />
+                        <piloto pilotoId="P06" escuderiaId="E05" posicion="2" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C02">Gran Premio de Arabia Saudita</nombre>
+                    <resultado>
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="1" />
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="2" />
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C03">Gran Premio de Australia</nombre>
+                    <resultado>
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="1" />
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="2" />
+                        <piloto pilotoId="P07" escuderiaId="E07" posicion="3" />
+                    </resultado>
+                </carrera>
+            </carreras>
+        </campeonato>
+
+        <campeonato año="2023">
+            <carreras>
+                <carrera>
+                    <nombre circuitoId="C01">Gran Premio de España</nombre>
+                    <resultado>
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="1" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="2" />
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C02">Gran Premio de Gran Bretaña</nombre>
+                    <resultado>
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="1" />
+                        <piloto pilotoId="P02" escuderiaId="E02" posicion="2" />
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="3" />
+                    </resultado>
+                </carrera>
+                <carrera>
+                    <nombre circuitoId="C03">Gran Premio de Francia</nombre>
+                    <resultado>
+                        <piloto pilotoId="P03" escuderiaId="E03" posicion="1" />
+                        <piloto pilotoId="P01" escuderiaId="E01" posicion="2" />
+                        <piloto pilotoId="P05" escuderiaId="E05" posicion="3" />
+                    </resultado>
+                </carrera>
+            </carreras>
+        </campeonato>
+    </campeonatos>
+
+</mundiales>

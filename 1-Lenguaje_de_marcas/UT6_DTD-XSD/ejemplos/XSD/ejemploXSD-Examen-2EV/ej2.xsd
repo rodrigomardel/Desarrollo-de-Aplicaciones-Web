@@ -1,0 +1,73 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libreria" type="tipoLibreria"/>
+
+    <xs:complexType name="tipoLibreria">
+        <xs:sequence>
+            <xs:element name="codigo" type="xs:string" minOccurs="1"/>
+            <xs:element name="direccion" type="xs:string"/>
+            <xs:element name="telefono" type="xs:string"/>
+
+            
+            <!--<xs:element name="propietario">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>  ** referencia **-->
+            <xs:element ref="propietario"/>
+            
+            
+            <xs:element name="libro" type="tipoLibro" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibro">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="autores">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element name="autor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="formato" type="formatos"/>
+            <xs:element name="publicacion" type="xs:gYear"/>
+            <xs:element name="precio">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:double">
+                            <xs:attribute name="oferta" type="xs:string"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="tipoCodigo" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="formatos">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bolsillo"/>
+            <xs:enumeration value="tapa blanda"/>
+            <xs:enumeration value="tapa dura"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCodigo">
+        <xs:restriction base="xs:string">
+            <xs:length value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- referencia a propietario-->
+    <xs:element name="propietario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

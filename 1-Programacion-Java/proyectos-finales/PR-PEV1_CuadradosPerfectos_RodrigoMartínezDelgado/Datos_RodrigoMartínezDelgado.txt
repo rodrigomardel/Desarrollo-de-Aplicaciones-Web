@@ -1,0 +1,18 @@
+
+1.1.-
+
+La estrategia a seguir en Snap calculando y sumando todos los cuadrados perfectos
+usando el bloque de control «repetir hasta que» con la condición (cuadradoPerfecto>=valorFinal),
+al plantearlo en Java con un bucle de tipo «while» la condición se invierte, para que mientras 
+el (cuadradoPerfecto<=valorFinal) el contador se incremente.
+
+
+1.2.-
+
+El programa en Snap con el uso del bloque «repetir hasta que» (cuadradoPerfecto>=valorFinal) tiene un defecto,
+ya que si el últimoCuadrado es igual que el valorFinal la condicion es cierta y sale del bucle no incluyendo este 
+último, posteriormente decrementa el valor de i para calcular el últimoCuadrado que sería el penúltimo.
+
+En mi planteamiento no afecta ya que el últimoCuadrado no coincide con el valorFinal.
+
+Este defecto en Java se soluciona con el uso del bucle «while».

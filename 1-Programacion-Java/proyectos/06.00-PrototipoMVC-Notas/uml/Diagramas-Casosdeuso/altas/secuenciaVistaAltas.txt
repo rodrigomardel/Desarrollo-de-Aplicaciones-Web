@@ -1,0 +1,22 @@
+@startuml
+skinparam actorStyle Hollow
+skinparam style strictuml
+
+actor Usuario as U1
+collections "Vista Altas" as L1 
+control Control as C1
+
+U1 ->> C1 : Opción
+L1 <<-- C1 : Mostrar título 
+U1 <<-- L1
+L1 <<- C1: Entrada texto
+activate L1
+U1 <- L1: Preguntar texto
+U1 ->> L1: Texto
+U1 <<-- L1: Entrada correcta
+L1 ->> L1: Confirmación
+L1 ->> C1 : Opción
+deactivate L1
+
+
+@enduml

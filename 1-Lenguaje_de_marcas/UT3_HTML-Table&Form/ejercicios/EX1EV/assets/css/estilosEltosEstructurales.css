@@ -1,0 +1,31 @@
+
+header, footer { 
+    margin:10px;
+    padding:10px;
+    background-color: #ffc0ad; 
+    text-align: center; 
+}
+nav {
+    margin:10px;
+    padding:10px;
+    background-color: #fdffa0;
+    text-align: center; 
+}
+main {
+    margin:10px;
+    padding:10px;
+    background-color: #024b8e; 
+}
+article {
+    margin:10px;
+    padding:10px;
+    background-color: #d6eaf7; 
+}
+section{
+    margin:10px;
+    padding:10px;
+    background-color: #FFFFFF; 
+}
+#poesia{
+    background-color: rgb(215, 239, 213);
+}

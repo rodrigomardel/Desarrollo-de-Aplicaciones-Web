@@ -1,0 +1,31 @@
+*{
+    color: yellow;/* 0 0 0 0 0 */
+}
+
+.normal p{
+    color: pink; /* 0 0 0 1 1*/
+}
+
+div p{
+    color: aqua; /* 0 0 0 0 2 */
+}
+
+.normal .especial{
+    color: darkgoldenrod; /* 0 0 0 2 0 */
+}
+
+div > p {
+    color: rgb(184, 51, 166); /* 0 0 0 0 2*/
+}
+
+p {
+    color: lightblue; /* 0 0 0 0 1 */
+}
+
+p {
+    color: blue; /* 0 0 0 0 1 */
+}
+
+
+
+

@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="camiseta" type="caracteristicasCamiseta"/>
+
+    <xs:complexType name="caracteristicasCamiseta">
+        <xs:sequence>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="talla" type="tallas"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Sin nombre:
+        <xs:element name="camiseta">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="color" type="xs:string"/>
+                        <xs:element name="talla" type="tallas"/>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:element>     
+    -->
+
+    <xs:simpleType name="tallas">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="S"/>
+            <xs:enumeration value="M"/>
+            <xs:enumeration value="L"/>
+            <xs:enumeration value="XL"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

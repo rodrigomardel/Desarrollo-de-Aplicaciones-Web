@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lectura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej13.xsd">
+	<libros>
+		<libro>
+			<novela>Los pilares de la tierra</novela>
+		</libro>
+		<libro>
+			<poesia>100 poemas de amor y una cancion desesperada</poesia>
+		</libro>
+	</libros>
+	<revistas>
+		<revista>
+			<nombreRevista>PCWorld</nombreRevista>
+		</revista>	
+	</revistas>
+</lectura>

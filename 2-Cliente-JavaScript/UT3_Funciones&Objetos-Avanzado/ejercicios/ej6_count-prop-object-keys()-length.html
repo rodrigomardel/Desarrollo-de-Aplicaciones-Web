@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ6-RMD-20241017</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Escriba una función count(obj) que devuelva el número de propiedades en el objeto. 
+        Trate de hacer el código lo más corto posible.
+        */
+
+      let user = {
+        name: "John",
+        age: 30,
+      };
+
+      function count(object) {
+        return Object.keys(object).length;
+      }
+
+      alert(count(user)); // 2
+    </script>
+  </body>
+</html>

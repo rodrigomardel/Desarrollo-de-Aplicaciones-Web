@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="get">
+    <p>
+        Crear un campo que valide un número de tarjeta de crédito
+        de 16 dígitos, dividido en bloques de 4 por espacios.
+        <input type="text" name="tarjeta-de-credito" id="tarjeta-de-credito" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+        <!-- Otra solución pattern="(\d{4} ){3}\d{4}" -->
+        <button type="submit">Enviar</button>
+    </p>
+
+    <p>
+        Crear un campo para un número de teléfono que acepte solo
+        números en el formato 123-456-7890.
+        <input type="text" name="tlf" id="tlf" pattern="\d{3}-\d{3}-\d{4}">
+        <button type="submit">Enviar</button>
+    </p>
+
+    <p>
+        Crear un campo que solo acepte palabras formadas por
+        letras mayúsculas.
+        <input type="text" name="mayus" id="mayus" pattern="[A-Z]+">
+        <button type="submit">Enviar</button>
+        <!-- No tiene sentido ya que se haría en JS o PHP (toUpperCase) -->
+    </p>
+
+    <p>
+        Crear un campo de texto para el nombre de usuario que solo
+        acepte nombres que comiencen con una letra y que puedan
+        contener letras, números, guiones bajos o puntos. Debe tener
+        entre 5 y 12 caracteres.
+        <input type="text" name="" id="" pattern="[A-Za-z][A-Za-z0-9_\.]{4-11}">
+        <button type="submit">Enviar</button>
+    </p>
+
+    <p>
+        Crear un campo para una URL que solo acepte direcciones
+        que empiecen por https:// y contengan un dominio válido (p.
+        ej. . com , .es)
+        <input type="text" name="" id="" pattern="https://.+\.(com|\.es)">
+        <button type="submit">Enviar</button>
+    </p>
+
+    <p>
+        Crear un campo de contraseña que acepte al menos 8
+        caracteres, con al menos una letra mayúscula, una letra
+        minúscula, un número y un carácter especial.
+        <input type="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*(*_)).{8}">
+        <button type="submit">Enviar</button>
+    </p>
+   </form> 
+</body>
+</html>

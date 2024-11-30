@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST" autocomplete="on">
+    <fieldset>
+        <legend>Datos del usuario</legend>
+    <p>
+        <label for="nomb">Nombre:</label>
+        <input type="text" id="nomb" name="nombre">
+    </p>    
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </p>    
+    <p>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Dime tu ciudad">
+    </p> 
+    <p>
+        <label for="pais">Pais:</label>
+        <input type="text" id="pais" name="pais" value="España" disabled>
+    </p> 
+    <p>
+        <label for="psw">Contraseña:</label>
+        <input type="password" id="psw" name="constraseña">
+    </p> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Radio y Check</legend>
+        <ul>
+            <li>
+                <input type="checkbox" id="respuestaA" name="respuestaA" value="A" checked>
+                <label for="respuestaA">A</label>
+            </li>
+            <li>
+                <input type="checkbox" id="respuestaB" name="respuestaB" value="B">
+                <label for="respuestaA">B</label>
+            </li>
+            <li>
+                <input type="checkbox" id="respuestaC" name="respuestaC" value="C">
+                <label for="respuestaA">C</label>
+            </li>
+        </ul><ul>
+            <li>
+                <input type="radio" id="respuestaA1" name="respuesta" value="A">
+                <label for="respuestaA1">A</label>
+            </li>
+            <li>
+                <input type="radio" id="respuestaB1" name="respuesta" value="B">
+                <label for="respuestaB1">B</label>
+            </li>
+            <li>
+                <input type="radio" id="respuestaC1" name="respuesta" value="C">
+                <label for="respuestaC1">C</label>
+            </li>
+        </ul>
+    </fieldset>
+
+
+        <input type="reset" value="Borrar datos">
+        <input type="submit" value="Enviar">
+        <input type="button" value="Comprobar" onclick="alert('Comprobado')">
+        <button type="submit">
+            <img src="png-transparent-tick-mark-ok-perfect-check-done-sign-good-green.png" alt="check" style="height: 10px; width: 10px;" >
+        </button>
+    </form>  
+</body>
+</html>

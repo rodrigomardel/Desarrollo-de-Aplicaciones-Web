@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE elementos [
+    <!ELEMENT elementos (elemento+)>
+        <!ELEMENT elemento EMPTY>
+        <!-- El ID no puede empezar por números, ni contener espacios... -->
+        <!ATTLIST elemento 
+            id ID #REQUIRED 
+            atributoCadena CDATA #IMPLIED
+            atributoNMToken NMTOKENS #IMPLIED
+            atributoEnumerado (true | false) "true"
+            ref IDREF #IMPLIED
+            refs IDREFS #IMPLIED 
+            > 
+   
+]>
+<elementos>
+    <elemento
+        id="A0001"
+        atributoCadena="#Este es un atributo cadena de texto &quot;"
+        atributoNMToken="11113 adasd dasds"
+        atributoEnumerado="true"
+    ></elemento>
+    <elemento
+        id="A0002"
+        atributoCadena="#Este es un atributo cadena de texto &quot;"
+        atributoNMToken="11114"
+        atributoEnumerado="true"
+        ref="A0002"
+        refs="A0001 A0002"
+    ></elemento>
+</elementos>

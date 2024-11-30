@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo,autor,editorial,anio)>
+    <!ATTLIST libro id ID #REQUIRED>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ENTITY and "&">
+
+]>
+<biblioteca>
+    <libro id="L001">
+        <titulo>El Principito</titulo>
+        <autor>Antoine de Saint-Exupéry</autor>
+        <editorial>Gallimard</editorial>
+        <anio>1943</anio>
+    </libro>
+    <libro id="L002">
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <editorial>Harper &and; Row</editorial>
+        <anio>1967</anio>
+    </libro>
+    <libro id="L003">
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <editorial>Secker &and; Warburg</editorial>
+        <anio>1949</anio>
+    </libro>
+</biblioteca>

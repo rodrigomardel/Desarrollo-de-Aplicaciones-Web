@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      button {
+        height: 40px;
+        width: 100px;
+        background-color: rebeccapurple;
+        border-radius: 2px;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /*Se pueden asignar varias funciones.*/
+      document.addEventListener("DOMContentLoaded", inicio);
+
+      //v1
+      function cambiaColor(elemento) {
+        elemento.style.backgroundColor = "red";
+        console.log(event);
+      }
+
+      //v1.1 con this
+      function cambiaColorv2() {
+        this.style.backgroundColor = "red";
+        console.log(event);
+      }
+
+      //v2
+      // Usando el evento que se genera automáticante el evento «e» JS en el onclick
+      function cambiaColorv3(e) {
+        e.target.style.backgroundColor = "red";
+        console.log(e);
+        e.preventDefault(); // impide el comporatimento por defecto del elemento equivale a «return false»
+      }
+
+      //v3
+      function cambiaColorv4(e) {
+        e.target.style.backgroundColor = "red";
+        console.log(e);
+        // e.preventDefault();
+      }
+
+      function inicio() {
+        //v1
+        let elementoEvento = document.body.getElementsByTagName("button")[1];
+        elementoEvento.onclick = cambiaColorv2;
+
+        //v2
+        let enlaceEvento = document.body.getElementsByTagName("a")[1];
+        enlaceEvento.onclick = cambiaColorv3;
+
+        //v3
+        let elementoEvento1 = document.body.getElementsByTagName("button")[2];
+        elementoEvento1.addEventListener("click", cambiaColorv4);
+        /*Se puede eliminar el escuchador, pasando un puntero a la función.*/
+        // elementoEvento1.removeEventListener("click", cambiaColorv4);
+      }
+    </script>
+
+    <!-- No es aconsejable se debe separar el JS del HTML
+    <button onclick="alert('HOLA'); " type="button" value="Enviar">
+      Enviar
+    </button>
+     «return false» impide la opcion por defecto 
+      <a onclick="alert('HOLA'); return false;" href="https:\\www.google.com"
+      >Ir a Google
+    </a> -->
+
+    <button type="button" value="Enviar">Enviar</button>
+    <button type="button" value="Enviar">eventListener</button>
+
+    <!-- Llamada a una funcion -->
+    <button onclick="cambiaColor(this);" type="button" value="Enviar">
+      Enviar
+    </button>
+
+    <a href="https:\\www.google.com">Ir a Google </a>
+  </body>
+</html>

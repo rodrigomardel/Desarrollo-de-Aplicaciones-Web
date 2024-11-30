@@ -1,0 +1,14 @@
+<!ENTITY % UP "unidadDeProduccion (1|2|3) #REQUIRED">
+    <!ELEMENT empresa (empleados, maquinaria)>
+        <!ELEMENT empleados (empleado+)>
+            <!ELEMENT empleado (nombre, apellidos)>
+            <!ATTLIST empleado 
+                %UP;
+                categoria (mantenimiento|limpieza|produccion) #REQUIRED>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT maquinaria (modelo+)>
+            <!ELEMENT modelo (#PCDATA)>
+            <!ATTLIST modelo
+                %UP;
+                tipo (A|B|C) #REQUIRED>

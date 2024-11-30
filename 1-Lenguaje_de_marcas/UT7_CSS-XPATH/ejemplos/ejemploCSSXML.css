@@ -1,0 +1,48 @@
+biblioteca::before{
+    content: "Libros";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(8, 133, 133);
+    display: block;
+}
+biblioteca{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+libro{
+    display: block;
+    border: 2px solid rgba(218, 65, 65, 0.308);
+    margin: 0.5em;
+    padding: 0.5em;
+}
+titulo::before{
+    content: "Título: ";
+    font-weight: bold;
+    color: black;
+
+}
+autor::before{
+    content: "Autor: ";
+    font-weight: bold;
+    color: black;
+
+
+}
+fechaPublicacion::before{
+    content: "Fecha: ";
+    font-weight: bold;
+    color: black;
+
+}
+titulo,autor,fechaPublicacion{
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+libro::after{
+    content:"Calificación: " attr(calif);
+    font-style: italic;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de CSS</title>
+  <style>
+    html{
+      font-size: 10px;
+    }
+    h1{
+      font-size: 2em;
+      text-decoration: underline green;
+    }
+    header{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5em;
+      font-style: italic;
+      font-weight: bold;
+      font-variant: small-caps;
+      background-color: rgba(0, 255, 0, 0.185);
+      top: 0;
+      padding: 1em;
+    }
+    body{
+      background-image: url("archivosParaPracticarAlumnos/img/fondoAzul.jpg");
+      margin: 0 10%;
+    }
+    .main-section > article{
+      border: 5px solid black;
+      border-radius: 20px;
+      background-color: white;
+      padding: 2em;
+      margin: 2rem 0; /* (rem) tamaño relativo al tamaño de la letra definida en el HTML*/
+    }
+    ul{
+      list-style: square;
+    }
+    article{
+      font-size: 2rem;
+    }
+    article p{
+      font-size: 2em;
+    }
+    footer{
+      background-color: black;
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi ejercicio completo con tamaño el doble de lo establecido en el contenedor. Está subrayado en verde y centrado</h1>
+    <p>Esta sección tiene fuente Arial tamaño 1.5em, cursiva, negrita, y versálitas </p>
+    <p>El fondo del header es color verde claro transparente</p>
+    <p>El fondo de la web es la imagen fondo.jpg</p>
+    <p>Además tiene un margen lateral del 10% todo el cuerpo</p>
+    <p>También tiene una posición para que permanezca stycky en la parte superio</p>
+  </header>
+  <section class="main-section">
+    <article id="article1">
+      <h2>Artículo 1</h2>
+      <img src="archivosParaPracticarAlumnos/img/tic.png" alt="estrella">
+      <p>Todos los artículos tienen borde negro de 5 px redondeado y fondo blanco</p>
+      <p>Tiene margin el doble de la letra definida en html pero sólo ariba y abajo</p>
+      <p>Tiene un padding de 2em</p>
+      <p>Este es un artículo de muestra con una lista desordenada.</p>
+      <p>LA lista debe tener marcadores cuadrados</p>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </article>
+    <article id="article2">
+      <h2>Artículo 2</h2>
+      <p>Este es otro artículo de muestra con una lista ordenada.</p>
+      <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+      </ol>
+    </article>
+  </section>
+  <footer>
+    <p>&copy; 2024 Mi Página de Ejercicio</p>
+    <p>Fondo negro, letra blanca, dcentrado</p>
+    <p>Padding de 10px</p>
+  </footer>
+</body>
+</html>

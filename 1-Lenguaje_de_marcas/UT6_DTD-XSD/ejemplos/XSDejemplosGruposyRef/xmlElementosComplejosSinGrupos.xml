@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xmlElementosComplejosSinGrupos.xsd">
+    <alumno id="a102">
+        <nombre>Juan</nombre>
+        <edad>20</edad>
+        <direccion>C/La Puebla 34</direccion>
+        <cp>09001</cp> 
+    </alumno>
+    <alumno id="a103">
+        <nombre>Laura</nombre>
+        <edad>33</edad>
+        <direccion>C/La San Juan 24</direccion>
+        <cp>09003</cp>  
+    </alumno>
+    <profesor id="p045">
+        <nombre>Juan</nombre>
+        <edad>20</edad>
+        <direccion>C/La Silos 66</direccion>
+        <cp>09002</cp>
+        <!--<asignatura>LM</asignatura>
+        <asignatura>Prog</asignatura>-->
+    </profesor>
+</clase>
+<!-- ¿qué pasa si quiero añadir un elemento más a profesor?
+    Pero no quiero que lo tenga alumno.
+Por ejemplo: asignaturas-->

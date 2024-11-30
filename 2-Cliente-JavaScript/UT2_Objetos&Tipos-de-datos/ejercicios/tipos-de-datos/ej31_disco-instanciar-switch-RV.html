@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ31-RMD-20241013</title>
+  </head>
+  <body>
+    <script>
+      /*
+        31.	 Crea una función constructora Disco que almacene la siguiente información:
+            •	Nombre del disco.
+            •	Grupo de música o cantante.
+            •	Año de publicación.
+            •	Tipo de música (podrá ser “rock”, “pop”, “punk” o “indie”);
+            •	Localización: almacenará un número de estantería.
+            •	Prestado: almacenará un valor booleano. Por defecto será false.
+
+            La función constructora se puede llamar con o sin parámetros:
+            •	Sin parámetros: las 4 primeras propiedades serán cadenas vacías, la localización será 0 por defecto y prestado estará a false.
+            •	Con parámetros: se pasarán solo las cinco primeras propiedades; la propiedad prestado será false.
+
+            Además, tendrá los siguientes métodos:
+            •	Un método que permitirá cambiar el número de estantería en la localización.
+            •	Un método que permitirá cambiar la propiedad prestado.
+            •	Un método que muestre toda la información de un disco.
+        */
+
+      const GENEROS = ["rock", "pop", "punk", "indie"];
+
+      /*Función constructura*/
+
+      function Disco(
+        nombre = "",
+        grupo = "",
+        año = "",
+        genero = "",
+        localizacion = 0
+      ) {
+        this.nombre = nombre;
+        this.grupo = grupo;
+        this.año = año;
+        this.genero = GENEROS.includes(genero.toLocaleLowerCase())
+          ? genero
+          : "";
+        this.localizacion = localizacion;
+        this.prestado = false;
+
+        this.cambiarLocalizacion = function () {
+          // while (control) {
+          this.localizacion = prompt("Introduzca nueva ubicación:");
+          //   if (!isNaN(this.localizacion)) {
+          //     alert("Debe introducir un valor numérico");
+          //   }
+          //   control = false;
+          // }
+        };
+
+        this.cambiarEstado = function () {
+          let control = true;
+          while (control) {
+            this.prestado = prompt(
+              "Introduzca true si está prestado y false en caso contrario"
+            );
+            if (
+              this.prestado != "true" &&
+              this.prestado != "false" &&
+              null &&
+              ""
+            ) {
+              alert("Valor no válido, intentelo de nuevo");
+            }
+            control = false;
+          }
+        };
+
+        this.verInformacion = function () {
+          alert(
+            "Nombre: " +
+              this.nombre +
+              "\n Grupo: " +
+              this.grupo +
+              "\n Año: " +
+              this.año +
+              "\n Género: " +
+              this.genero +
+              "\n Localización: " +
+              this.localizacion +
+              "\n Prestado: " +
+              this.prestado
+          );
+        };
+      }
+
+      /* El programa hará lo siguiente:
+            •	Creará un objeto de tipo disco, para lo cual te pide los parámetros.
+            •	Presente un menú que permita:
+            o	Mostrar la información del disco que se ha añadido
+            o	Cambiar el disco de estantería
+            o	Prestar un disco
+            o	Devolver un disco
+            o	Terminar
+      */
+      function nuevoDisco() {
+        let nuevoDisco = new Disco(
+          prompt("Nombre del disco"),
+          prompt("Nombre del grupo"),
+          +prompt("Año"),
+          prompt("Genero - Rock, Pop, Punk o Indie:"),
+          +prompt("Localización"),
+          prompt("¿Está prestado? - true/false")
+        );
+
+        control = true;
+
+        while (control) {
+          let entrada = prompt(
+            "Introduzca la opción deseada:\n v(Ver información Disco)\n c(Cambiar de estantería\n p(Prestar)\n d(Devolver)\n t(Terminar))"
+          );
+
+          switch (entrada) {
+            case "v":
+              nuevoDisco.verInformacion();
+              break;
+
+            case "c":
+              nuevoDisco.cambiarLocalizacion();
+              break;
+
+            case "p":
+              nuevoDisco.cambiarEstado();
+              break;
+
+            case "d":
+              nuevoDisco.cambiarEstado();
+              break;
+
+            case "t":
+              alert("** F I N **");
+              control = false;
+              break;
+
+            default:
+              alert("Opción inválida. Intentelo de nuevo");
+              control = false;
+              break;
+          }
+        }
+      }
+      nuevoDisco();
+    </script>
+  </body>
+</html>

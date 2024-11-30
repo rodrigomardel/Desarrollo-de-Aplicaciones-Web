@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ12-RMD-20241002</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea un programa que imprima por consola los números ganadores de la bonoloto: son 6 números entre 1 y 49 (combinación ganadora),
+        un complementario, también entre 1 y 49, y el reintegro entre el 0 y el 9.
+        Los números de la combinación ganadora y el complementario tienen que ser distintos.
+        Se mostrarán al usuario en el siguiente orden: combinación ganadora, complementario, reintegro.
+
+        Para comprobar que no se repiten hay que utilizar strings o arrays.
+        */
+
+      const min = 1;
+      const max = 49;
+      var numerosB = [];
+      var complementario;
+      var reintegro;
+
+      function numerosBonoloto() {
+        for (let i = 0; i < 6; i++) {
+          var numero = min + Math.random() * (max + 1 - min);
+          numero = Math.floor(numero);
+          numerosB.push(Number(numero));
+        }
+
+        let resultado = numerosB.join(" - ");
+        return console.log(
+          `Los números ganadores de la bonoloto son →   ${resultado}`
+        );
+      }
+
+      function numComplementario() {
+        let seguir = true;
+
+        while (seguir) {
+          complementario = min + Math.random() * (max + 1 - min);
+          complementario = Math.floor(complementario);
+
+          let repetido = false;
+
+          for (elemento of numerosB) {
+            if (elemento == complementario) {
+              repetido = true;
+            }
+          }
+
+          if (repetido == false) {
+            seguir = false;
+          }
+        }
+        return console.log(`Complementario el →  ${complementario}`);
+      }
+
+      function numReintegro() {
+        reintegro = (Math.random() * 9).toFixed();
+        Math.floor(reintegro);
+        return console.log(`Reintegro el →  ${reintegro}`);
+      }
+
+      numerosBonoloto();
+      numComplementario();
+      numReintegro();
+    </script>
+  </body>
+</html>

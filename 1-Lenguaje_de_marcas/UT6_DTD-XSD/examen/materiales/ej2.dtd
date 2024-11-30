@@ -1,0 +1,36 @@
+<!ENTITY Tienda543 "<nombre>Tienda543</nombre><direccion>Calle Principal, 123</direccion>
+    <telefono>123-456-789</telefono><correo>info@tienda543.com</correo>">
+<!ENTITY ach "ACH Muebles (Arte y Confort en el Hogar)">
+<!ENTITY bnc "Muebles Evelio">
+<!ELEMENT tienda (datosTienda,item+)>
+    <!ELEMENT datosTienda (nombre, direccion, telefono+, correo, observaciones?)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT direccion (#PCDATA)>
+        <!ELEMENT telefono (#PCDATA)>
+        <!ELEMENT correo (#PCDATA)>
+        <!ELEMENT observaciones ((texto+, imagen?)*)>
+            <!ELEMENT texto (#PCDATA)>
+            <!ELEMENT imagen (#PCDATA)>
+    <!ELEMENT item (producto|servicio)>
+        <!ELEMENT producto (precio, nota*, marca, opcion?)>
+        <!ATTLIST producto 
+            id ID #REQUIRED
+            nombre CDATA #REQUIRED
+            categoria (herramienta|mueble|instalacion|diseño) "herramienta"
+            fabrica (Valladolid|Palencia|León) #IMPLIED
+            inventario (en-stock|bajo-orden|agotado) #IMPLIED>
+        <!ELEMENT precio (#PCDATA)>
+        <!ATTLIST precio 
+            moneda CDATA "euros"
+            oferta (si|no) "no"
+            codCupon ID #IMPLIED
+            gastosdeenvio CDATA #IMPLIED>
+        <!ELEMENT servicio (descripcion, precio, nota)>
+        <!ATTLIST servicio 
+            id ID #REQUIRED
+            nombre CDATA #REQUIRED
+            categoria (herramienta|mueble|instalacion|diseño) "herramienta">
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT nota (#PCDATA)>
+        <!ELEMENT marca (#PCDATA)>
+        <!ELEMENT opcion (#PCDATA)>

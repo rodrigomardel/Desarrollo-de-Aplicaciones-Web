@@ -1,0 +1,96 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+body{
+    background-image: url(../img/fondo.gif);
+}
+header{
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center; 
+}
+#contenedor{
+    margin:auto;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: brown;
+    margin-bottom: 1em;
+    padding: 0.5em 0.5em;
+}
+nav a{
+    background-color: brown;
+    color: white;
+}
+nav a:hover{
+    color: bisque;
+}
+#cuerpo{
+    display: flex;
+}
+main{
+    flex: 80%;
+}
+aside{
+    flex: 30%;
+}
+section{
+    padding: 2em;
+    text-align: justify;
+}
+h1{
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+main article{
+    padding: 1em;
+}
+aside{
+    background-color: rgb(255, 231, 221);
+    padding: 10px;
+}
+.cuerpolateral{
+    padding: 1.5em;
+}
+.titulosAside{
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8em 0.5em;
+}
+#navabajo{
+    margin-top: 2em;
+}
+footer{
+    text-align: center;
+    color: grey;
+    border-top: solid 4px rgb(255, 231, 221);
+}
+section article{
+    tab-size: 5cap;
+}
+@media screen and (max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        background-color: rgb(255, 228, 196, 0.2);
+        text-align: center;
+        border: solid 2px brown;
+        padding: 1em;
+    }
+    #cuerpo{
+        display: flex;
+        flex-direction: column;
+    }
+}

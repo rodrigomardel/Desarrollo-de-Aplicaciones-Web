@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 450px 450px 150px;
+        grid-template-areas:
+          "he he he"
+          "ma ma as"
+          "se1 se2 se3"
+          "fo fo fo"; /**/
+      }
+      header {
+        grid-area: he;
+        background-color: rebeccapurple;
+      }
+      .m1 {
+        grid-area: ma;
+        background-color: aquamarine;
+      }
+      aside {
+        grid-area: as;
+        background-color: beige;
+      }
+      .s1 {
+        grid-area: se1;
+        background-color: pink;
+      }
+      .s2 {
+        grid-area: se2;
+        background-color: yellow;
+      }
+      .s3 {
+        grid-area: se3;
+        background-color: red;
+      }
+      footer {
+        grid-area: fo;
+        background-color: darkkhaki;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main class="m1"></main>
+    <aside></aside>
+    <section class="s1"></section>
+    <section class="s2"></section>
+    <section class="s3"></section>
+    <footer></footer>
+  </body>
+</html>

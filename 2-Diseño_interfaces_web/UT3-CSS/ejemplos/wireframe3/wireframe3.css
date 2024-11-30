@@ -1,0 +1,68 @@
+/*ajusta todas las imagenes al tamaño del contenedor*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  border: 1px solid rgb(195, 204, 30);
+  width: 1280px;
+  margin: auto;
+}
+header {
+  border: 1px solid red;
+}
+header nav ul li {
+  display: inline;
+}
+/*Mantiene el elemento pegado arriba sobre el elemento padre, habitualmente sobre el body*/
+body header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+}
+body ul.sticky li {
+  display: inline;
+}
+section#carrusel figure ~ figure {
+  display: none;
+}
+/*posicionamiento relativo*/
+section#carrusel figure {
+  position: relative;
+}
+/*posicionamiento absoluto*/
+section#carrusel figure figcaption {
+  font-size: 20px;
+  background-color: rgb(123, 213, 225);
+  color: black;
+  height: 50px;
+  width: 650px;
+  /* position: absolute; */
+  position: relative;
+  top: -199px;
+  left: 68px;
+  /* z-index: 200px; */
+}
+main {
+  border: 1px solid green;
+}
+main section#productos {
+  border: 1px solid purple;
+}
+main section#productos > article {
+  border: 1px solid black;
+  margin: 10px 10px 15px 5px; /*orden de las agujas del reloj*/
+  padding: 10px 5px 5px 5px;
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/*posicionamiento fijo en la parte deseada*/
+/* main section#mapa {
+  position: fixed;
+  bottom: 0;
+} */
+footer {
+  border: 1px solid blue;
+}

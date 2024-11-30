@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejemplo de Media Queries</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+main{
+    display:flex;
+    justify-content: space-evenly;
+}
+section {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #0400fd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+@media screen and (max-width:600px){
+    header{
+        background-color: blueviolet;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+}
+</style>
+
+</head>
+    <body>
+        <header>
+            <h1>Mi Sitio Web</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Contenido Principal</h2>
+                <p>Bienvenido a mi sitio web. Este es el contenido principal.</p>
+            </section>
+            <section>
+                <h2>Contenido Secundario</h2>
+                <p>Este es el contenido secundario de mi web.</p>
+            </section>
+            <section>
+                <h2>Contenido Secundario</h2>
+                <p>Este es el contenido secundario de mi web.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Mi Sitio Web</p>
+        </footer>
+    </body>
+</html>

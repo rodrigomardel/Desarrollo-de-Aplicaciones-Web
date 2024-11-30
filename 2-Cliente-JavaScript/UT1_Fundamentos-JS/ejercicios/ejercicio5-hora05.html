@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4-RMD-20240919</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      /*let horas, minutos;
+
+      for (horas = 9; horas <= 21; horas++) {
+        for (minutos = 0; minutos < 60; minutos++) {
+          if (minutos == 0 || minutos == 5) {
+            console.log(`${horas}` + `:0` + `${minutos}`);
+          } else if (minutos % 5 == 0) {
+            console.log(`${horas}` + `:` + `${minutos}`);
+          }
+        }
+      }*/
+
+      //v2.0
+      let ended = false;
+
+      for (let i = 9; i <= 21; i++) {
+        for (let j = 0; j <= 55 && !ended; j += 5) {
+          let hora = i + ":";
+          hora += j < 10 ? "0" + j : j;
+
+          if (i == 21 && j == 30) {
+            ended = true;
+          }
+          console.log(hora);
+        }
+      }
+    </script>
+  </body>
+</html>

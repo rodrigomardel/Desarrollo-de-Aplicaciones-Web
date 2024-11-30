@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostrar / ocultar información</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+        A partir de la página web proporcionada, añade código JavaScript para que:
+        •	Cuando se haga clic un enlace, se oculte su sección relacionada y cambie el texto del enlace a “Mostrar contenidos”
+        •	Cuando se vuelva a hacer clic sobre el mismo enlace, se muestre otra vez esa sección de contenidos y cambie el texto del enlace a “Ocultar contenidos”
+        */
+      function ocultarMostrarContenido(e) {
+        if (e.target.tagName == "A") {
+          e.preventDefault();
+          let elementoAnterior = e.target.previousElementSibling;
+          elementoAnterior.hidden = !elementoAnterior.hidden; //por defecto hidden == false
+
+          let textoEnlace = e.target.textContent;
+          e.target.textContent =
+            textoEnlace == "Mostrar contenidos"
+              ? "Ocultar contenidos"
+              : "Mostrar contenidos";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        let body = document.querySelector("body");
+        body.addEventListener("click", ocultarMostrarContenido);
+      });
+    </script>
+    <h1>Mostrar y ocultar información de una página web</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
+        enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
+        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+        vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+        aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+        elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut,
+        rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,
+        odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
+        dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+      </p>
+      <a href="#">Ocultar contenidos</a>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
+        enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
+        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+        vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+        aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+        elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut,
+        rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,
+        odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
+        dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+      </p>
+      <a href="#">Ocultar contenidos</a>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
+        enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
+        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+        vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+        aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum
+        elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut,
+        rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,
+        odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
+        dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+      </p>
+      <a href="#">Ocultar contenidos</a>
+    </div>
+  </body>
+</html>

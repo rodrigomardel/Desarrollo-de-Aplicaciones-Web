@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="compra" type="tipoCompra"/>
+    <xs:complexType name="tipoCompra">
+        <xs:attribute name="nombre" type="xs:string" default="A"/>
+        <xs:attribute name="precio" type="xs:decimal" fixed="5"/>
+        <xs:attribute name="dni" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="\d{8}[A-Za-z]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>    
+    </xs:complexType>
+</xs:schema>

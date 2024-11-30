@@ -1,0 +1,35 @@
+body {
+    background-color: lightcyan;
+}
+h1{
+    color:darkmagenta;
+}
+table,tr,td,th{
+    border-collapse:collapse; 
+    border:2px solid white;
+    padding:0.5em;
+}
+table{
+    margin:1em;
+}
+th{
+    background-color: purple; color:white;
+}
+.par {
+    background-color: lightpink;
+}
+.impar{
+    background-color: bisque;
+}
+main{
+    display:flex;
+    justify-content:space-around;
+}
+div{
+    border:2px solid white;
+    background-color:plum; 
+}
+ul{
+    padding:0.5em;
+    list-style-position: inside;
+}

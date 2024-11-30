@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- cliquear en este botón llama a clockStart() -->
+    <input type="button" onclick="clockStart()" value="Start" />
+
+    <!-- cliquear en este botón llama a clockStop() -->
+    <input type="button" onclick="clockStop()" value="Stop" />
+    <div id="hora"></div>
+
+    <script>
+      let codigo;
+
+      function clockStart() {
+        codigo = setInterval(() => {
+          const div = document.querySelector("#hora");
+          let p = document.createElement("p");
+          let hora = new Date();
+          p.innerText = `${hora.getHours()}:${hora.getMinutes()}:${hora.getSeconds()}`;
+          reiniciarHora();
+          div.append(p);
+        }, 1000);
+      }
+
+      function reiniciarHora() {
+        const p = document.querySelector("#hora").children[0];
+        if (p) {
+          p.remove();
+        }
+      }
+
+      function clockStop() {
+        clearInterval(codigo);
+      }
+    </script>
+  </body>
+</html>

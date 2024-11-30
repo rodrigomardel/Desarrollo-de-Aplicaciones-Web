@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ejercicios 1º DAW 2023/2024 - Centro Juan de Colonia -->
+<curso>
+  <ejercicio id="1">
+    <descripcion>Ejercicio 1: Corrección de XML bien formados</descripcion>
+    <codigo_xml><![CDATA[<a><b><c></b></c></a>]]></codigo_xml>
+    <alumno id="101">
+      <nombre>Juan Pérez</nombre>
+    </alumno>
+    <nota>3</nota>  
+  </ejercicio>
+  <ejercicio id="2">
+    <descripcion>Ejercicio 2: Creación de documentos XML</descripcion>
+    <codigo_xml><![CDATA[<contacto nombre="María"><telefono>666 777 888]]></codigo_xml>
+    <alumno id="101">
+      <nombre>Juan Pérez</nombre>
+    </alumno>
+    <nota>5</nota>
+  </ejercicio>
+  <ejercicio id="2">
+    <descripcion>Ejercicio 2: Creación de documentos XML</descripcion>
+    <codigo_xml><![CDATA[<contacto nombre=Juan> <email>juan@email.com</email</contacto>]]></codigo_xml>
+    <alumno id="102">
+      <nombre>María López</nombre>
+    </alumno>
+    <nota>10</nota>
+  </ejercicio>
+  <ejercicio id="3">
+    <descripcion>Ejercicio 3: JSON</descripcion>
+    <alumno id="103">
+      <nombre>Pablo Pintor</nombre>
+    </alumno>
+    <nota>0</nota>
+  </ejercicio>
+  <resumenDelCurso>
+    <ejerciciosEntregados>4</ejerciciosEntregados>
+    <alumnosAprobados>2</alumnosAprobados>
+  </resumenDelCurso>
+</curso>

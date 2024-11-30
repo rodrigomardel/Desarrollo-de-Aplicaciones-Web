@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*La pagina puede decrecer en tamaño pero el tamaño máximo va a ser 1200px*/
+        body {
+            max-width: 1200px;
+            margin: auto;
+
+            border: 1px solid black;
+        }
+
+        /*Que todas las imagenes se adapten al tamaño del contenedor*/
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body main {
+            display: flex;
+            /*Los elementos se van a distribuir en mas de una fila*/
+            flex-wrap: wrap;
+            /*Hueco entre elementos de la misma fila de 10px*/
+            row-gap: 10px;
+            /*Elementos del flex distribuidos con espacios entre si pero sin espacios a izquierda y derecha */
+            justify-content: space-between;
+
+        }
+
+        article {
+            /*Ancho base del flex 250px*/
+            flex-basis: 250px;
+            /*Los elementos pueden crecer*/
+            flex-grow: 1;
+            /* Maximo tamaño de los elementos 300px*/
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+        <article>
+            <h1>Articulo 1</h1>
+            <img src="imagen7.png">
+        </article>
+    </main>
+</body>
+
+</html>

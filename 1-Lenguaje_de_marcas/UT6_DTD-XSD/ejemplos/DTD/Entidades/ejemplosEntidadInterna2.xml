@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE direcciones [
+    <!ELEMENT direcciones (envio, factura)>
+     <!ELEMENT envio (ciudad, calle, numero, cp)>
+     <!ELEMENT factura (ciudad, calle, numero, cp)>
+        <!ELEMENT ciudad (#PCDATA)>
+        <!ELEMENT calle (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT cp (#PCDATA)>
+        <!ENTITY jdc " <ciudad>Burgos</ciudad>
+        <calle>C/ Francisco de Vitoria</calle>
+        <numero>s/n</numero>
+        <cp>09006</cp> ">
+]>
+
+<direcciones>
+    <envio>
+      &jdc;
+    </envio>
+    <factura>
+        &jdc;
+    </factura>
+</direcciones>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            background-color: rgba(172, 157, 157, 0.479);
+            margin: 0em 5em;
+            border-right: 2px solid blue;
+            border-left: 2px solid rgb(199, 35, 71);
+            padding: 0px 2em;  
+        }
+        .padre{
+            background-color: hsla(120, 24%, 53%, 0.993);
+        }
+        div + p{
+            text-shadow: red 2px 2px 4px;
+            box-shadow: red 8px 8px 10px;
+        }
+        .padre{
+            border: 2px solid red;
+            width: 80%;           
+        }
+        .hijo{
+            border: 2px solid red;
+            width: 30%;
+            height: 20%;
+        }
+        .hijo2{
+            border: 2px solid red;
+            width: 30%;
+            height: 20%;
+            padding: 2em;
+            margin-top: 2em;
+        }
+        .bordesDiferentes{
+            border-right: 5px dotted red;
+            border-bottom: 1px dashed blue;
+            border-top: 2px solid black;
+        }
+        .bordesDos{
+            border-width: 5px 4px 3px 1px;
+            border-color: rgb(67, 20, 143) red;
+            border-style: solid dotted dashed double;
+            border-radius: 20px;
+        }
+        body{
+            background-image: url(img/fondoColores.jpg);
+            background-attachment: fixed;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="padre">
+            Este es un contenedor padre
+        <div class="hijo">
+            Este es un contenedor hijo 1
+        </div>
+        <div class="hijo">
+            Este es un contenedor hijo 1
+        </div>
+        <div class="hijo2">
+            Este es un contenedor hijo 2
+        </div>
+                <p>Este es un párrafo con <em>dentro</em></p>
+            </div>
+    
+        <div class="bordesDiferentes">
+            <p>Div con 4 bordes diferentes</p>
+        </div>
+    
+        <div class="bordesIguales">
+            <p>Div con bordes iguales</p>
+        </div>
+    
+        <div class="bordesDos">
+            <p>Div con bordes de 2 en 2</p>
+        </div>
+        <div class="bordesRedondeados">
+            <p>Bordes redondeados</p>
+        </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum hendrerit nulla, eu tempor neque. Mauris semper lacinia feugiat. Quisque malesuada vehicula imperdiet. Maecenas tincidunt et libero eget scelerisque. Nunc ac enim at velit vestibulum interdum sit amet at ipsum. Nunc faucibus turpis ut tortor iaculis, viverra porta justo venenatis. Maecenas fringilla tortor eu nisl sodales porttitor. Vivamus porttitor id leo sed luctus. Praesent ut eros quis nibh fringilla finibus et et massa. In feugiat aliquam tellus, vitae ullamcorper purus mattis sed.
+            </p>
+            <p>
+            Aenean non erat ornare, dignissim nunc porttitor, pretium lectus. Suspendisse gravida nibh ac mi efficitur, sed laoreet lectus egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque id pharetra mauris, vel convallis velit. Sed ac eleifend purus. Nunc euismod sapien sit amet leo facilisis pulvinar. Nam quis venenatis neque. Mauris tempus ante ut nisl gravida malesuada. Etiam sed justo ullamcorper, blandit turpis a, venenatis elit. Integer ut mauris vitae mi facilisis ornare. Quisque sed felis in massa sagittis accumsan. Phasellus non tortor vel metus tincidunt pharetra.
+            </p>
+            <p>
+            Nulla condimentum massa vitae sapien pharetra, a lobortis sapien mollis. Nulla facilisi. Nulla venenatis egestas ante vel malesuada. Cras magna quam, pellentesque nec sodales sit amet, vestibulum in est. Cras quis ipsum tincidunt, feugiat nunc eu, tempus mi. Praesent vel turpis sed mi finibus egestas. Pellentesque dictum diam felis, nec eleifend sem tincidunt a. Donec hendrerit in mi a porta. Nulla cursus eu nisl in elementum. Etiam auctor nec augue a dictum. Praesent eleifend cursus mi nec pretium. Nam vel leo non eros ultricies ullamcorper et vel augue. Aliquam sit amet pellentesque mauris. Duis congue lacus at egestas condimentum. Aenean pulvinar ornare volutpat.
+            </p>
+            <p>
+            Nam venenatis diam purus, sit amet aliquam purus molestie ac. Vestibulum sit amet fermentum magna, eu ultricies lorem. In hac habitasse platea dictumst. Aenean dictum interdum accumsan. Vestibulum et pulvinar quam. Phasellus justo justo, aliquet fringilla porttitor eu, ultrices in quam. Vestibulum laoreet non metus sed suscipit. Duis id orci libero. Donec suscipit tincidunt risus, et commodo ligula pretium sit amet. In rutrum tristique dolor in viverra.
+            </p>
+            <p>
+            Cras eu nisl lobortis risus convallis porttitor. Ut dignissim ante quis porta condimentum. Aliquam massa dolor, feugiat ut odio ut, feugiat semper enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam non imperdiet urna. Etiam placerat lacus et nibh elementum vehicula. Suspendisse tortor quam, egestas vitae neque ut, convallis semper velit. Pellentesque aliquet arcu eget quam fringilla efficitur eu sed orci. Nulla porttitor augue at velit ultricies bibendum. Fusce accumsan dolor et lectus maximus tincidunt. Mauris vitae felis aliquam, finibus diam at, interdum neque.
+            </p>
+    </div>
+</body>
+</html>

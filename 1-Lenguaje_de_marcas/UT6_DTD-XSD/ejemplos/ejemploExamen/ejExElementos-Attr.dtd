@@ -1,0 +1,23 @@
+<!ELEMENT catalogo (producto+)>
+    <!ELEMENT producto (especificaciones+, opciones*, precio+, notas*)>
+    <!ATTLIST producto 
+        nombre CDATA #IMPLIED
+        categoria (herramienta|mesa|tienda-profesional) "herramienta"
+        numpart NMTOKEN #IMPLIED
+        fabrica (Valladolid|Palencia|Leon) "Valladolid"
+        inventario (enstock|bajoorden|nodisponible) "enstock">
+    <!ELEMENT especificaciones (#PCDATA)>
+    <!ATTLIST especificaciones 
+        peso CDATA #IMPLIED
+        potencia CDATA #REQUIRED>
+    <!ELEMENT opciones (#PCDATA)>
+    <!ATTLIST opciones 
+        adaptador (incluido|opcional|noincluido) #REQUIRED>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio 
+        moneda CDATA "euros"
+        gastosdeenvio NMTOKEN #IMPLIED>
+    <!ELEMENT notas (#PCDATA)>
+
+
+        

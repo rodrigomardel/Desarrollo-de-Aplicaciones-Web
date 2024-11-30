@@ -1,0 +1,10 @@
+<map id="jcolonia.daw2024.rmd.drumfest.FestivalTest" name="jcolonia.daw2024.rmd.drumfest.FestivalTest">
+<area shape="rect" id="Node000001" title="Pruebas sobre la clase Festival." alt="" coords="236,699,584,1109"/>
+<area shape="rect" id="Node000002" href="$classjcolonia_1_1daw2024_1_1rmd_1_1drumfest_1_1_festival.html" title="Conjunto en forma de («array») de un número determinado de elementos «Banda»." alt="" coords="5,277,361,560"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,559,293,674,297,683,292,685,288,676,237,561"/>
+<area shape="rect" id="Node000003" href="$classjcolonia_1_1daw2024_1_1rmd_1_1drumfest_1_1_banda.html" title="Agrupación de características principales de las bandas musicales." alt="" coords="499,203,748,635"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="531,636,509,684,504,682,526,633"/>
+<area shape="rect" id="Node000004" href="$enumjcolonia_1_1daw2024_1_1rmd_1_1drumfest_1_1_relevancia.html" title="Enumeración para categorizar la relevancia de las artistas invitadas al evento." alt="" coords="303,5,560,139"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="428,139,424,203,416,451,413,682,407,682,410,451,418,203,423,138"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="470,137,498,187,493,189,465,140"/>
+</map>

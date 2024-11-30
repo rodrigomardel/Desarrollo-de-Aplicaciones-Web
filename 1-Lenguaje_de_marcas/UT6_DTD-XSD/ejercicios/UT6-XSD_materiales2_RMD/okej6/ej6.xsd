@@ -1,0 +1,66 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="capitulos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="capitulo" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="a" type="tipoA"/>
+            <xs:attribute name="b" type="tipoB"/>
+            <xs:attribute name="c" type="tipoC"/>
+            <xs:attribute name="d" type="tipoD"/>
+            <xs:attribute name="e" type="tipoE"/>
+            <xs:attribute name="f" type="tipoF"/>
+            <xs:attribute name="g" type="tipoG"/>
+            <xs:attribute name="h" type="tipoH"/>
+        </xs:complexType>
+    </xs:element>
+
+  <xs:simpleType name="tipoA">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Capítulo [0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoB">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Capítulo [0-9]{1,2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoC">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Capítulo [1-9][0-9]?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoD">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Capítulo [0-9]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoE">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^\d]Z"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoF">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="AB{2,}C"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoG">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="RS{2,}[3-8]?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoH">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="COD\d{3}.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+        
+</xs:schema>

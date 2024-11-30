@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ23-RMD-20241009</title>
+  </head>
+  <body>
+    <script>
+      /*
+        23.	Ordenar un array con orden decreciente matemático
+
+            Escribe una función ordenaDecreciente(arr) que recibe un array como parámetro y lo ordena en orden decreciente matemático.
+            Suponemos que todos los elementos del array son números.
+
+            La función modifica el array.
+            Ejemplo
+            let arr = [5, 2, 1, -10, 8];
+            ordenaDecreciente(arr);
+            console.log(arr);
+    */
+
+      let array = [5, 2, 1, -10, 8];
+
+      function ordenaDecreciente(array) {
+        let ordenar;
+        let arrayOrdenado;
+
+        //criterio de ordenación
+        ordenar = array.sort((item1, item2) => {
+          if (item1 > item2) {
+            return -1;
+          } else if (item1 < item2) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+        //array.sort((a,b) => b - a); Ordena según la diferencia de valores
+
+        //recorre array y almacena en función del criterio anterior
+        array.forEach((element) => {
+          arrayOrdenado = element;
+        });
+
+        return arrayOrdenado;
+      }
+
+      ordenaDecreciente(array);
+      console.log(array);
+    </script>
+  </body>
+</html>

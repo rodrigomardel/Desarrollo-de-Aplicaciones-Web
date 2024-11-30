@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ24-RMD-20241009</title>
+  </head>
+  <body>
+    <script>
+      /*
+        24.	Devolver una copia de un array, pero ordenado con orden alfabético
+
+            Escribe una función copiaOrdenada(arr) que devuelva una copia del array ordenada con orden alfabético.
+            El array original no se tiene que modificar.
+
+            Ejemplo:
+            let arr = ["HTML", "CSS", "JavaScript"];
+            let arrOrdenado = copiaOrdenada(arr);
+            console.log(arr); // HTML,CSS,JavaScript
+            console.log(arrOrdenado); // CSS,HTML,JavaScript
+
+        */
+
+      let array = ["HTML", "CSS", "JavaScript"];
+
+      function copiaOrdenada(array) {
+        let copiaArrayOrdenada;
+
+        //copiaArrayOrdenada = array.filter((elemento) => elemento, array.sort());
+        //no debería modificar el array original al usar filter **revisar (no tiene condición??)
+
+        copiaArrayOrdenada = array.concat(); //copia de array
+        copiaArrayOrdenada.sort();
+
+        return copiaArrayOrdenada;
+      }
+
+      let arrayOrdenado = copiaOrdenada(array);
+      console.log(array); // HTML,CSS,JavaScript
+      console.log(arrayOrdenado); // CSS,HTML,JavaScript
+    </script>
+  </body>
+</html>

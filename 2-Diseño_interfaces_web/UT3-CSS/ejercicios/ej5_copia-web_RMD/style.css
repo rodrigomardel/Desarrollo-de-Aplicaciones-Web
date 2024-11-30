@@ -1,0 +1,68 @@
+/*ALL DOCUMENT*/
+:root {
+  font-size: 16px;
+}
+.boxed {
+  width: 1170px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*HEADER*/
+header div.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(121, 111, 111);
+}
+header img.logo-img {
+  width: 275px;
+  height: 42px;
+}
+header form input {
+  width: 445px;
+  height: 41px;
+}
+header div.icons-user {
+  display: flex;
+}
+header div.icons-user img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+header nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  font-size: 0.75rem;
+}
+header nav li.nav-black-friday {
+  color: red;
+}
+/*MAIN*/
+main div.container-black-friday {
+  display: flex;
+  justify-content: center;
+  height: 225px;
+  background-color: black;
+}
+main div.container-black-friday img {
+  display: flex;
+  width: 500px;
+  align-items: center;
+}
+main section.black-friday {
+  background-color: black;
+}
+main section.black-friday ul {
+  display: flex;
+  list-style: none;
+}
+main section.black-friday ul li span.card-title {
+  justify-content: center;
+}

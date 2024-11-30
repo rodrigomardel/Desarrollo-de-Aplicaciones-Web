@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento HTML</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Eventos</h1>
+    <img src="lamp_off.jpg" />
+    <!-- Asigna la URL de la imagen (lamp_on.jpg o lamp_off.jpg) al atributo src de <img>
+  Enciende o apaga la bombilla con clic o doble-clic en ella (muestra lamp_on.jpg o lamp_off.jpg) -->
+
+    <script>
+      /*
+      Crear los siguientes scripts, partiendo del documento bombillaEnLinea.html:
+          bombillaTradicional: que contendrá el resultado de transformar el modelo de eventos en línea al modelo de eventos tradicional. Ej. span.onclick = …
+      */
+      function bombillaEncendidoApagado(e) {
+        switch (e.type) {
+          case "click":
+            e.target.src = "lamp_off.jpg";
+            break;
+          case "dblclick":
+            e.target.src = "lamp_on.jpg";
+            break;
+        }
+      }
+      let img = document.getElementsByTagName("img")[0];
+      //   img.onclick = img.ondblclick = bombillaEncendidoApagado;
+
+      /*
+      bombillaW3C: que contendrá el resultado de transformar el modelo de eventos en línea o el modelo de eventos tradicional, al modelo de eventos del W3C. Ej. span.addEvent()
+      */
+      img.addEventListener("click", bombillaEncendidoApagado);
+      img.addEventListener("dblclick", bombillaEncendidoApagado);
+    </script>
+  </body>
+</html>

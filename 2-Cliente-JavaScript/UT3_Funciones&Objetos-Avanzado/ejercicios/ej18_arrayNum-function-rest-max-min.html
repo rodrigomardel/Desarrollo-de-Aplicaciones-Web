@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ18-RMD-20241019</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea una función que recibe cualquier número de parámetros numéricos.
+        Esta función debe devolver un objeto con dos propiedades: el valor máximo 
+        y el mínimo de los parámetros recibidos. Para ello, utilizará las funciones Math.max() y Math.min().
+        */
+
+      const valores = [0, 12, 1, 4, 8, "14", 6, 100, -1];
+
+      function calcularMinMax(...numeros) {
+        resultado = {};
+
+        for (let valores of numeros) {
+          resultado.max = Math.max(...valores);
+          resultado.min = Math.min(...valores);
+        }
+
+        return resultado;
+      }
+
+      console.log(calcularMinMax(valores));
+    </script>
+  </body>
+</html>

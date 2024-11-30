@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE d [
+    <!ELEMENT d (c+)>
+    <!ELEMENT c ((a,b)|(b,a))>
+    <!ELEMENT a (#PCDATA)>
+    <!ELEMENT b (#PCDATA)>
+]>
+
+<d>
+    <c>
+        <a>a</a>
+        <b>b</b>
+    </c>
+    <c>
+        <b>b</b>
+        <a>a</a>
+    </c>
+</d>

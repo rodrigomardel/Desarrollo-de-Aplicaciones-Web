@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio10-RMD-20240922</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      function listadoPrimos(num) {
+        let parecePrimo, i;
+
+        console.log(`1 SI es primo`);
+        console.log(`2 SI es primo`);
+
+        for (i = 3; i <= num; i += 2) {
+          parecePrimo = true;
+
+          for (let j = 3; j * j > i; j += 2) {
+            if (i % j == 0) {
+              parecePrimo = false;
+              break;
+            }
+          }
+
+          if (parecePrimo) {
+            console.log(`${i}` + ` es número primo`);
+          }
+        }
+      }
+
+      //Función para saber si un número es primo
+      /*function esPrimo(num) {
+        let parecePrimo, i;
+
+        parecePrimo = num % 2 != 0;
+        i = 3;
+
+        while (parecePrimo && i*i <= num){
+          if(num % i == 0){
+            parecePrimo = false;
+          }
+          i += 2;
+        }
+
+        if(parecePrimo){
+          console.log(`${num}`+` SI es primo` );
+        } else{
+          console.log(`${num}`+` NO es primo` );
+        }
+      }*/
+    </script>
+  </body>
+</html>

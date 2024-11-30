@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejemploXSDExamen.xsd" codigo="3">
+    <programas>
+        <programa name="Firefox" licencia="GPL"/>
+        <programa name="OpenOffice.org" licencia="GPL"/>
+        <programa name="Inkscape" licencia="GPL"/>
+    </programas>
+    <libros>
+        <libro cod="25">Cien años de soledad</libro>
+    </libros>
+    <total>34.5</total>
+</compra>

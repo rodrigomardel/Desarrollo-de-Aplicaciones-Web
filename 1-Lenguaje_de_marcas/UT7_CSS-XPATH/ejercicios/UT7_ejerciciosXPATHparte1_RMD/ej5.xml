@@ -1,0 +1,19 @@
+<AAA>
+    <BBB></BBB>
+    <BBB id="hermano 1"></BBB>
+    <XXX>
+        <DDD>
+            <EEE />
+            <DDD />
+            <CCC />
+            <FFF />
+            <FFF>
+                <XXX />
+                <GGG />
+            </FFF>
+        </DDD>
+    </XXX>
+</AAA>
+    
+    
+    

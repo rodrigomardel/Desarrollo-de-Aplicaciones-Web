@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['máximo_0',['máximo',['../classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado.html#acf197e8fcb046fd25c7dcdcf3a33e137',1,'jcolonia.daw2023.g4d.Grupo4DMejorado.máximo()'],['../interfacejcolonia_1_1daw2023_1_1g4d_1_1_sumable.html#ab1dddb02dc6201e1799f7b931ae8d3b8',1,'jcolonia.daw2023.g4d.Sumable.máximo()']]],
+  ['mínimo_1',['mínimo',['../classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado.html#ac5bad13d510e7def3b9893936074a5c6',1,'jcolonia.daw2023.g4d.Grupo4DMejorado.mínimo()'],['../interfacejcolonia_1_1daw2023_1_1g4d_1_1_sumable.html#a7f00153b2f39f8bc75d07d94d974864c',1,'jcolonia.daw2023.g4d.Sumable.mínimo()']]],
+  ['main_2',['main',['../classjcolonia_1_1daw2023_1_1g4d_1_1_ensayo4_d.html#a4604aff19fa9adfad252e0bf8fb9580f',1,'jcolonia.daw2023.g4d.Ensayo4D.main()'],['../classjcolonia_1_1daw2023_1_1g4d_1_1_ensayo4_d_conjunto.html#aeee5fddbfd104b865844ffcd879f3585',1,'jcolonia.daw2023.g4d.Ensayo4DConjunto.main()'],['../classjcolonia_1_1daw2023_1_1g4d_1_1_ensayo4_d_mejorado.html#a2f93c74e3aa149f7741730e5825bda9e',1,'jcolonia.daw2023.g4d.Ensayo4DMejorado.main()']]],
+  ['media_3',['media',['../classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado.html#a6fd43ca37527f76de5f1ffafcd4c8a1a',1,'jcolonia.daw2023.g4d.Grupo4DMejorado.media()'],['../interfacejcolonia_1_1daw2023_1_1g4d_1_1_sumable.html#a4716f68496f80e1c29b1007e76d2267e',1,'jcolonia.daw2023.g4d.Sumable.media()']]]
+];

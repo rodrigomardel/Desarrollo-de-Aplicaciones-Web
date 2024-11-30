@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clase [
+	<!ELEMENT clase (profesor, aula)>
+		<!ELEMENT profesor (#PCDATA)>
+		<!ELEMENT aula (#PCDATA)>
+]>
+<clase>
+	<profesor>Elena Torres</profesor>
+	<aula>Aula456</aula>
+</clase>

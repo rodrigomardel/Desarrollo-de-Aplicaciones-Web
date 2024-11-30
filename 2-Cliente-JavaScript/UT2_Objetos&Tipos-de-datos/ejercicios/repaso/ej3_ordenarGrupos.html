@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ3-RMD-20241014</title>
+  </head>
+  <body>
+    <script>
+      let grupos = [
+        { aula: "12", grupo: "751A", curso: 5, ciclo: "ASIR", turno: "D" },
+        { aula: "12", grupo: "751B", curso: 1, ciclo: "ASIR", turno: "V" },
+        { aula: "11", grupo: "752A", curso: 1, ciclo: "ASIR", turno: "D" },
+        { aula: "11", grupo: "752B", curso: 2, ciclo: "ASIR", turno: "V" },
+      ];
+
+      /*Escribe una sentencia para crear el array grupos12, con los objetos del array grupo que sean del aula “12”.*/
+      let grupos12 = grupos.filter(function (element) {
+        return element.aula == "12";
+      });
+      //forma resumida con función flecha
+      // let grupos12 = grupos.filter((element) => element.aula == "12");
+
+      console.log(grupos12);
+
+      // grupos12.forEach((element) => {
+      //   console.log(element);
+      // });
+
+      /*Escribe una sentencia para ordenar el array grupos por curso.*/
+      let ordenar = grupos.sort((item1, item2) => {
+        if (item1.curso < item2.curso) {
+          return -1;
+        } else if (item1.curso > item2.curso) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      console.log(grupos.sort());
+    </script>
+  </body>
+</html>

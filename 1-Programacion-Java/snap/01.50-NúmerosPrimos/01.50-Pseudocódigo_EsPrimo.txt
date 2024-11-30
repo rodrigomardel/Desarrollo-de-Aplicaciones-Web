@@ -1,0 +1,22 @@
+PROGRAMA ¿Es primo?
+VARIABLES n, parecePrimo, i, texto:texto
+ALGORTIMO
+	LEER n
+
+	ASIGNAR mod(n/2)≠0 a parecePrimo
+	ASIGNAR a i el valor de 3
+
+	MIENTRAS parecePrimo y (i×i)≤n
+		SI mod(n/i)=0
+			ASIGNAR NO a parecePrimo
+		FIN-SI
+		
+		ASIGNAR a i valor i+2	
+	FIN-MIENTRAS
+
+	SI parecePrimo
+		ESCRIBIR n SI es primo
+	SINO
+		ESCRIBIR n NO es primo
+	FIN-SI	
+FIN-PROGRAMA	

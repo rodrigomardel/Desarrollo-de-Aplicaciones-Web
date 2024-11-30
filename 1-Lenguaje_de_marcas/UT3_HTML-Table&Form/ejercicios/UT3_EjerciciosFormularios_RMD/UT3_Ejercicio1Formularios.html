@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1.</title>
+</head>
+<body>
+    <form method="post" action="/php/insertar_cv.php" autocomplete="on">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="30" size="32" placeholder="Nombre completo" required>
+        </p>
+        <p>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="50" size="52" placeholder="Dos apellidos" required>
+        </p>
+        <p>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" size="14" pattern="[0-9]{8}[A-Za-z]" title="Solo se permiten letras y números" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="30" size="32">
+        </p>
+        <p>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" maxlength="12" size="14">
+        </p>
+        <p>
+            <label for="centro">Tipo de centro:</label>
+            <input type="text" id="centro" name="centro" readonly value="CIFP">
+        </p>
+        <p>Sexo:</p>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>              
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+            </li>
+        </ul>
+        <p>
+            <input type="checkbox" name="novedades" id="novedades" value="boletin novedades" checked>
+            <label for="novedades">Suscribirme al boletín de novedades</label>
+        </p>
+        <p>
+            <label for="adjunto">Sube tu foto:</label>
+            <input type="file" id="adjunto" name="archivoAdjunto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+            <input type="button" onclick="alert('Formulario comprobado')" value="Comprobar">
+        </p>
+    </form> 
+</body>
+</html>

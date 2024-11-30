@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fruta" type="tipoFruta"/>
+    <xs:complexType name="tipoFruta">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="pagado" type="xs:boolean"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

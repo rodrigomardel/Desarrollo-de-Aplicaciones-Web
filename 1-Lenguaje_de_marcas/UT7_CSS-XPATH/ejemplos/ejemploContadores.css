@@ -1,0 +1,44 @@
+documento{
+    counter-reset: cont1;
+}
+titulo1::before{
+    content: counter(cont1) ". ";
+}
+titulo2::before{
+    content: counter(cont1) "." counter(cont2) ". ";
+}
+titulo3::before{
+    content: counter(cont1) "." counter(cont2) "." counter(cont3) ". ";
+}
+titulo1, titulo2, parrafo, titulo3{
+    display: block;
+}
+titulo1{
+    counter-increment: cont1;
+    color: rgb(33, 202, 69);
+    font-weight: bold;
+    font-size: 2em;
+    font-variant: small-caps;
+    counter-reset: cont2;
+}
+titulo2{
+    counter-increment: cont2;
+    color: rgb(192, 139, 41);
+    font-weight: bold;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    text-indent: 1em;
+    counter-reset: cont3;
+}
+titulo3{
+    counter-increment: cont3;
+    color: rgb(41, 101, 192);
+    font-weight: bold;
+    font-size: 1em;
+    font-variant: small-caps;
+    text-indent: 2.5em;
+    counter-reset: cont3;
+}
+parrafo{
+    text-indent: 2em;
+}

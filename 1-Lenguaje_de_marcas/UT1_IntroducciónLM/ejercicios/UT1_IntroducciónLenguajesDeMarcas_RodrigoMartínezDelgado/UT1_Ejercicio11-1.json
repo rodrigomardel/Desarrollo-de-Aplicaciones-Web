@@ -1,0 +1,7 @@
+{ "filmoteca": 
+	{ "pelicula": 
+		[{ "titulo": "Con faldas y a lo loco", "director": "Billy Wilder"},
+		 { "titulo": "Sopa de ganso", "director": "Leo McCarey" }],	 
+	  "autor": "alumno"
+	}	
+}

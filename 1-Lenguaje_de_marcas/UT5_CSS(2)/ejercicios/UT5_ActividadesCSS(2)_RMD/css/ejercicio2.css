@@ -1,0 +1,15 @@
+h3{
+    font: bold italic small-caps 16px Arial, Serif, Helvetica;
+    text-decoration: underline;
+    text-align: center;
+}
+body{
+    font-family: Arial, Serif, Helvetica;
+}
+p{
+    text-indent: 50%;
+}
+body p:nth-child(3){
+    word-spacing: 10px;
+    text-shadow: 2px 2px 4px red;
+}

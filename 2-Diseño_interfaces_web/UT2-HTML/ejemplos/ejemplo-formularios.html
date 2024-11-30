@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <form action="./form/formulario.php" method="get" name="datos-personales"
+    target="_blank" accept-charset="" autocomplete="off" enctype="multipart/form-data">
+    <!--name="" importante para procesar el formulario
+        accept-charset="" tipo de caracteres que van en el get
+        autocomplete="" activado por defecto
+        enctype="multipart/form-data" para que pueda enviar archivos -->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!-- fieldset agrupa campos y legend da título  -->
+            <p>
+
+                <input type="hidden" name="clave-primaria-id-user" value="65498">
+            </p>
+            <p>
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" spellcheck="false" tabindex="1">
+                <!-- value="" sería el valor a enviar por defecto 
+                    hidden oculta el input
+                    spellcheck="" revisa la ortografía
+                    tabindex para usabilidad tabulando a los campos deseados-->
+                
+
+            </p>
+            <p>
+                <input type="tel" name="num-telefono" placeholder="Teléfono" tabindex="2">
+                <!-- Importante definir tipo tel, en los teléfonos saltaría el teclado numérico -->
+            </p>
+            
+            <p>
+                <input type="email" name="correo-electronico" placeholder="Email" tabindex="3">
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="url">Ruta de dirección:</label>
+            <input type="url" name="link-de-direccion" id="url" placeholder="URL">
+        </p>
+ 
+        <p>
+            <input type="password" name="contraseña" placeholder="Contraseña" tabindex="3">
+
+        </p>
+        <p>
+            <input type="search" name="busqueda" placeholder="Introduce una búsqueda">
+
+        </p>
+        <p>
+            <textarea name="descripcion" cols="30" rows="10" placeholder="Introduce una descripción"></textarea>
+
+        </p>
+
+        <!-- Números -->
+        <p>
+            <input type="number" name="edad-user" min="10" max="100" step="5">
+        </p>
+        <p>
+            <input type="range" name="donacion-user" min="5" max="1000" step="20" oninput="this.nextElementSibling.value=this.value">
+            <!-- oninput="" apaño para ver el rango numérico cada vez que se mueve el rango, salta el output y nos muestra el rango definido -->
+            <output>0</output>
+        </p>
+
+        <!-- Fechas -->
+        <p>
+            <input type="date" name="fecha-*">
+            <input type="time" name="hora-reserva" value="10:00" min="08:30" max="14:30">          
+            <input type="datetime-local">
+            <input type="week">
+            <input type="month">
+
+        </p>
+
+        <!-- Campos de tipo casillas -->
+        <p>
+            <input type="checkbox" name="condiciones-de-uso" checked>Acepto todo los terminos
+            <!-- checked="" marcado por defecto
+                Su value="" no es necesario ya que será true or false -->
+        </p>
+        <p>
+            <input type="radio" name="condiciones" value="particular" checked>Particular
+            <!-- value ="" obligatorio para el tratamiento de la opción elegida -->
+            <input type="radio" name="condiciones" value="empresa">Empresa
+            <input type="radio" name="condiciones" value="otro">Otro
+            <!-- Deben tener el mismo name para que sean excluyentes -->
+        </p>
+
+        <!-- Paleta de colores -->
+        <p>
+            <input type="color" name="color" value="#000000">
+        </p>
+
+        <!-- Enviar archivos -->
+        <p>
+            <input type="file" name="curriculum" accept="application/pdf">
+            <!-- **Tener en cuenta que el formulario debe estar preparado para enviar archivos
+                accept="application/pdf" por defecto pdf -->
+        </p>
+
+        <!-- Campos de selección -->
+        <p>
+            ¿Qué lenguajes de programación sabes?<br>
+            «Si quiere elegir varios campos mantenga la tecla control pulsada»<br><br>
+            <select name="lenguajes-de-programacion" multiple>
+                <!-- multiple para elegir varios, mantener CTRL pulsado -->
+
+                <optgroup label="Web">    
+                    <option value="1">JavaScript</option>
+                    <option value="2">Java</option>
+                    <option value="3">PHP</option>
+                </optgroup>
+            
+                <optgroup label="S.O.">  
+                    <option value="4">C</option>
+                    <option value="4">C++</option>
+                </optgroup>
+              
+            </select>
+        </p>
+
+        <!-- Datalist -->
+        <p>
+            <input type="text" list="pais" name="pais-usuario" placeholder="Pais de nacimiento" tabindex="4">
+            <!-- Se puede introducir cualquier valor pero se da la opción de las más utilizadas por defecto «también se evitan errores» -->
+            <datalist id="pais">
+                <option value="España">España</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Francia">Francia</option>
+            </datalist>
+        </p>
+
+        <button type="submit">Enviar</button><!--Otra opción <input type="submit" value="Enviar"> ** Mejor usar button para dar estilos con CSS más facilmente-->
+        <input type="image" src="image.jpg"><!-- Poca usabilidad (el usuario espera un botón)-->
+        <input type="reset">
+
+        
+    </form>
+    
+</body>
+</html>

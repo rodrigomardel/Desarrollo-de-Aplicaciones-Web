@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ21-RMD-20241007</title>
+  </head>
+  <body>
+    <script>
+      /*
+        21.	Transformar border-left-width en borderLeftWidth
+            Escribe la función camelize(str) que convierta palabras separadas por guión como "mi-cadena-corta" en palabras con mayúscula "miCadenaCorta".
+            Es decir, eliminar todos los guiones y que cada palabra después de un guión comience con mayúscula.
+            Ejemplo:
+            camelize("background-color") == "backgroundColor";
+            camelize("list-style-image") == "listStyleImage";
+            camelize("-webkit-transition") == "WebkitTransition";
+        */
+
+      let cadena = "list-style-image";
+
+      function camelize(cadena) {
+        let arrayPablabras = cadena.split("-"); //["background", "color"]
+        let cadenaCamelCase = "";
+
+        arrayPablabras.forEach((elemento, indice) => {
+          if (indice == 0) {
+            cadenaCamelCase += elemento;
+          } else {
+            cadenaCamelCase += elemento[0].toUpperCase() + elemento.slice(1);
+          }
+        });
+        return cadenaCamelCase;
+      }
+
+      console.log(camelize(cadena));
+    </script>
+  </body>
+</html>

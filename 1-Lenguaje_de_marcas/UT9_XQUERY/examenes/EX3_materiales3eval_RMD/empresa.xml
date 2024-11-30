@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej2.xsl" type="text/css"?>
+<empresa>
+	<departamentos>
+		<departamento tlf="912345678" piso="2" codigo="24">
+			<nombre>Marketing</nombre>
+			<empleado rut="7">
+				<salario>30000</salario>
+				<nombre>Juan Antonio Castro</nombre>
+				<profesion>Economista</profesion>
+				<datos>
+					<email>juan.castro@example.com</email>
+					<telefono>912345001</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="2">
+				<salario>30000</salario>
+				<nombre>Maria Manero</nombre>
+				<profesion>Economista</profesion>
+				<datos>
+					<email>maria.manero@example.com</email>
+					<telefono>912345002</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="5">
+				<salario>21000</salario>
+				<nombre>Francisco Crespo</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>francisco.crespo@example.com</email>
+					<telefono>912345003</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="4">
+				<salario>21000</salario>
+				<nombre>Sandra Reyes</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>sandra.reyes@example.com</email>
+					<telefono>912345004</telefono>
+				</datos>
+			</empleado>
+		</departamento>
+		<departamento tlf="912388771" piso="2" codigo="20">
+			<nombre>Personal</nombre>
+			<empleado rut="33">
+				<salario>36000</salario>
+				<nombre>Juan Molinero</nombre>
+				<profesion>Economista</profesion>
+				<datos>
+					<email>juan.molinero@example.com</email>
+					<telefono>912388701</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="23">
+				<salario>30000</salario>
+				<nombre>Carmelo Salinas</nombre>
+				<profesion>Relaciones laborales</profesion>
+				<datos>
+					<email>carmelo.salinas@example.com</email>
+					<telefono>912388702</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="54">
+				<salario>23000</salario>
+				<nombre>Maria Dolores Echevarria</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>maria.echevarria@example.com</email>
+					<telefono>912388703</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="24">
+				<salario>15000</salario>
+				<nombre>Sara Zarate</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>sara.zarate@example.com</email>
+					<telefono>912388704</telefono>
+				</datos>
+			</empleado>
+		</departamento>
+		<departamento tlf="912299882" piso="1" codigo="20">
+			<nombre>I+D</nombre>
+			<empleado rut="71">
+				<salario>40000</salario>
+				<nombre>Laura Estevez</nombre>
+				<profesion>Ingeniero</profesion>
+				<datos>
+					<email>laura.estevez@example.com</email>
+					<telefono>912299801</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="81">
+				<salario>38000</salario>
+				<nombre>Rosario Anglada</nombre>
+				<profesion>Ingeniero</profesion>
+				<datos>
+					<email>rosario.anglada@example.com</email>
+					<telefono>912299802</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="75">
+				<salario>40000</salario>
+				<nombre>Fernando Martin</nombre>
+				<profesion>Ingeniero</profesion>
+				<datos>
+					<email>fernando.martin@example.com</email>
+					<telefono>912299803</telefono>
+				</datos>
+			</empleado>
+		</departamento>
+		<departamento tlf="911987865" piso="3" codigo="11">
+			<nombre>Ventas</nombre>
+			<empleado rut="4">
+				<salario>23000</salario>
+				<nombre>Antonio Castrillejo</nombre>
+				<profesion>Economista</profesion>
+				<datos>
+					<email>antonio.castrillejo@example.com</email>
+					<telefono>911987801</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="11">
+				<salario>31000</salario>
+				<nombre>Ramiro Sanchez</nombre>
+				<profesion>Economista</profesion>
+				<datos>
+					<email>ramiro.sanchez@example.com</email>
+					<telefono>911987802</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="14">
+				<salario>12000</salario>
+				<nombre>Emilia Arce</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>emilia.arce@example.com</email>
+					<telefono>911987803</telefono>
+				</datos>
+			</empleado>
+			<empleado rut="44">
+				<salario>13000</salario>
+				<nombre>Pilar Barona</nombre>
+				<profesion>Administrativo</profesion>
+				<datos>
+					<email>pilar.barona@example.com</email>
+					<telefono>911987804</telefono>
+				</datos>
+			</empleado>
+		</departamento>
+	</departamentos>
+
+	<equipos>
+		<equipo nombre="Equipo A">
+			<lider>Fernando Martin</lider>
+			<miembros>
+				<miembro>Juan Antonio Castro</miembro>
+				<miembro>Sandra Reyes</miembro>
+				<miembro>Lucía Gómez</miembro>
+			</miembros>
+		</equipo>
+		<equipo nombre="Equipo B">
+			<lider>Ana María Pérez</lider>
+			<miembros>
+				<miembro>Laura Estevez</miembro>
+				<miembro>Rosario Anglada</miembro>
+				<miembro>Ramiro Sanchez</miembro>
+			</miembros>
+		</equipo>
+		<equipo nombre="Equipo C">
+			<lider>Javier Ruiz</lider>
+			<miembros>
+				<miembro>Pedro Martínez</miembro>
+				<miembro>Maria Manero</miembro>
+				<miembro>Antonio Castrillejo</miembro>
+			</miembros>
+		</equipo>
+		<equipo nombre="Equipo D">
+			<lider>Sofía Morales</lider>
+			<miembros>
+				<miembro>Francisco Crespo</miembro>
+				<miembro>Carmelo Salinas</miembro>
+				<miembro>Sara Zarate</miembro>
+			</miembros>
+		</equipo>
+	</equipos>
+</empresa>

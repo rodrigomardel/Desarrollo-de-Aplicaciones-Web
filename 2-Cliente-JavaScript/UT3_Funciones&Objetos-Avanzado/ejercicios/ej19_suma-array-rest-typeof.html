@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ19-RMD-20241019</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea una función que recibe cualquier número de parámetros numéricos y devuelve su suma.
+        Si alguno de los parámetros no es número, no lo considera para la suma.
+        Si ningún parámetro fuera numérico, devuelve null.
+        */
+
+      let valores = [0, 8, "14", 6, 100, -1, "hola"];
+      // let valores = [];
+      let valores1 = [0, 12, 1, 4, 8, 6, 100, -1, "hola"];
+      // let valores = ["", "texto", "hola"];
+
+      function suma([...numeros]) {
+        let suma = null;
+
+        numeros.forEach(function (element) {
+          if (typeof element === "number") {
+            suma += element;
+          }
+        });
+
+        return suma;
+      }
+
+      // console.log(suma(valores, valores1));??
+      console.log(suma(valores));
+    </script>
+  </body>
+</html>

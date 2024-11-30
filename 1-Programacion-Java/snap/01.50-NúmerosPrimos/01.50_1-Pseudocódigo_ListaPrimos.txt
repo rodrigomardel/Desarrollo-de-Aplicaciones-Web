@@ -1,0 +1,34 @@
+PROGRAMA ListaPrimos
+VARIABLES
+	tope: número entero, constante
+	i,j: números enteros, contadores
+	parecePrimo: lógico/booleano
+
+ALGORITMO
+	tope ← 1000
+	
+	ESCRIBIR 1 y 2
+	
+	PARA i DESDE 3 HASTA tope INCREMENTANDO 2
+		parecePrimo ← SÍ
+		
+*		PARA j DESDE 3 HASTA NO parecePrimo o j×j > i INCREMENTANDO 2
+*			SI MÓDULO (i/j) =0
+*				parecePrimo ← NO
+*			FIN-SI
+*		FIN-PARA
+		
+		SI parecePrimo
+			ESCRIBIR i
+		FIN-SI
+	FIN-PARA
+		
+
+-------------- Bucle j desglosado --------
+*		j ← 3
+*		SI NO parecePrimo o j×j > i
+*			SI MÓDULO (i/j) =0
+*				parecePrimo ← NO
+*			FIN-SI
+*			j ← j + 2
+*		FIN-SI		

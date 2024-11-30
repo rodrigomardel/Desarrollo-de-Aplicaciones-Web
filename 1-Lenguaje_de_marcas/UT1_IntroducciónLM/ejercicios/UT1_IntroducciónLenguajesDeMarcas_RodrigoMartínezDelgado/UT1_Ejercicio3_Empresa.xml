@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <empresa>
+    <empleado>
+      <nombre>Juan</nombre>
+      <apellidos>Pérez Delgado</apellidos>
+      <puesto categoria="A1">Director</puesto>
+      <permanencia/>
+      <proyecto tipo="Educativo">Formación</proyecto>
+      <proyecto tipo="Investigación">Innovación</proyecto>
+    </empleado>  
+    <empleado>
+      <nombre>Pedro</nombre>
+      <apellidos>Díaz García</apellidos>
+      <puesto categoria="B2">Gerente</puesto>
+      <permanencia annos="4"/>
+    </empleado>  
+  </empresa>

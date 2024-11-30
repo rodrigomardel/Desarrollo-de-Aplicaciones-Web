@@ -1,0 +1,78 @@
+@startuml
+skinparam classAttributeIconSize 0
+set separator none
+
+package "jcolonia.daw2024.mvc" <<Frame>>{
+
+class VistaGeneral{
+-nombre: String
+-scEntrada: Scanner
+-{static} SI: String
+-{static} NO: String
++VistaGeneral(nombre: String, in: Scanner)
++mostrarTítulo(): void
++getScEntrada(): Scanner
++pedirConfirmación(): boolean
+}
+
+class VistaMenú{
+-listaOpciones: String[]
+-opción: int
+-nombre: String
++VistaMenú(nombre: String, listaOpciones: String[], entrada Scanner)
++mostrarTítulo(): void
++mostrarMenú(): void
++pedirOpción(): int
+}
+
+class VistaAltas{
+-nombre: String
++VistaAltas(nombre: String, entrada: Scanner)
++introducirAlta(): ArrayList<String>
++mostrarTítulo(): void
+}
+
+class ControlNotas{
+-entrada: Scanner
+-notas: ArrayList<String>
++{static} OPCIONES_MENÚ_PRINCIPAL: String[]
+-{static} NOMBRE_PREDETERMINADO: String
+-{static} SI: String
+-{static} NO: String
++ControlNotas(entrada: Scanner)
++importarNotas(): void
++exportarNotas(): void
++listarNotas(): void
++introducirNotas(): void
++borrarNotas(): void
++buclePrincipal(): void
++{static} main(argumentos: String[]): void
+-pedirConfirmación(): boolean
+}
+
+class Exportar{
+-entrada: Scanner
+-{static} NOMBRE_PREDETERMINADO: String
+-{static} SI: String
+-{static} NO: String
++Exportar()
++exportarArchivo(notas: ArrayList<String>): void
+-pedirConfirmación(): boolean
+}
+
+class Importar{
++Importar()
++importarArchivo(archivoImportar: String, notas: ArrayList<String>): void
+}
+
+VistaMenú  -[#green]-|> VistaGeneral: es un
+VistaAltas -[#green]-|> VistaGeneral: es un
+ControlNotas <.. VistaMenú: usa
+ControlNotas <.. VistaAltas: usa
+Importar ..> ControlNotas: usa
+Exportar ..> ControlNotas: usa
+}
+
+footer PrototipoMVC − Gestión de notas (20240412) | Rodrigo Martínez Delgado – CIFP Juan de Colonia\nPlantUML versión %version()
+
+@enduml

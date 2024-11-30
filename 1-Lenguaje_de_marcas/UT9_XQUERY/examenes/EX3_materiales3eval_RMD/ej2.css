@@ -1,0 +1,56 @@
+/* aportado */
+empresa {
+    display: flex;
+    justify-content: space-around;
+}
+
+departamentos {
+    display: table;
+}
+
+departamento>nombre {
+    display: table-caption;
+    font-size: 1.5em;
+    display: block;
+}
+
+departamento empleado {
+    display: table-row;
+}
+
+departamento salario,
+empleado nombre,
+profesion,
+datos {
+    display: table-cell;
+    border: 1px black solid;
+    padding: 3px 3px;
+}
+
+empleado>* {
+    display: list-item;
+    list-style: lower-roman;
+    list-style-position: inside;
+}
+
+equipos {
+    counter-reset: cont1;
+}
+
+equipo::before {
+    content: counter(cont1)". Equipo:";
+
+}
+
+equipo {
+    counter-increment: cont1;
+    margin: 2px 2px 2px 2px;
+}
+
+equipo * {
+    display: list-item;
+}
+
+lider {
+    font-weight: bold;
+}

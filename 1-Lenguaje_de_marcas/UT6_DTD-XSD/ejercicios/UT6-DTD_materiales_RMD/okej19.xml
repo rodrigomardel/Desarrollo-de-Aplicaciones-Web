@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comunidad [
+    <!ELEMENT comunidad (centros+)>
+        <!ELEMENT centros (localidad, nombre, tipo)>
+            <!ELEMENT localidad (#PCDATA)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT tipo (#PCDATA)>
+            <!ENTITY CIFP "Centro Integrado de Formación Profesional">
+        
+]>
+<comunidad>
+    <centros>
+        <localidad>Burgos</localidad>
+        <nombre>Juan de Colonia</nombre>
+        <tipo>&CIFP;</tipo>
+    </centros>
+    <centros>
+        <localidad>Valladolid</localidad>
+        <nombre>Juan de Herrera</nombre>
+        <tipo>&CIFP;</tipo>
+    </centros>
+    <centros>
+        <localidad>Soria</localidad>
+        <nombre>La Merced</nombre>
+        <tipo>&CIFP;</tipo>
+    </centros>
+</comunidad>

@@ -1,0 +1,11 @@
+<!ELEMENT faq (info, part+)>
+    <!ELEMENT info (titulo, autor, email?, version, fecha)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT version (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT part (q+)>
+        <!ELEMENT q (qtext, a)>
+            <!ELEMENT qtext (#PCDATA)>
+            <!ELEMENT a (#PCDATA)>

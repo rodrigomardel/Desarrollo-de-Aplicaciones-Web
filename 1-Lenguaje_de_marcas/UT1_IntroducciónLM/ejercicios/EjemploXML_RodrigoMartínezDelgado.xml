@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Consulta de libros -->
+<biblioteca>
+	<libro genero="Drama">
+		<titulo>La Milla Verde</titulo>
+		<autor>Stephen King</autor>
+		<editorial/>
+	</libro>
+	<libro genero="Novela existencial">
+		<titulo>La Metamorfosis</titulo>
+		<autor>Franz Kafka</autor>
+		<editorial/>
+	</libro>	
+	<libro genero="Novela de ficción">
+		<titulo>El Gran Gatsby</titulo>
+		<autor>F. Scott Fitzgerald</autor>
+		<editorial/>
+	</libro>	
+	<libro genero="Relato">
+		<titulo>El niño</titulo>
+		<autor>Juan Martínez García</autor>
+		<editorial/>
+	</libro>
+	<!-- Este libro no se debe procesar -->
+	<!--<libro>
+		<titulo>Buscando la letra Ñ</titulo>
+		<autor>Rosa Morillo Gallardo</autor>
+	</libro>-->
+	<libro>
+		<titulo>"&lt;xml&gt;: El lenguaje"</titulo>	
+	</libro>
+	<!-- Estructura con un bloque CDATA -->
+	<ejemplo>
+		<![CDATA[ Lo de dentro es considerado solo texto		
+			<html>
+				<head>
+					<title> Rock & Roll </title>
+				</head>
+			</html>
+		]]>	
+	</ejemplo>	
+</biblioteca>

@@ -1,0 +1,29 @@
+body{
+    font-size: 16px;
+}
+.em{
+    font-size: 2em;
+}
+.rem{
+    font-size: 2rem;
+}
+.fontFamily{
+    font-family: Arial, Helvetica, Serif;
+}
+.propiedadesFuente{
+    font: bold italic 24px Serif, Arial, Helvetica;
+}
+.propiedadesTexto{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    color: red;
+    text-decoration: underline;
+}
+/* Si modificamos el tamaño de la fuente en body, se modifica el tamaño indicado a todos 
+los elementos que incluye, excepto el contenido de clase "em" que su tamaño es 2 veces 
+mayor en relación al contenedor (en este caso el tamaño de body), la clase "rem" mantiene 
+su tamaño relativo, que es 2 veces mayor al tamaño del elemento raíz (html) y la clase
+"propiedadesFuente" mantiene su tamaño indicado (24px). */

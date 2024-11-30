@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE fiesta [
+  <!ENTITY % persona SYSTEM "persona.dtd">
+  %persona;
+  <!ELEMENT fiesta (persona,lugar,hora,dia)>
+  <!ELEMENT lugar (#PCDATA)>
+  <!ELEMENT hora (#PCDATA)>
+  <!ELEMENT dia (#PCDATA)>
+]>
+
+
+
+<fiesta>
+  <persona> <!--cuidado, probar con en XMLSpy, que en VSCode no muestra los errores -->
+   <nombre>Iker</nombre>
+   <mayor_de_edad/>
+   <ciudad>Pamplona</ciudad>
+</persona>
+  <persona> <!--cuidado, probar con en XMLSpy, que en VSCode no muestra los errores -->
+   <nombre>Juan</nombre>
+   <mayor_de_edad/>
+   <ciudad>Palencia</ciudad>
+  </persona>
+  <lugar>San Antonio 56</lugar>
+  <hora>22:45</hora>
+  <dia>25-9-2055</dia>
+</fiesta>

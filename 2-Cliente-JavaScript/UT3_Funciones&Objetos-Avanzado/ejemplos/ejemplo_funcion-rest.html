@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Agrupación en un array u objeto
+      function pintarVentana({ alto, ancho, ...opciones }) {
+        console.log(`${alto}`);
+      }
+
+      //recibe un array de varios tipos
+      function suma([...datos]) {
+        let resultado = 0;
+        datos.forEach((elemento) => {
+          if (typeof elemento != "number") {
+            resultado += 0;
+          } else {
+            resultado += elemento;
+          }
+        });
+        return resultado;
+      }
+    </script>
+  </body>
+</html>

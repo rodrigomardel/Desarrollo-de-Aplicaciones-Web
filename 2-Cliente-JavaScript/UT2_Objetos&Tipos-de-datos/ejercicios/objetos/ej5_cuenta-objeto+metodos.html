@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio5-RMD-20240928</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea un objeto literal cuenta con las siguientes propiedades:
+            •	titular: su valor es “Alex”.
+            •	saldo: su valor inicial es 0.
+        También deberá tener estos métodos:
+            •	ingresar(cantidad): permite añadir dinero a la cuenta, pasando la cantidad como parámetro.
+            •	extraer(cantidad): permite retirar dinero de la cuenta, pasando la cantidad como parámetro.
+            •	informar(): devuelve la información del estado de la cuenta: un texto con el titular y el saldo.
+        */
+
+      "use strict";
+
+      let cuenta = {
+        titular: "Alex",
+        saldo: 0,
+        ingresar: function (num) {
+          if (!isNaN(num)) {
+            this.saldo += num;
+            console.log("¡Ingreso realizado!");
+          } else {
+            console.log("Valor no válido");
+          }
+        },
+        extraer: function (num) {
+          if (!isNaN(num)) {
+            this.saldo -= num;
+            console.log("¡Retirada realizado!");
+          } else {
+            console.log("Valor no válido");
+          }
+        },
+        informe: function (obj) {
+          console.log(`Titular: ${this.titular} Saldo: ${this.saldo}`);
+        },
+      };
+    </script>
+  </body>
+</html>

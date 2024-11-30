@@ -1,0 +1,48 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="productos" type="tipoProductos"/>
+    <xs:complexType name="tipoProductos">
+        <xs:sequence>
+            <xs:element name="producto" type="tipoProducto" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoProducto">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoNombre" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="precio" type="tipoPrecio"/>
+            <xs:element name="descripcion" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="tipoID"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPrecio">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="moneda" type="tipoMoneda"/>
+            </xs:extension>    
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="USD"/>
+            <xs:enumeration value="€"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoID">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Camiseta"/>
+            <xs:enumeration value="Pantalón"/>
+            <xs:enumeration value="Zapatos"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

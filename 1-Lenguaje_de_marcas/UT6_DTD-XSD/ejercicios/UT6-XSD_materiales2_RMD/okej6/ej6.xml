@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capitulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej6.xsd">
+    <capitulo tipo="a">Capítulo 9</capitulo>
+    <capitulo tipo="b">Capítulo 99</capitulo>
+    <capitulo tipo="c">Capítulo 99</capitulo>
+    <capitulo tipo="d">Capítulo 100</capitulo>
+    <capitulo tipo="e">aZ</capitulo>
+    <capitulo tipo="f">ABBBBBC</capitulo>
+    <capitulo tipo="g">RSSSSSSSSSSS7</capitulo>
+    <capitulo tipo="h">COD645pera</capitulo>
+</capitulos>

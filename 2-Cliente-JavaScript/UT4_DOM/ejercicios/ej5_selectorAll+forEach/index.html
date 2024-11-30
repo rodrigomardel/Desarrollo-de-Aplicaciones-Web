@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul>
+      <li>
+        Animales
+        <ul>
+          <li>
+            Mamíferos
+            <ul>
+              <li>Vacas</li>
+              <li>Burros</li>
+              <li>Perros</li>
+              <li>Tigres</li>
+            </ul>
+          </li>
+          <li>
+            Otros
+            <ul>
+              <li>Serpientes</li>
+              <li>Aves</li>
+              <li>Lagartos</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Peces
+        <ul>
+          <li>
+            Acuario
+            <ul>
+              <li>Guppy</li>
+              <li>Angelote</li>
+            </ul>
+          </li>
+          <li>
+            Mar
+            <ul>
+              <li>Trucha de mar</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script>
+      /*Hay un árbol estructurado como ul/li anidado.
+
+    Escribe el código que para cada <li> muestra:
+      * ¿Cuál es el texto dentro de él (sin el subárbol)?
+      * El número de <li> anidados: todos los descendientes, incluidos los profundamente anidados.*/
+      const todosLi = document.querySelectorAll("li");
+
+      todosLi.forEach((element) => {
+        console.log(
+          element.firstChild.textContent.trim() +
+            " y tiene " +
+            element.querySelectorAll("li").length +
+            " li descendientes"
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+header {
+  margin: 10px 10px 10px 10px;
+  height: 60px;
+}
+
+header div#logo {
+  float: left;
+}
+header div#user-info {
+  float: right;
+}
+header div#user-info p:first-child {
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 200px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+nav,
+main {
+  border: 1px solid black;
+  margin: 0 10px 0 10px;
+}

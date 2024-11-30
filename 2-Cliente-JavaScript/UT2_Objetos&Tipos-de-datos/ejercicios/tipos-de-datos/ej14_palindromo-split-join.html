@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ14-RMD-20241003</title>
+  </head>
+  <body>
+    <script>
+      /*
+        14.	Palíndromo.
+        Crea una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, 
+        es decir, si se lee de la misma forma desde la izquierda y desde la derecha. Ejemplo de palíndromo: “La ruta nos aportó otro paso natural”.
+        Tener en cuenta: varios espacios en blanco se consideran como uno sólo; las mayúsculas y minúsculas se consideran iguales.
+
+        ** Truco: quitar los espacios a la cadena, pasar a mayúsculas o minúsculas, convertir la cadena en un array de caracteres, 
+        y utilizar el método .reverse() de los arrays, que cambia el orden de los elementos de un array.
+      */
+
+      let palindromo = "La ruta nos aporto otro paso natural";
+
+      console.log(comprobacionPalindromo(palindromo));
+
+      function comprobacionPalindromo(cadena) {
+        //cad.replace(/\s+/g, '') -> expresión regular equivalente (quita uno mas espacios a nivel global)
+        let textoTransformado = cadena.toLowerCase().split(" ").join("");
+        let textoTransformadoReves = textoTransformado
+          .split("")
+          .reverse()
+          .join("");
+
+        console.log(`Texto original → ${textoTransformado}`);
+        console.log(`Texto invertido → ${textoTransformadoReves}`);
+
+        return textoTransformado == textoTransformadoReves;
+      }
+    </script>
+  </body>
+</html>

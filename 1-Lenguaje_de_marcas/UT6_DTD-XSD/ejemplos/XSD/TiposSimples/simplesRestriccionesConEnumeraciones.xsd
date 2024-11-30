@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="matricula" type="codigoCiudad"/>    
+        <xs:simpleType name="codigoCiudad">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="BU"/>
+                <xs:enumeration value="VA"/>
+                <xs:enumeration value="PA"/>
+            </xs:restriction>
+        </xs:simpleType>
+</xs:schema>

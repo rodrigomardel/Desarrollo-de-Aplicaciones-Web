@@ -1,0 +1,28 @@
+var classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test =
+[
+    [ "setUp", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a1cf823d748d22e2e4b76977508fe14b0", null ],
+    [ "setUpBeforeClass", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ae1dfaaee559d23d068fb5cc5822bac04", null ],
+    [ "tearDown", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#acebe8345dcca4a43657334d399d0d5a6", null ],
+    [ "tearDownAfterClass", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a3df9ed2fde51299aa7685ed8c5f9dc50", null ],
+    [ "testConstructorListaValores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ad83de9767b9f2579350fb3f2194b2f69", null ],
+    [ "testExcepciónConstructorLista3Ceros", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a800297757caf2212b6b719143dbddab2", null ],
+    [ "testExcepciónConstructorLista3Valores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ae9bd900455de62cc40bc306940b75186", null ],
+    [ "testExcepciónConstructorLista5Ceros", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a9299257737444cdc7b9b2200ce440224", null ],
+    [ "testExcepciónConstructorLista5Valores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a25e03e029326aa2f29bcc01c22dcdb28", null ],
+    [ "testExcepciónConstructorListaNula", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#aff86bd70c049b11e6858156010a34234", null ],
+    [ "testExcepciónSetValoresLista3Ceros", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a10c7039f1e3867e58500d51c6d2a34e6", null ],
+    [ "testExcepciónSetValoresLista3Valores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ae916aa7e7a00c40ea0e87208f20e6982", null ],
+    [ "testExcepciónSetValoresLista5Ceros", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a619c3b6ca2db31bd6d9bc0d6bb52633f", null ],
+    [ "testExcepciónSetValoresLista5Valores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ab88a547e18aef43a482d388702672519", null ],
+    [ "testExcepciónSetValoresListaNula", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a8130cba63bafedf4cf777ae4815a245d", null ],
+    [ "testSetvaloresLista4Ceros", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#addc45b1762c97cf1fbe0bd0afd626cdd", null ],
+    [ "testSetvaloresLista4Valores", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a42ce651adbca62aebea1cd4971fd6ce9", null ],
+    [ "verificarTextoExcepción", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a049707a8360b1aec323eeb3e09ce17cf", null ],
+    [ "LISTA_CINCO", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#aa9025034527673c79f2a24bf4fd4ecd3", null ],
+    [ "LISTA_CINCO_CEROS", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#aec84c8f4c39edfd3e8024c9002617510", null ],
+    [ "LISTA_CUATRO", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a7ca1996db0b4c12b554dc4b08365c7ba", null ],
+    [ "LISTA_CUATRO_CEROS", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#af7cd85c1e9270c1344c2d7378c4fb63f", null ],
+    [ "LISTA_NULA", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a6ff61f32b78d4bcf5b2a23da424c4bde", null ],
+    [ "LISTA_TRES", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#ad4290cf157c636fb4f467291c9bcc76e", null ],
+    [ "LISTA_TRES_CEROS", "classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado_azul_test.html#a464a85dd92aea72360f959ad99ef8c0e", null ]
+];

@@ -1,0 +1,19 @@
+create trigger trgModificaConductores_ej1a on Conductores
+after insert, update
+as
+begin
+declare @tipooperacion varchar(30)
+
+if exists (select * from deleted)
+begin
+set @tipooperacion='Ha sido una actualización'
+end
+else
+begin
+set @tipooperacion='Ha sido una inserción'
+end
+
+insert into Historico (Tabla,TipoOperacion,FechaHora,Usuario)
+values ('Conductores',@tipooperacion,GETDATE(),SYSTEM_USER)
+
+end;

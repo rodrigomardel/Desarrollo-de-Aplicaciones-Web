@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE newspaper [
+<!ENTITY publisher "Editor principal">
+<!ENTITY copyright "Derechos de autor">
+	<!ELEMENT newspaper (article+)>
+	<!ATTLIST article 
+		author CDATA #REQUIRED
+		date CDATA #IMPLIED
+		edition NMTOKEN #IMPLIED>
+		<!ELEMENT article (headline, lead*, body, notes*)>
+			<!ELEMENT headline (#PCDATA)>
+			<!ELEMENT body (#PCDATA)>
+			<!ELEMENT notes (#PCDATA)>
+			<!ELEMENT lead (#PCDATA)>
+]>
+<newspaper> 
+	<article author="kelvin" date="2009-9-9"> 
+		<headline>Apple's next big thing is Steve Jobs</headline> 
+		<body>On September 9, Steve Jobs returned to the public eye ...</body> 
+		<notes>nice</notes> 
+		<notes>good</notes> 
+	</article> 
+	<article author="tim" edition="1"> 
+		<headline>Headline B. Each can only has one lead</headline> 
+		<lead>This is a lead.  Each article can only has one lead</lead> 
+		<body>This is the body of the news &publisher; &copyright;</body> 
+	</article> 
+</newspaper> 

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jardineria>
+  <pedido fecha="20/09/2023" urgencia="Alta">
+    <cliente>Roberto Movilla</cliente>
+    <productos> 
+      <articulo codigo="872-AA">
+        <descripcion>Cortadora</descripcion>
+        <modelo>Eléctrica</modelo>
+        <precio>148,95€</precio>
+      </articulo>
+      <articulo codigo="926-FH">
+        <descripcion>Podadora</descripcion>
+        <cantidad>3</cantidad>
+        <precio>7,98€</precio>
+      </articulo>  
+    </productos>
+    <envio>
+      <poblacion cp="05020">Albacete</poblacion>
+      <direccionEntrega>Plaza de la Duquesa, 12</direccionEntrega>
+      <personaRecogida>Alicia Abad</personaRecogida>
+      <direccionPago cp="28055" poblacion="Madrid">C/ General Ricardos, 56</direccionPago>
+    </envio>
+  </pedido>
+</jardineria>

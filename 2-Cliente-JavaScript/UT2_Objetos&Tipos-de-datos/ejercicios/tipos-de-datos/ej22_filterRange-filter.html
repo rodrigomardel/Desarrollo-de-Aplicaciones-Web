@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ22-RMD-20241008</title>
+  </head>
+  <body>
+    <script>
+      /*
+        22.	Obtener un subarray
+                Escribe una función filterRange(arr, a, b) que obtenga un array arr, busque los elementos con valor mayor o igual 
+                a a y menor o igual a b y devuelva un array con los resultados.
+                
+                La función no debe modificar el array. Debe devolver un nuevo array.
+                Por ejemplo:
+
+                let arr = [5, 3, 8, 1];
+                let filtrado = filterRange(arr, 1, 4);
+                console.log(filtrado); // 3,1 (valores dentro del rango)
+                console.log(arr); // 5,3,8,1 (array original no modificado)
+       */
+
+      let array = [5, 3, 8, 1];
+
+      let filterRange = (array, a, b) => {
+        //let nuevoArray = array.map(function (elemento)
+        let nuevoArray = array.filter(
+          (elemento) => elemento >= a && elemento <= b
+        );
+        return nuevoArray;
+      };
+
+      let filtrado = filterRange(array, 1, 4);
+      console.log(filtrado); // 3,1 (valores dentro del rango)
+      console.log(array); // 5,3,8,1 (array original no modificado)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+section#whats {
+  width: 500px;
+  margin: 10px 10px 10px 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+section#whats h2 {
+  border-bottom: 1px solid black;
+}
+section#whats img {
+  margin: 10px 0 10px 0px;
+}
+section#whats button {
+  position: relative;
+  float: right;
+  bottom: 69px;
+  left: -60px;
+  border-radius: 12px;
+}

@@ -1,0 +1,44 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="urlset" type="tipoUrlset"/>
+
+    <xs:complexType name="tipoUrlset">
+        <xs:sequence>
+            <xs:element name="url" type="tipoUrl" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoUrl">
+        <xs:sequence>
+            <xs:element name="loc" type="tipoLoc" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="lastmod" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="changefreq" type="tipoChangefreq" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="priority" type="tipoPriority" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoLoc">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="2048"/>
+            <xs:pattern value="http.+/?"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoChangefreq">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="always"/>
+            <xs:enumeration value="hourly"/>
+            <xs:enumeration value="daily"/>
+            <xs:enumeration value="weekly"/>
+            <xs:enumeration value="monthly"/>
+            <xs:enumeration value="yearly"/>
+            <xs:enumeration value="never"/>
+          </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPriority">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="1.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

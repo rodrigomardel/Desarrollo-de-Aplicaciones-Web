@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2.</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">Comprueba tu aprendizaje:</th>
+        </tr>
+        <tr>
+            <td>Los métodos de envío son POST y GET</td>
+            <td>
+                <form method="post">
+                    <input type="radio" id="verdadero1" name="v/f" value="verdadero">
+                    <label for="verdadero1">Verdadero</label>
+                    <br>
+                    <input type="radio" id="falso1" name="v/f" value="falso">
+                    <label for="falso1">Falso</label>
+                </form>                                  
+            </td>
+        </tr>
+        <tr>
+            <td>La etiqueta &lt;strong&gt; pone en cursiva</td>
+            <td>
+                <form method="post">
+                    <input type="radio" id="verdadero2" name="v/f" value="verdadero">
+                    <label for="verdadero2">Verdadero</label>
+                    <br>
+                    <input type="radio" id="falso2" name="v/f" value="falso">
+                    <label for="falso2">Falso</label>   
+                </form>                                 
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;caption&gt; es el título de la tabla</td>
+            <td>
+                <form method="post">
+                    <input type="radio" id="verdadero3" name="v/f" value="verdadero">
+                        <label for="verdadero3">Verdadero</label>
+                        <br>
+                        <input type="radio" id="falso3" name="v/f" value="falso">
+                        <label for="falso3">Falso</label> 
+                </form>                                   
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt; sirve para fusionar columnas</td>
+            <td>
+                <form method="post">
+                    <input type="radio" id="verdadero4" name="v/f" value="verdadero">
+                    <label for="verdadero4">Verdadero</label>
+                    <br>
+                    <input type="radio" id="falso4" name="v/f" value="falso">
+                    <label for="falso4">Falso</label> 
+                </form>                                      
+            </td>
+        </tr>
+        <tr>
+            <td>href es un atributo img</td>
+            <td>
+                <form method="post">
+                    <input type="radio" id="verdadero5" name="v/f" value="verdadero">
+                    <label for="verdadero5">Verdadero</label>
+                    <br>
+                    <input type="radio" id="falso5" name="v/f" value="falso">
+                    <label for="falso5">Falso</label> 
+                </form>                              
+            </td>
+        </tr>
+    </table>
+
+    <form method="post">
+        <p>Marca las casillas con las que estés mas de acuerdo</p>
+        <input type="checkbox" name="estudio" id="estudio1" value="estudio suficiente">
+        <label for="estudio1">He estudiado suficiente</label>
+        <br>
+        
+        <input type="checkbox" name="estudio" id="estudio2" value="estudio todos los días">
+        <label for="estudio2">Estudio todos los días</label>
+        <br>
+
+        <p>El examen lo veo de este color:</p>
+        <input type="color" name="colorExamen" id="fondo" value="#000000">
+        <label for="fondo">Fondo</label>
+        <br><br>
+
+        <label>Porcentaje estudiado hasta ahora:
+            <input type="range" id="estudio" name="rangoEstudio" min="1" max="100" step="5" value="50" >
+        </label>
+        <br><br>
+
+        <label>Nota que espero sacar en el examen:
+            <input type="number" name="notaExamen" id="nota" min="0" max="10" value="0">
+        </label>
+        <br><br>
+
+        <button type="submit">
+            <img src="check.png" alt="imagen de check" style="height: 50px; width: 50px;">
+            Enviar datos
+        </button>
+
+        <label>
+            <input type="reset" value="Borrar datos">
+        </label>
+    </form>   
+</body>
+</html>

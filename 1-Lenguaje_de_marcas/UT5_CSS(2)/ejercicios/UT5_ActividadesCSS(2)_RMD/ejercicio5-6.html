@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" href="css/ejercicio5-6.css">
+	<!--muy importante, sin esto no funcionan las media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body>
+<div id="borde">
+	<div id="contenedor">
+		<header>
+		</header>
+		<nav>
+			<a href="#" class="enlacenav">Portada</a>
+			<a href="#" class="enlacenav">HTML</a> 
+			<a href="#" class="enlacenav">CSS</a>
+			<a href="#" class="enlacenav">Webs de Interés</a>
+			<a href="#" class="enlacenav">Contacto</a>
+		</nav>
+		<div id="cuerpo">
+			<main>
+				<section>
+					<h1>CSS</h1>
+					<article>		
+					En este articulo vamos a conocer la maquetación de paginas utilizando Hojas de estilos en cascada (CSS). Veremos cómo realizar este tipo de maquetación, junto con algunas ventajas e inconvenientes. Para muchos será todavía un campo por explorar. Aunque no vamos a entrar en grandes detalles, vamos a intentar dar a conocer la maquetación con CSS para que cubrir la posible laguna por parte del lector. En capítulos sucesivos ampliaremos la información y ofreceremos tutoriales más prácticos. 
+					</article>
+					<article>		
+					Como se ha podido aprender en el Manual de CSS, las hojas de estilo en cascada ayudan a separar el contenido de la forma, es decir, los elementos que componen una página de la forma con la que se muestran. Además, CSS ayuda en gran medida a la definición de estilos en la página, ya que permite ajustar de una manera mucho más precisa cualquier aspecto de cualquier elemento de la página. 
+					</article>
+					<article>		
+					La maquetación con CSS lleva la utilización de las hojas de estilo a su grado maximo, de manera que cualquier definicion del aspecto de la página se realiza en la declaracion CSS que enlazamos con el documento HTML. Para definir la situacion de los elementos en la pagina se utilizan las capas, a las que se aplica un posicionamiento a traves tambien de las hojas de estilo. 
+					</article>
+					<article>		
+					Para crear las capas se utilizan etiquetas &lt;DIV&gt;, en las que se introducen los elementos que queramos que aparezcan en la página. Los elementos dentro de los &lt;DIV&gt; tambien se pueden anidar, para heredar las propiedades y posicionamiento de las capas padre. 
+					</article>
+					<article>		
+					En la maquetación por capas se definen unicamente etiquetas &lt;DIV&gt; y las tablas solo se utilizan para mostrar informacion tabulada, es decir, mostrada en filas y columnas. Cabe señalar que en la maquetación tradicional se utilizan las tablas para ajustar la posicion.
+					</article>
+					<div id="navabajo">
+						<a href="#">Volver</a> | 
+						<a href="#">Portada</a> | 
+						<a href="#">Mapa del sitio</a>
+					</div>
+				</section>
+			</main>
+			<aside>
+				<article>
+					<h2 class="titulosAside">Buscar</h2>
+					<div id="fbuscar" class="cuerpolateral">
+						<form>
+							<div id="campotexto">
+								<input type="text" name="criterio">
+								<input type="submit" value="buscar">
+							</div>
+							<div class="radio">
+								<input type="radio" id="css" name="buscar" value="css">
+								<label for="css">En la Web CSS</label>  
+							</div>
+							<div class="radio">
+								<input id="todo" type="radio" name="buscar" value="todo"> 
+								<label for="todo">En toda la Web</label>
+							</div>
+						</form>
+					</div>
+				</article>
+				<article> 
+					<h2 class="titulosAside">Registro</h2>
+					<div id="registro" class="cuerpolateral">
+						<p><a href="#">Registrese con nosotros</a> y obtenga muchas ventajas.</p>
+					</div>
+				</article>
+				<article>
+					<h2 class="titulosAside">Otras informaciones</h2>
+					<div id="otras" class="cuerpolateral">
+						<ul>
+						<li><a href="#">Quienes somos</a></li>
+						<li><a href="#">Nuestra misión</a></li>
+						<li><a href="#">Agenda de eventos</a></li>
+						</ul>
+					</div>
+				</article>
+			</aside>
+		</div>
+		
+		<footer>
+			Pruebas de maquetación CSS &copy; Lenguajes de Marcas
+		</footer>
+	</div>
+</div>
+</body>
+</html>

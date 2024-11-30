@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+ <!ELEMENT libro EMPTY>
+ <!ATTLIST libro autor CDATA #REQUIRED>
+]>
+<!-- El tipo de autor no corresponde con el contenido-->
+<libro autor="Mario Vargas LLosa" /> 

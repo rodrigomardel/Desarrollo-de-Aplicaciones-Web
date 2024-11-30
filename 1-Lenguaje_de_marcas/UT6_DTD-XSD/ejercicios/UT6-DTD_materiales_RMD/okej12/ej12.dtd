@@ -1,0 +1,20 @@
+<!ELEMENT catalogo (producto+)>
+        <!ELEMENT producto (especificaciones+, opciones*, precio+, notas*)>
+        <!ATTLIST producto 
+            nombre CDATA #IMPLIED
+            categoria (herramienta | mesa | tienda-profesional) "herramienta"
+            numpart CDATA #IMPLIED
+            fabrica (Valladolid | Palencia | León) "Valladolid"
+            inventario (enstock | bajoorden | nodisponible) "enstock">
+            <!ELEMENT especificaciones (#PCDATA)>
+                <!ATTLIST especificaciones 
+                    peso CDATA #IMPLIED
+                    potencia CDATA #REQUIRED>
+            <!ELEMENT opciones (#PCDATA)>
+                <!ATTLIST opciones
+                    adaptador (incluido | opcional | noincluido) "incluido">
+            <!ELEMENT precio (#PCDATA)>
+                <!ATTLIST precio
+                 moneda CDATA "euros"
+                 gatosdeenvio CDATA #IMPLIED>
+            <!ELEMENT notas (#PCDATA)>

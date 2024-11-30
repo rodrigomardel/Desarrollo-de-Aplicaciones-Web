@@ -1,0 +1,14 @@
+digraph "Gráfico de jerarquía de clases"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="jcolonia.daw2023.teatrillo.Actor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_actor.html",tooltip="Individuo del que almacenamos datos de identificación básicos: nombre e identificador."];
+  Node0 -> Node1 [id="edge1_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="jcolonia.daw2023.teatrillo.Personaje",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_personaje.html",tooltip="Sujeto que interactúa saludando al resto de personajes, contabilizando el número de frases."];
+  Node2 [id="Node000002",label="Cotizable",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node2 -> Node1 [id="edge2_Node000002_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

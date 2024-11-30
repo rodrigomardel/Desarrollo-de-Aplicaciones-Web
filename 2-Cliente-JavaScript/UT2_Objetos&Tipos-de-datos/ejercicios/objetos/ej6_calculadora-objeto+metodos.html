@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio6-RMD-20240929</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Crea un objeto calculator con tres métodos:
+            •	read() pide dos valores y los almacena como propiedades de objeto, con nombres a y b.
+            •	sum() devuelve la suma de los valores almacenados.
+            •	mul() multiplica los valores almacenados y devuelve el resultado.
+
+            Ej. de funcionamiento:
+            let calculator = {
+            // ... tu código ...
+            };
+
+            calculator.read();
+            alert( calculator.sum() );
+            alert( calculator.mul() );
+        */
+
+      "use strict";
+
+      let calculator = {
+        read: function () {
+          let fin = false;
+
+          while (fin == false) {
+            //almacena la entrada como propiedades del objeto
+            calculator.a = +prompt("Introduzca el primer valor");
+            calculator.b = +prompt("Introduzca el segundo valor");
+
+            if (!isNaN(this.a) && !isNaN(this.b)) {
+              console.log("Valores registrados");
+              fin = true;
+            } else {
+              console.log("Debe introducir valores válidos");
+            }
+          }
+        },
+
+        suma: function () {
+          let resultado = this.a + this.b;
+          return resultado;
+        },
+
+        multiplicacion: function () {
+          let resultado = this.a * this.b;
+          return resultado;
+        },
+      };
+    </script>
+  </body>
+</html>

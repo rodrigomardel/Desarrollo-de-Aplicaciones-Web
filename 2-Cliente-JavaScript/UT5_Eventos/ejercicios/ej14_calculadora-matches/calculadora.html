@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora eventos W3C y bubbling</title>
+    <script type="text/javascript">
+      //Este ejemplo muestra como capturar eventos delegados ("bubbling") en document
+      //Esta forma es mucho más concisa, más elegante y eficaz
+      //evento del manejador: ev => {.....} contiene el elemento HTML sobre el que se clicó en la propiedad target
+      //Atributos id o class se utilizan para filtrar eventos con el método matches(..) antes de invocar manejadores
+
+      let resultado = document.createElement("p");
+      resultado.id = "texto-resultado";
+
+      document.addEventListener("click", (e) => {
+        if (e.target.matches("#input-numero")) {
+          vaciar();
+        } else if (e.target.matches("#boton-cuadrado")) {
+          resultado.textContent =
+            "El resultado de la operación es: " + cuadrado();
+        } else if (e.target.matches("#boton-cubo")) {
+          resultado.textContent = "El resultado de la operación es: " + cubo();
+        } else if (e.target.matches("#boton-division")) {
+          resultado.textContent =
+            "El resultado de la operación es: " + division();
+        }
+
+        document.body.append(resultado);
+      });
+
+      function vaciar() {
+        document.getElementById("input-numero").value = "";
+        document.getElementById("texto-resultado").textContent = "";
+      }
+
+      function cuadrado() {
+        let num = document.getElementById("input-numero");
+        return (num.value = num.value * num.value);
+      }
+
+      function cubo() {
+        let num = document.getElementById("input-numero");
+        return (num.value = num.value * num.value * num.value);
+      }
+
+      function division() {
+        let num = document.getElementById("input-numero");
+        return (num.value = 1 / num.value);
+      }
+
+      /*
+        Partiendo del documento calculadora.html, añadir a nuestra calculadora dos botones más x3 y 1/x.
+        Habrá que realizar la gestión de eventos correspondiente para que funcionen correctamente las dos operaciones nuevas.
+
+        También se añadirá un campo informativo mediante la etiqueta <h3> con contenido inicial "Información sobre el número".
+        El contenido del campo se debe actualizar cada vez que se hace un cálculo en la calculadora. Su contenido debe ser
+        "Información: el resultado de la operación x2 | x3 | 1/x es número."
+      */
+
+      document.addEventListener("DOMContentLoaded", () => {
+        let buttonCuadrado = document.getElementById("b1");
+        let buttonCubo = document.createElement("button");
+        let buttonDivision = document.createElement("button");
+        let sup = document.createElement("sup");
+        let h3 = document.createElement("h3");
+
+        h3.textContent = "- Información sobre el número -";
+
+        buttonCubo.id = "boton-cubo";
+        buttonCubo.textContent = "x";
+        sup.textContent = "3";
+
+        buttonDivision.id = "boton-division";
+        buttonDivision.textContent = "1/x";
+
+        buttonCubo.append(sup);
+        document.body.append(buttonCubo, buttonDivision);
+        document.body.append(h3);
+      });
+    </script>
+  </head>
+
+  <body>
+    Número:
+    <input type="text" id="input-numero" />
+    <button id="boton-cuadrado">x<sup>2</sup></button>
+  </body>
+</html>

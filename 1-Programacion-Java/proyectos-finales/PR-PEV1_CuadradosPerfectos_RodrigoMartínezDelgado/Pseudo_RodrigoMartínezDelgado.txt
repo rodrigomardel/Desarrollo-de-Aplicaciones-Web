@@ -1,0 +1,44 @@
+PROGRAMA Cuadrados perfectos entre 13.000 y 1.300.000
+VARIABLES
+	númeroClase, valorInicial, valorFinal: número entero, constante
+	primerCuadrado, últimoCuadrado, contadorCuadrados, sumaCuadrados, cuadradoPerfecto: número entero 
+	i: número entero, contadores
+	
+ALGORTIMO
+	ASIGNAR a númeroClase el valor de 13
+	ASIGNAR a valorInicial el valor de númeroClase × 1.000 
+	ASIGNAR a valorFinal el valor de númeroClase × 100.000 
+	
+	ASIGNAR a primerCuadrado el valor de 0
+	ASIGNAR a últimoCuadrado el valor de 0
+	ASIGNAR a contadorCuadrados el valor de 0
+	ASIGNAR a sumaCuadrados el valor de 0
+	ASIGNAR a cuadradoPerfecto el valor de 0
+	
+	ASIGNAR a i el valor de 0
+	MIENTRAS cuadradoPerfecto ≤ valorFinal INCREMENTAR i en 1 ASIGNANDO a cuadradoPerfecto el valor de i×i
+		SI cuadradoPerfecto ≥ valorInicial 
+			INCREMENTAR contadorCuadrados en 1
+			ASIGNAR a sumaCuadrados el valor de sumaCuadrados + cuadradoPerfecto
+				SI contadorCuadrados=1
+					ASIGNAR a primerCuadrado el valor de cuadradoPerfecto
+				FIN-SI
+		FIN-SI			
+	FIN-MIENTRAS
+	
+	DECREMENTAR i en 1
+	ASIGNAR a últimoCuadrado el valor de i×i
+	
+	ESCRIBIR valorInicial
+	ESCRIBIR valorFinal
+	ESCRIBIR primerCuadrado
+	ESCRIBIR últimoCuadrado
+	ESCRIBIR contadorCuadrados
+	ESCRIBIR sumaCuadrados
+FIN-PROGRAMA	
+	
+	 
+	
+	
+	
+	

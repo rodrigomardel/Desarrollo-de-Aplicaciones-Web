@@ -1,0 +1,11 @@
+Rodrigo Martínez Delgado - CIFP Juan de Colonia - rodrigo.mardel@educa.jcyl.es - 20240429
+
+- Modificaciones futuras versiones -
+
+1.- El método (leerTexto) en la clase VistaGeneral controla que la entrada de texto no pueda estar vacía, 
+se podría programar para que ciertas características puedan admitir valores vacíos.
+
+2.- La opción «Borrar bandas» también se podría ampliar para que nos mostrase el listado y seleccionar el elemento a eliminar.
+
+Video demostración funcionamiento:
+https://educajcyl-my.sharepoint.com/:v:/r/personal/rodrigo_mardel_educa_jcyl_es/Documents/DAW23-24/Programaci%C3%B3n/06.02%20DrumFest24-MVC/PR-P2_3EV-Demostraci%C3%B3n-Funcionamiento-20240428.mkv?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hZh06m

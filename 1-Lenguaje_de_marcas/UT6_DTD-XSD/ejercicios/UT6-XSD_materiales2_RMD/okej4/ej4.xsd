@@ -1,0 +1,65 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="publication" type="tipoPublication"/>
+
+    <xs:complexType name="tipoPublication">
+        <xs:sequence>
+            <xs:element name="article" type="tipoArticle" maxOccurs="unbounded"/>
+            <xs:element name="book" type="tipoBook" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoArticle">
+        <xs:group ref="elementosArticulo"/>
+        <xs:attributeGroup ref="atributosArticulo"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoBook">
+        <xs:group ref="elementosLibro"/>
+        <xs:attributeGroup ref="atributosLibro"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoGenre">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Mystery"/>
+            <xs:enumeration value="Drama"/>
+            <xs:enumeration value="Fantasy"/>
+            <xs:enumeration value="Terror"/>
+            <xs:enumeration value="Comedy"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEdition">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="[0-9]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:group name="elementosArticulo">
+        <xs:sequence>
+            <xs:element name="headline" minOccurs="1" type="xs:string"/>
+            <xs:element name="lead" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="body" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="notes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="atributosArticulo">
+        <xs:attribute name="author" use="required" type="xs:string"/>
+        <xs:attribute name="date" type="xs:date"/>
+    </xs:attributeGroup>
+
+    <xs:group name="elementosLibro">
+        <xs:sequence>
+            <xs:element name="headline" minOccurs="1" type="xs:string"/>
+            <xs:element name="lead" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="isbn" minOccurs="1" type="xs:string"/>
+            <xs:element name="genre" minOccurs="1" type="tipoGenre"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="atributosLibro">
+        <xs:attribute name="author" use="required" type="xs:string"/>
+        <xs:attribute name="edition" use="required" type="tipoEdition"/>
+        <xs:attribute name="date" type="xs:date"/>
+    </xs:attributeGroup>
+</xs:schema>

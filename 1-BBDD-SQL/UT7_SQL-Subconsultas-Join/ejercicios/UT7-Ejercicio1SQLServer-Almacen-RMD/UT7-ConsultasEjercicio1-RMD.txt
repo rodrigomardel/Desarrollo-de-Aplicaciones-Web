@@ -1,0 +1,26 @@
+Rodrigo Martínez Delgado
+
+1.
+select *
+from ProductoProveedores
+where nombreProveedor like 'Juan García'
+
+2.
+select *
+from ProductosClientes
+where dni like '12123123a'
+
+3.
+select *
+from PreciosProveedor
+where precio_venta between 200 and 300
+
+4.
+select *
+from FacturasClientes
+where referencia in ('1','2')
+
+5.
+select * 
+from ProveedorClientes
+where Teléfono like '333333333'

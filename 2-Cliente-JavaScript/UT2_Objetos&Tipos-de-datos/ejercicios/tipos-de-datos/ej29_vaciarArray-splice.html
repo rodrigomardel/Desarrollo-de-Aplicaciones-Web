@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ29-RMD-20241009</title>
+  </head>
+  <body>
+    <script>
+      /*
+        29.	Crea una función llamada vaciarArray(), que recibe como parámetro un array y vacía su contenido,
+        es decir, después de llamar a esta función, el array pasado como parámetro no tendrá datos.
+        */
+
+      var gruposMusicales = ["Muse", "RHCP", "QOSA", "L.P.R.", "Desakato"]
+
+      function vaciarArray(array) {
+        /*for (let index = 0; index < array.length; index++) {
+          delete array[index];
+        }*/
+       
+        //otra opción
+        //array.length = 0;
+        //otra opcion usando splice
+        array.splice(0, array.length);//splice() por defecto va de 0 a la longitud del array
+        
+      }
+
+      vaciarArray(gruposMusicales);
+      console.log(gruposMusicales);
+
+    </script>
+  </body>
+</html>

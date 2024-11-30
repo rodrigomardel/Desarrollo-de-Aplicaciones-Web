@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE agenda [ 
+  <!ELEMENT agenda (contacto*)> 
+  <!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)> 
+  <!ELEMENT nombre (#PCDATA)> 
+  <!ELEMENT telefonoFijo (#PCDATA)> 
+  <!ELEMENT telefonoMovil (#PCDATA)> 
+]> 
+<!-- Contacto debe contener uno o más telefonoMovil y respetar el orden de la declaración -->
+
+<agenda> 
+  <contacto> 
+    <nombre>Ayuntamiento</nombre> 
+    <telefonoFijo>010</telefonoFijo>
+    <telefonoMovil>652 52 55 85</telefonoMovil> 
+  </contacto> 
+  <contacto> 
+    <nombre>Emergencias</nombre> 
+    <telefonoFijo>112 (Unión Europea)</telefonoFijo> 
+    <telefonoMovil>Desconocido</telefonoMovil> 
+  </contacto> 
+</agenda>

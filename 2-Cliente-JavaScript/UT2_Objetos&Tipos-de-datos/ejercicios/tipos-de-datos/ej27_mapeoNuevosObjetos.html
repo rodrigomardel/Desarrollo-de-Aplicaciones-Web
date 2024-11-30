@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ27-RMD-20241009</title>
+  </head>
+  <body>
+    <script>
+      /*
+        27.	Mapear a objetos
+            Tienes un array de objetos usuarios, cada uno tiene nombre, apellido e id.
+            Escribe el código para crear otro array a partir de este, de objetos con id y nombreCompleto, donde nombreCompleto es generado
+            a partir de nombre y apellido.
+            Por ejemplo:
+            let john = {nombre: "John", apellido: "Smith", id: 1};
+            let pete = {nombre: "Pete", apellido: "Hunt", id: 2};
+            let mary = {nombre: "Mary", apellido: "Key", id: 3};
+
+            let usuarios = [john, pete, mary];
+
+            let usuariosMapeados =
+             ... tu código ...
+
+
+            usuariosMapeados= [
+            {nombreCompleto: "John Smith", id: 1 },
+            {nombreCompleto: "Pete Hunt", id: 2 },
+            {nombreCompleto: "Mary Key", id: 3 }
+            ]
+
+
+            alert(usuariosMapeados[0].id); // 1
+            alert(usuariosMapeados[0].nombreCompleto); // John Smith
+
+            Para hacerlo, se puede mapear un array de objetos a otro.
+            Si se utilizan funciones flecha (=>), hay un pequeño truco.
+
+        */
+
+      let john = { nombre: "John", apellido: "Smith", id: 1 };
+      let pete = { nombre: "Pete", apellido: "Hunt", id: 2 };
+      let mary = { nombre: "Mary", apellido: "Key", id: 3 };
+
+      let usuarios = [john, pete, mary];
+
+      let usuariosMapeados = (usuarios) => {
+        let arrayCompleto;
+
+        arrayCompleto = usuarios.map((elemento) => {
+          //nuevos objetos mapeando el array anterior
+          let nombresCompletos = {
+            nombreCompleto: elemento.nombre + " " + elemento.apellido,
+            id: elemento.id,
+          };
+          //return para arrayCompleto
+          return nombresCompletos;
+        });
+
+        return arrayCompleto;
+      };
+
+      let usersMapeados = usuariosMapeados(usuarios);
+
+      alert(usersMapeados[0].id); // 1
+      alert(usersMapeados[0].nombreCompleto); // John Smith
+    </script>
+  </body>
+</html>

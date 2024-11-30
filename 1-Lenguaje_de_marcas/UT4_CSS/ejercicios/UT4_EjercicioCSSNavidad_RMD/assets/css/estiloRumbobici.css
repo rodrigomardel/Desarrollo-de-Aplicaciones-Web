@@ -1,0 +1,134 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url(../img/fondoRumboBici.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header, footer { 
+    margin:10px;
+    padding:10px;
+    background-color: #009b2f3f; 
+    text-align: center;
+    color: white;
+}
+nav {
+    display: flex;
+    margin:10px;
+    padding:10px;
+    background-color: #83850046;
+    gap: 100px;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+main {
+    margin:10px;
+    padding:10px;
+    background-color: #024a8e85;
+    border-width: 5px 4px;
+    border-color: rgb(67, 20, 143) rgb(182, 0, 143);
+    border-style: solid;
+    border-radius: 20px;
+}
+article {
+    margin:10px;
+    padding:10px;
+    background-color: rgba(250, 235, 215, 0.336);
+}
+section{
+    margin:10px;
+    padding:10px;
+    background-color: #7c95e78e; 
+}
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+
+}
+li > ul{
+    list-style-image: url(../img/repair.png);
+}
+.listaServicios{
+    font-weight: bolder;
+    font-style: oblique;
+}
+h1{
+    text-decoration: underline;
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+h3::before{
+    content: "✨";
+}
+h3::after{
+    content: "✨";
+}
+p::first-letter{
+    font-size: 18px;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: orange;
+    opacity: 0.7;
+}
+img{
+    height: 20%;
+    width: 20%;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: 4px solid rgba(243, 9, 224, 0.568);
+    width: auto;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 4px;
+    margin: auto;
+}
+.review strong{
+    text-shadow: rgb(5, 62, 146) 2px 2px;
+    color: rgb(255, 255, 255);    
+}
+
+iframe{
+    border: 4px solid rgb(243, 9, 224);
+    border-style: solid;
+    margin: 2.5em;
+}
+td,th {
+    border: 2px solid rgb(1, 0, 71);
+    padding: 8px;
+    width: auto;
+    text-align: center;
+}
+.review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div > p{
+    background-color: rgba(39, 146, 123, 0.5);
+    margin: 10px;
+    padding: 20px;
+}
+#enlacesInicio{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 0.5em;
+}
+
+section + #enlacesInicio{
+    background-color: #22bd519f;
+    box-shadow: 2px 2px 6px 4px black;
+}

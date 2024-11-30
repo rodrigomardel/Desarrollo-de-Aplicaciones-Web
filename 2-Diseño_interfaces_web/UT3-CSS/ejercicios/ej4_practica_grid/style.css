@@ -1,0 +1,51 @@
+:root {
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  background-color: #92b6e7;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.boxed {
+  max-width: 1250px;
+  margin: auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+section#productos div.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px 15px; /* == row-gap: 15px; column-gap: 15px;*/
+  justify-items: center; /*eje x*/
+  align-items: center; /*eje y*/
+  /*más usados habitualmente*/
+  justify-content: space-between; /*eje x */
+  align-content: space-between; /*eje y*/
+}
+section#productos div.grid article {
+  border: 1px solid black;
+}
+
+.discount {
+  position: absolute;
+  background: yellow;
+  border-radius: 50%;
+  padding: 5px 5px;
+  font-size: 0.9em;
+}

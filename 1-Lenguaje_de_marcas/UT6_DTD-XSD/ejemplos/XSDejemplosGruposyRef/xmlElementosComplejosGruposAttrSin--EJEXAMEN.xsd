@@ -1,0 +1,37 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="familias" type="tipoFamilias"/>
+
+    <xs:complexType name="tipoFamilias">
+        <xs:sequence>
+            <xs:element name="familia" type="miembrosFamilia" minOccurs ="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="miembrosFamilia">
+        <xs:sequence>
+            <!-- <xs:element name="padre" type="tipoDatos" minOccurs="0" maxOccurs="1"/> -->
+            <xs:element ref="padre" minOccurs="0" maxOccurs="1"/><!--Referencia a objeto-->
+            <xs:element name="madre" type="tipoDatos" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="hijo" type="tipoHijos" minOccurs ="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoDatos">
+        <xs:attribute name="dni" type="xs:string"/>
+        <xs:attributeGroup ref="datosGenerales"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoHijos">
+        <xs:attribute name="dni" type="xs:string" use="optional"/>
+        <xs:attributeGroup ref="datosGenerales"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="datosGenerales">
+        <xs:attribute name="nombre" type="xs:string"/>
+        <xs:attribute name="edad" type="xs:nonNegativeInteger" default="0"/>
+        <xs:attribute name="nacionalidad" type="xs:string"/>
+    </xs:attributeGroup>
+
+    <xs:element name="padre" type="tipoDatos"></xs:element>
+</xs:schema>

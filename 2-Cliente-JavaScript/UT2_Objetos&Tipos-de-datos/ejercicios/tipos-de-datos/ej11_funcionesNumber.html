@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ11-RMD-20241002</title>
+  </head>
+  <body>
+    <script>
+      /*
+        11.	números
+            Crea un programa que pida al usuario un número entero por pantalla y muestre por consola:
+            1.	El número con 4 decimales.
+            2.	El número en binario.
+            3.	El número en octal.
+            4.	El número en hexadecimal.
+
+            Ejemplo: si metes 50, deberías obtener: 50.0000 / 00110010 / 62 / 32.
+        */
+
+      let num;
+
+      num = +prompt("Introduzca un número cualquiera");
+
+      console.log(
+        `${num.toFixed(4)} / ${num.toString(2)} / ${num.toString(
+          8
+        )} / ${num.toString(16)}`
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+receta {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+datos {
+    display: block;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: orange;
+    border: solid 2px red;
+}
+
+comensales::before {
+    content: ". Comensales: ";
+}
+
+ingredientes::before {
+    content: "Ingredientes";
+    font-size: 1, 5em;
+    margin-left: 0.5em;
+    color: red;
+    font-weight: bold;
+}
+
+ingrediente {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+proceso::before {
+    content: "Proceso";
+    margin-left: 0.5em;
+    font-size: 1, 5em;
+    color: red;
+    font-weight: bold;
+}
+
+paso {
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: decimal;
+    margin-left: 2em;
+}

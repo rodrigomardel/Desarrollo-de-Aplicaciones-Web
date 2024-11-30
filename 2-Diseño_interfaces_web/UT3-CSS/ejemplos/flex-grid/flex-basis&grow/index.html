@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        width: 1200px;
+        margin: auto;
+        border: 5px solid rgb(0, 0, 0);
+      }
+      aside {
+        /* width: 350px; */
+        background-color: rebeccapurple;
+        height: 500px;
+        flex-basis: 350px;
+        flex-grow: 1;
+        /*flex-shrink: 1; decrece el elemento en la proporcion numerica dada*/
+      }
+      main {
+        /* width: 750px; */
+        background-color: crimson;
+        height: 500px;
+        flex-basis: 750px;
+        flex-grow: 3; /*crece el elemento en la proporcion numerica dada*/
+      }
+    </style>
+  </head>
+  <body>
+    <aside>aside</aside>
+    <main>main</main>
+  </body>
+</html>

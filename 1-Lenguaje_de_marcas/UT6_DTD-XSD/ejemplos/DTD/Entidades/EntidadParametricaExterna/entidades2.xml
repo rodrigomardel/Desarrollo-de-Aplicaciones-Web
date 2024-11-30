@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inmobiliaria [
+   <!ENTITY % persona SYSTEM "persona.dtd">
+   %persona;
+   <!ELEMENT inmobiliaria (personas, inmuebles)>
+      <!ELEMENT personas (persona+)>
+      <!ELEMENT inmuebles (inmueble+)>
+         <!ELEMENT inmueble (direccion, estado)>
+         <!ELEMENT direccion (#PCDATA)>
+         <!ELEMENT estado (#PCDATA)>
+]>
+
+<inmobiliaria>
+    <personas>
+        <persona>
+           <nombre>Iker</nombre>
+           <mayor_de_edad/>
+           <ciudad>Pamplona</ciudad>
+        </persona>
+        <persona>
+           <nombre>Maria</nombre>
+           <mayor_de_edad/>
+           <ciudad>Barcelona</ciudad>
+        </persona>
+        <persona>
+           <nombre>Jose</nombre>
+           <mayor_de_edad/>
+           <ciudad>Madrid</ciudad>
+        </persona>
+     </personas>
+     <inmuebles>
+        <inmueble>
+            <direccion>Calle del Sol, 23</direccion>
+            <estado>Disponible</estado>
+         </inmueble>
+         <inmueble>
+            <direccion>Av. de la Constitución, 101</direccion>
+            <estado>Alquilado</estado>
+         </inmueble>
+         <inmueble>
+            <direccion>Paseo del Prado, 5</direccion>
+            <estado>En reparación</estado>
+         </inmueble>
+     </inmuebles>
+</inmobiliaria>

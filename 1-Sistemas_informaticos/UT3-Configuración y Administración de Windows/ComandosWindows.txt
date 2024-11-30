@@ -1,0 +1,133 @@
+USUARIOS Y GRUPOS
+	* ejecutar el cmd como administrador *
+	- net user -> muestra las cuentas de usuario del equipo
+	- net user nombre_usuario contraseña /add -> agregar usuario
+	- net user nombre_usuario /delete -> borrar usuario
+	
+	- net localgroup -> listar todos los grupos
+	- net localgroup nombre_grupo -> visualizar grupo
+	- net localgroup nombre_grupo /add -> crear grupo
+	- net localgroup nombre_grupo nombre_usuario /add -> añadir usuario a grupo
+	- net localgroup nombre_grupo_destino nombre_grupo /add -> añadir un grupo a otro
+	- net localgroup nombre_grupo nombre_usuario /delete -> borrar usuario de grupo
+	- net localgroup nombre_grupo /delete -> eliminar grupo
+	
+SISTEMA DE ARCHIVOS
+	ayuda -> nombre_comando /? o help nombre_comando
+	
+	- dir -> Muestra la lista de subdirectorios y archivos de un directorio.
+		 DIR /O:[atributo] -> ordena los ficheros con respecto a un orden
+			-D -> Muestra los ficheros ordenados por fecha y hora del más moderno al más antiguo. 
+			S -> Muestra los ficheros ordenados por tamaño de menor a mayor. 
+		 DIR /A:[atributo] -> muestra archivos con un atributo específico
+			-S Archivos diferentes a los de sistema
+			H Archivos Ocultos
+			R Archivos de Solo Lectura
+			
+			
+	- CD [unidad:][ruta] -> Muestra el nombre del directorio actual o cambia de directorio.
+	
+	- MD [unidad:][ruta] -> Crea un directorio.
+	
+	- RDMDIR (Abreviatura RD) [unidad:][ruta][opciones] -> Quita (elimina) un directorio
+		/s eliminar un directorio específico junto con todos sus subdirectorios y archivos de forma recursiva.
+		/q modo silencioso, es decir, sin pedir confirmación al usuario
+		
+	- TREE [unidad:][ruta][opciones] -> Muestra de forma gráfica la estructura de carpetas de una unidad o ruta.
+		/f también muestra los archivos contenidos dentro de cada directorio.
+		
+	- copy [unidad1:][ruta1]original1] [unidad2:][ruta2]original2...] … [unidad:][ruta]copia -> Copia uno o más archivos en otra ubicación. 
+	
+	- COPY CON nombre_archivo -> Crea un fichero de texto.
+	
+	- XCOPY origen destino [opciones] -> Copia árboles de directorios y archivos.
+		/e incluidos los vacíos
+		/u Copia solo archivos que ya existen en el destino.
+		/D:m-d-y Copia archivos cambiados durante o después de la fecha
+		
+	- move [unidad:][ruta]origen ... [unidad:][ruta]destino -> Mueve UNO o MÁS archivos y cambia el nombre a archivos y directorios.
+	
+	- REN [unidad:][camino] NombreArchivo NombreNuevo -> Cambia el nombre de uno o más archivos.
+	
+	- DEL nombreArchivo.extension -> Elimina uno o más archivos.
+		/A:H * Todos los ficheros ocultos del directorio actual
+		
+	- TYPE [unidad:][ruta]archivo -> Muestra el contenido de uno o más archivos de texto.
+	
+	- MORE [opciones][unidad:][ruta] archivo -> Muestra la información pantalla a pantalla.
+	
+	- SORT [opciones][unidad:][ruta] archivo -> Recibe como entrada un conjunto de caracteres y devuelve los mismos caracteres ordenandos alfabéticamente.
+		/r orden inverso
+		/+3 ordena por el tercer carácter de cada fila.
+		Redirecciones:
+			~ operador de salida ">": dirige el resultado de la ejecución de un comando a un fichero o a un dispositivo especificado.
+			~ operador de entrada "<": toma los datos de entrada desde el fichero o dispositivo especificado.
+			~ operador de adicción a un fichero (“>>”) dirige la ejecución de un comando a un fichero.
+				Si el fichero existe añade el resultado de la ejecución al final del fichero sin sobrescribir lo anterior.
+				Si no existe se crea.
+			~ La tubería (pipe) (“|”) redirige la salida de una orden a la entrada de otra orden.
+				Ej. DIR | SORT /R -> Redirige la salida del comando “dir” al comando “sort”.
+				
+	- FIND [opciones] "cadena" [unidad:][nombre de ruta de acceso]...] -> Busca una cadena de texto en uno o más archivos.
+	- FINDSTR [opciones] "cadenas" [[unidad:][ruta de acceso]...] -> Busca cadenas en los archivos.
+		/i Especifica que la búsqueda no distingue mayúsculas de minúsculas
+		/c cadena Usa una cadena especificada como una búsqueda de cadena literal
+		/b Hace coincidir los modelos si están al principio de la línea
+		/e Hace coincidir los modelos si están al final de la línea
+		/s Busca archivos que coinciden en el directorio actual y en todos los subdirectorios
+		/r interpreta el patrón a buscar como una expersión regular	
+		
+	- FC [opciones] [unidad1:] [camino1] NombreArchivo1 [unidad2:] [camino2] NombreArchivo2 -> Compara dos archivos o conjuntos de archivos y muestra las diferencias entre ellos.
+		/n Muestra los números de línea en una comparación ASCII.
+		/b Ejecuta una comparación binaria.	
+		
+	- ATTRIB [opciones] [unidad :] [ruta] [nombrearchivo] -> Muestra o cambia los atributos de un archivo.
+		+R +H Oculta el fichero y agrega el atributo de solo lectura
+		
+	- PROMPT -> Cambia el símbolo del sistema de cmd.exe
+		PROMPT $d Mostrar como prompt la fecha actual
+		PROMPT $t Mostrar como prompt la hora actual	
+		PROMPT $t $v Mostrar como prompt la hora actual y la versión de Windows
+		PROMTP $ Hacer que sólo se muestre el cursor parpadeando
+		
+	- CHKDSK -> Comprueba un disco y muestra un informe de estado
+		/F: Corrige los errores del disco.
+		/R: Encuentra sectores defectuosos y recupera la información legible.
+	
+	- DEFRAG -> Desfragmenta los volúmenes indicados.
+		/a analiza si la unidad indica necesita desfragmentación
+		/U Imprime el progreso de la operación en pantalla
+		/v Imprime la salida detallada, incluidas las estadísticas de fragmentación.
+		/m Ejecuta la operación en cada volumen en paralelo en segundo plano.
+		DEFRAG /C >[ruta] envia el informe de la desfragmentación a un archivo
+		
+	- CONVERT -> Convierte particiones FAT o FAT32 a NTFS (NO ES REVERSIBLE)
+		Ejemplo (convertir la unidad E:) -> CONVERT E: /FS: NTFS
+		
+	- FORMAT -> Formatea un disco para ser utilizado con Windows en FAT, FAT32, exFAT, NTFS o UDF.
+		sintaxis: format letra_volumen: /fs:sistema_de_ficheros
+		
+	- DISKPART -> Es un INTÉRPRETE dentro del cmd que permite crear, eliminar y administrar particiones.
+		* help - muestra los comandos y su función
+		assign [[letter=l]/[mount=ruta de acceso]] [noerr]
+		create partition primary [size=n] [offset=n] [id=byte/guid] [noerr]
+		create partition extended [size=n] [offset=n] [noerr]
+		create partition logical [size=n] [offset=n] [noerr]
+		delete partition [noerr] [override]
+		extended [size=n] [noerr]
+		remove [[letter=l]/[mount=ruta de acceso]/[all]] [noerr]
+
+		
+		
+	
+	
+	
+		
+		
+		
+		
+
+				
+
+		
+		

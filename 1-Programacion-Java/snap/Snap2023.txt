@@ -1,0 +1,51 @@
+Snap 2023
+
+1.- Dibujar un triángulo equilátero
+2.- Dibujar un cuadrado
+3.- Dibujar un pentágono
+4.- Dibujar un polígono regular de n lados
+	- Variables
+5.- Dibujar los polígonos rellenos
+6.- Dibujar una circunferencia
+7.- Dibujar una espiral
+
+10.- Dibujar varios circulitos formando un círculo (Bandera EU)
+11.- Dibujar varios circulitos formando un rectángulo (Bandera EEUU)
+12.- Dibujar círculos, con relleno
+13.- Repetir los anteriores, con estrellas en vez de círculos.
+14.- Estrellas variadas (puntas impares, radio1/radio2 + número de puntas...)
+
+15.- Figuritas escalables
+
+16.- Listas. Rellenar lista con valores aleatorios.
+17.- Listas. «Recitar» lista estática.
+18.- Listas. Escribir lista dinámica.
+
+19.- Bloque ListarLista, con parámetros
+
+
+20.- Tabla de multiplicar
+21.- ...con petición del número
+22.- ...con lista y bloque ListarLista
+
+25.- Escribir los números de 1 a 20 múltiplos de 3
+26.- Escribir los números de 1 a 20 NO múltiplos de 3
+
+
+
+30.- Número par o impar
+	 ...con ordinograma (en papel)
+	 ...con ordinograma (imagen digital)
+	 ...con pseudocódigo
+31.- Mostrar múltiplos de 7 en un rango
+	 ...con ordinograma (en papel)
+	 ...con ordinograma (imagen digital)
+	 ...con pseudocódigo
+
+
+43.- Suma 1..100
+44.- Media de lista de valores introducidos.
+45.- Máximo/mínimo de lista de valores aleatorios.
+46.- Ordenar lista de valores aleatorios.
+
+50.- Generar la lista de números primos hasta uno dado y escribirla rellenando la pantalla.

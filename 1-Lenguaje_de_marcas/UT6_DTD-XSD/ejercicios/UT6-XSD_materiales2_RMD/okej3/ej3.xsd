@@ -1,0 +1,92 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalogo" type="tipoCatalogo"/>
+    <xs:complexType name="tipoCatalogo">
+        <xs:sequence>
+            <xs:element name="producto" type="tipoProducto" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoProducto">
+      <xs:group ref="elementosProducto"/>
+      <xs:attributeGroup ref="atributosProducto"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoCategoria">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="herramienta"/>
+            <xs:enumeration value="mesa"/>
+            <xs:enumeration value="tienda-profesional"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoFabrica">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Valladolid"/>
+                    <xs:enumeration value="Palencia"/>
+                    <xs:enumeration value="León"/>
+                </xs:restriction>
+            </xs:simpleType>           
+            <xs:simpleType>
+                <xs:restriction base="xs:int">
+                    <xs:pattern value="[0-9]{2}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoInventario">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="enstock"/>
+            <xs:enumeration value="bajoorden"/>
+            <xs:enumeration value="nodisponible"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoEspecificacion">
+        <xs:attribute name="peso" use="optional"/>
+        <xs:attribute name="potencia" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoOpcion">
+        <xs:attribute name="adaptador" default="incluido">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="incluido"/>
+                    <xs:enumeration value="opcional"/>
+                    <xs:enumeration value="noincluido"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPrecio">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="moneda" use="optional" default="euros"/>
+                <xs:attribute name="gastosdeenvio" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent> 
+    </xs:complexType>
+
+    <xs:group name="elementosProducto">
+        <xs:sequence>
+            <xs:element name="especificacion" type="tipoEspecificacion" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="opcion" type="tipoOpcion" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="precio" type="tipoPrecio" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:choice>
+                <xs:element name="nota" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="detalles" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="atributosProducto">
+        <xs:attribute name="nombre" type="xs:string" use="optional"/>
+        <xs:attribute name="categoria" type="tipoCategoria" default="herramienta"/>
+        <xs:attribute name="numpart" type="xs:int" use="optional"/>
+        <xs:attribute name="fabrica" type="tipoFabrica" default="Valladolid"/>
+        <xs:attribute name="inventario" type="tipoInventario" default="enstock"/>
+    </xs:attributeGroup>
+
+</xs:schema>

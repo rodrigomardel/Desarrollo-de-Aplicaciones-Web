@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        *{
+            font-weight: normal;
+        }
+        h1,h2{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .italica{
+            font-style: italic;
+        }
+        .importante{
+            font-weight: bold;
+        }
+        @font-face {
+            font-family: 'rubik';
+            src: url(RubikBubbles-Regular.ttf);
+        }
+        .contenedor > p{
+            /*
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-family: 'rubik', arial, sans-serif;  
+            font-size: 18px;
+            */
+            font: italic small-caps bold 18px 'rubik', arial, sans-serif
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Texto</h1>
+    <h2>Elemento con font-family</p>
+    <p class="italica">Parrafo italica</p>  
+    <div class="contenedor">
+        <p>Parrafo uno</p>
+        <p>Parrafo dos</p>
+        <p class="importante"> Parrafo tres importante</p>
+        <p class="importante">Parrafo cuatro importante</p>
+        <p>Parrafo cinco</p>
+        <p>Parrafo seis</p>
+        <p title="Siete es un número impar">Parrafo siete</p>
+        
+    </div>
+    
+
+</body>
+</html>

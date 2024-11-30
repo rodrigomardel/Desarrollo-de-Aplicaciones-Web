@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ1-RMD-20241014</title>
+</head>
+<body>
+    <script>
+        /*
+        1.	Crea una función constructora  denominada Grupo que tenga estas propiedades: grupo, curso y numAlumnos.
+                Cuando se crean objetos, se pasará como parámetro el grupo y el curso. Si no se pasa curso, su valor será 1.
+                La propiedad numAlumnos será un número, cuyo valor inicial será 0.
+
+                Deberá contener estos métodos:
+                •	alta(): incrementará en 1 la propiedad numAlumnos
+                •	baja(): decrementará en 1 la propiedad numAlumnos
+                •	toString(), para que cuando se utilice un objeto de tipo Grupo en un lugar donde se espere un string aparezca el texto “Grupo XXXX, del curso XX, tiene XXX alumnos” 
+        */
+
+        function Grupo(grupo, curso = 1) {
+            this.grupo = grupo;
+            this.curso = curso;
+            this.numAlumnos = 0;
+
+            this.alta = function (){
+                this.numAlumnos++;
+            }
+
+            this.baja = function (){
+                this.numAlumnos--;
+            }
+            
+            this.toString = function(){
+                let mensaje = "Grupo: " + this.grupo + "del curso" + this.curso + ", tiene" + this.numAlumnos + "alumnos.";
+                return mensaje;
+            } 
+        }
+
+        let daw = new Grupo ("Desarrollo Aplicaciones Web");
+    </script>
+</body>
+</html>

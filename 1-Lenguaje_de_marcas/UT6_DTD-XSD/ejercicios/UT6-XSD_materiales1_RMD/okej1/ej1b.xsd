@@ -1,0 +1,6 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fechaNacimiento" type="xs:date"/>
+</xs:schema>
+<!-- ¿Se puede cambiar el formato y poner 1973-2-4? ¿Y 2-4-1979?
+No son formatos válidos ya que el formato fecha "xsd:date" especificado en un XSD 
+sigue el estándar ISO 8601, el cual es YYYY-MM-DD-->

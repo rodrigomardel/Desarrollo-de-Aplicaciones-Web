@@ -1,0 +1,80 @@
+Rodrigo Martínez Delgado
+
+Consultas Empresa
+
+1.
+SELECT ciudad, region
+FROM oficinas
+WHERE region !='oeste';
+
+2.
+SELECT nombre, edad
+FROM repventas
+WHERE ventas>cuota;
+
+3.
+SELECT fecha_pedido, clie, producto
+FROM pedidos
+WHERE producto NOT LIKE '114' and PRODUCTO NOT LIKE '4100Z';
+
+4.
+SELECT oficina, ciudad
+FROM oficinas
+WHERE objetivo>ventas;
+
+5.
+SELECT *
+FROM pedidos
+WHERE FECHA_PEDIDO LIKE'1990-01%';
+
+6.
+SELECT id_producto, descripcion
+FROM productos
+WHERE precio>1000 or existencias>200;
+
+7.
+SELECT *
+FROM productos
+WHERE ID_FAB='BIC';
+
+8.
+SELECT *
+FROM clientes
+WHERE empresa='Zetacorm' OR EMPRESA='Orion Corp';
+
+9.
+SELECT *
+FROM clientes
+WHERE limite_credito BETWEEN 30000 and 60000;
+
+10.
+SELECT *
+FROM productos
+WHERE descripcion like 'A%' and existencias<100;
+
+11.
+SELECT *
+FROM pedidos
+WHERE fab like 'aci' or fab like 'imm';
+
+12.
+SELECT *
+FROM pedidos
+WHERE REP=108 AND FECHA_PEDIDO BETWEEN '1990-01-01' and '1990-01-31';
+
+13.
+SELECT *
+FROM repventas
+WHERE contrato like '1988-%';
+
+14.
+SELECT *
+FROM repventas
+WHERE NOMBRE like 'Bill Adams';
+
+15.
+SELECT *
+FROM repventas
+WHERE TITULO NOT LIKE 'dir ventas';
+
+

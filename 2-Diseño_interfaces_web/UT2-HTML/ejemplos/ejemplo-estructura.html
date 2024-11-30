@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Estructura básica la página HTML" />
+    <meta name="keywords" content="HTML,CSS,diseño web" />
+    <meta name="author" content="Rodrigo Mtz Delgado" />
+    <!--casi no usada-->
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="favicon-mad-hub.png" />
+    <!--sobreescribe lo links relativos con la base especificada-->
+    <!-- <base href="https://www.misitio.com" target="_blank" />-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Document</title>
+    <!-- Estilo en línea, no se debe usar -->
+    <style>
+            body *{ color: rgb(219, 187, 69);
+
+            }
+            span{ color: rgb(181, 26, 132);
+
+            }
+            span strong{
+              color: aqua;
+            }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Nos indica que es una cabecera, puede ser de cualkquier tipo -->
+      <nav>
+        <!-- Elementos de navegación -->
+      </nav>
+    </header>
+    <main>
+      <!-- Contenido principal de la página -->
+      <section>
+        <!-- Seccion (noticias) -->
+        <article>
+          <!-- Componente (articulo)  -->
+          <figure>
+            <!--  Agrupar contenido que representa una unidad de contenido independiente, como imágenes, diagramas, gráficos, tablas,etc. -->
+            <img src="." alt="imagen figure" />
+            <figcaption>Leyenda del elemento figure</figcaption>
+          </figure>
+        </article>
+        <article>
+          <!-- Componente (articulo)  -->
+        </article>
+        <article>
+          <!-- Componente (articulo)  -->
+          <a
+            href="www.google.com"
+            hreflang="es"
+            download="nombreModificado.pdf"
+            target="_blank"
+            >link</a
+          >
+          <!-- con href="#ancla" enlace referenciado al id del documento «ancla» / download para que se pueda descargar, se puede modificar el nombre del archivo ""-->
+        </article>
+      </section>
+
+      <section>
+        <!-- Seccion (noticias) -->
+        <article>
+          <!-- Componente (articulo)  -->
+          <div>
+            <!-- Contenedor general para agrupar varios elementos, no tiene sentido semantico  -->
+            <p>
+              hg asjhgkjsahglkjshglkjhadsfl <em>contenido semántico</em>, sflkjsdhflkj hskjfhkjlhlkjh sf <s>texto tachado</s>
+              fsdjfñasjd fajsfk klñsadjf ñlsafasd f<strong>texto importante semanticamente</strong> kiahgfñfhglñafhgljkfdahsglkjdafs
+               <q>texto entrecomillado</q> agfsñokhñlasdhfglkjahdslgfhfalslkajs <mark>texto maracado</mark>ñlkjafhjsdhflkjdhslkjfhsdlkjhflksjdhflkdjs
+                <cite>El Quijote</cite>Esto<wbr>IndicaAlNavegadorPartirElTexto</wbr>paraElScroll 
+                <span> aplicar estilos o manipular secciones específicas de texto o contenido <strong>sin afectar su estructura semántica</strong></span>
+            </p>.
+            <hr />
+            <!-- Inculye una línea, tiene contenido semantico normalmente la pondremos con CSS-->
+            <p>Segundo párrafo</p>
+          </div>
+          <ol type="1" start="10" reversed>
+            <!-- Listas ordenadas, tiene atributos específicos -->
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+            <li value="10">Decimo elemento</li>
+          </ol>
+          <ul>
+            <!-- Listas desordenadas -->
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+          </ul>
+          <menu>
+            <!-- Lista desordenada normal, se usa para menus contextuales -->
+            <li>Ir a</li>
+            <li>Cortar</li>
+            <li>TCopiar</li>
+          </menu>
+          <dl>
+            <!-- Lista de definiciones, poco usadas -->
+            <dt>Gallina</dt>
+            <dd>Animal de granja</dd>
+            <dd>Cobarde</dd>
+          </dl>
+
+          <blockquote cite="http:\\url-cite">
+            <!--URL a nivel de SEO-->
+            <!-- Definir citas textuales -->
+            <p>Insertamos una cita</p>
+          </blockquote>
+
+          <pre id="ancla">
+
+              <!-- Conserva el formato definido -->
+
+                  Esto es un elemento
+                  
+
+                  preformateado
+
+                  <code class="language-javascript">
+                    <!-- Usada con pre para incluir código fuente -->
+                    let arr = ["a", "b"];
+
+                    arr.push(function () {
+                      console.log("hola");
+                    });
+              
+                    arr[2]();
+                  </code>
+            </pre>
+        </article>
+      </section>
+      <aside>
+        <!-- Poco usado, se situa en un lateral. Se suele usar para contenido no relacionado -->
+      </aside>
+    </main>
+    <footer>
+      <!-- Pie de pagina, logotipo, iconos de redes  -->
+    </footer>
+  </body>
+</html>

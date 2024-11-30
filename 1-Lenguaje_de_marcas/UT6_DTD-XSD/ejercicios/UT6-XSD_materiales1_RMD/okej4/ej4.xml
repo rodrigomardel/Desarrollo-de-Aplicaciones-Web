@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej4.xsd" nombre="A" precio="5" 
+dni="12345678A"/>

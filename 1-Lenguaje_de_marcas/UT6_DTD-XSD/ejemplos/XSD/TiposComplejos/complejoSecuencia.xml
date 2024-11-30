@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<camiseta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="complejoSecuencia.xsd">
+    <color>Azul</color>
+    <talla>XL</talla>
+</camiseta>

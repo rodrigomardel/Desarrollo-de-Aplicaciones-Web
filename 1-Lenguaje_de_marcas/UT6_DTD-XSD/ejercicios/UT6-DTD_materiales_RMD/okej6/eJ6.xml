@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE faq SYSTEM "ej6.dtd">
+
+<!--
+•	El elemento faq está compuesto por una INFO y la parte PART que puede estar una o mas veces
+•	La parte INFO está compuesta por un TITULO, un AUTOR, y puede tener o no EMAIL,VERSION y FECHA
+•	El elemento PART puede tener uno o más elementos Q.
+•	El elemento Q está compuesto por el elemento QTEXT y A
+-->
+<faq>
+	<info>
+		<titulo> WINDOWS11 SOLO SI ME OBLIAN! </titulo>
+		<autor> Fernando Damián Lorenzo García </autor>
+		<email> Fer@yahoo.es </email>
+		<version> 1.0 </version>
+		<fecha> 20.1.2023 </fecha>
+	</info>
+	<part>
+		<q>
+			<qtext>¿Por qué tengo que instalar W11?</qtext>
+			<a> A mi también me parece una buena pregunta.</a>
+		</q>
+		<q>
+			<qtext>Y de que me vale?</qtext>
+			<a>Otra ingeniosa pregunta.</a>
+		</q>
+	</part>
+</faq>

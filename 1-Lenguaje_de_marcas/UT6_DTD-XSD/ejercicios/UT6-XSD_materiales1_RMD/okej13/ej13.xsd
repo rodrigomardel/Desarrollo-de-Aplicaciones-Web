@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="lectura" type="tipoLectura"/>
+    <xs:complexType name="tipoLectura">
+        <xs:sequence>
+            <xs:element name="libros" type="tipoLibros" minOccurs="1"/>
+            <xs:element name="revistas" type="tipoRevistas" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibros">
+        <xs:sequence>
+            <xs:element name="libro" type="tipoLibro" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibro">
+        <xs:choice>
+            <xs:element name="novela" type="xs:string"/>
+            <xs:element name="poesia" type="xs:string"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="tipoRevistas">
+        <xs:sequence>
+            <xs:element name="revista">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombreRevista" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

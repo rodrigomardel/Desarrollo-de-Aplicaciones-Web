@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ30-RMD-20241011</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Crea un array, cuyo contenido son números.
+      */
+
+      let arrayNumber = [12, 5, 0, 6, 8, 1, 13];
+
+      /*Haz una función que muestre en la página los números pares que hay en el array, utilizando un for, utilizando forEach(), for..in y for..of.*/
+      function mostrarNumerosPares(arrayNumber) {
+        console.log("Bucle for:");
+        for (i = 0; i < arrayNumber.length; i++) {
+          if (arrayNumber[i] % 2 == 0) {
+            console.log(arrayNumber[i]);
+          }
+        }
+
+        console.log("Bucle forEach:");
+        arrayNumber.forEach((element) => {
+          if (element % 2 == 0) {
+            console.log(element);
+          }
+        });
+
+        console.log("Bucle for in:");
+        for (const indice in arrayNumber) {
+          if (arrayNumber[indice] % 2 == 0) {
+            console.log(arrayNumber[indice]);
+          }
+        }
+
+        console.log("Bucle for of:");
+        for (const number of arrayNumber) {
+          if (number % 2 == 0) {
+            console.log(number);
+          }
+        }
+      }
+
+      /*Haz una función que muestre en la página el resultado de sumar todos los elementos del array.*/
+      function sumaArray(array) {
+        let suma = 0;
+        array.forEach((element) => {
+          suma += element;
+        });
+        console.log(suma);
+      }
+      //Como implementar con función flecha??
+      /*let sumaArray = (arrayNumber) => arrayNumber.forEach(element => {
+          suma += element;
+      });*/
+
+      /*Haz una función que elimine el último elemento del array, y añada otro elegido por el usuario.*/
+      function eliminarUltimoElemento(array) {
+        array.pop();
+        array.push(prompt("Inserte el elemento deseado:"));
+        console.log("Nuevo array modificado:");
+        20;
+        array.forEach((element) => {
+          console.log(element);
+        });
+      }
+
+      /* Haz una función que muestre el valor máximo que hay en el array.*/
+      function valorMaximo(array) {
+        let valorMaximo = -Infinity;
+        array.forEach((element) => {
+          if (element > valorMaximo) {
+            valorMaximo = element;
+          }
+        });
+        console.log(`${valorMaximo} es el valor máximo.`);
+      }
+
+      //   mostrarNumerosPares(arrayNumber);
+      //   sumaArray(arrayNumber);
+      //   eliminarUltimoElemento(arrayNumber);
+      //   valorMaximo(arrayNumber);
+    </script>
+  </body>
+</html>

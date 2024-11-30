@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej11.xsd">
+	<profesor>Elena Torres</profesor>
+	<aula>Aula456</aula>
+</clase>

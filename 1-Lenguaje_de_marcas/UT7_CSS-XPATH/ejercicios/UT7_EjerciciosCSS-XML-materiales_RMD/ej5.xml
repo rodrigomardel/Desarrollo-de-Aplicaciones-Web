@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej5.css" type="text/css"?>
+<productos>
+    <cabecera>
+        <ID>ID</ID>
+        <Tipo>Tipo</Tipo>
+        <Marca>Marca</Marca>
+        <Modelo>Modelo</Modelo>
+        <Especificaciones>Especificaciones</Especificaciones>
+    </cabecera>
+    <producto>
+        <ID>1</ID>
+        <Tipo>Procesador</Tipo>
+        <Marca>Intel</Marca>
+        <Modelo>Core i7-9700K</Modelo>
+        <Especificaciones>8-Core, 3.6 GHz</Especificaciones>
+    </producto>
+    <producto>
+        <ID>2</ID>
+        <Tipo>RAM</Tipo>
+        <Marca>Corsair</Marca>
+        <Modelo>Vengeance LPX 16GB</Modelo>
+        <Especificaciones>DDR4, 3200MHz</Especificaciones>
+    </producto>
+    <producto>
+        <ID>3</ID>
+        <Tipo>Tarjeta Gráfica</Tipo>
+        <Marca>NVIDIA</Marca>
+        <Modelo>GeForce RTX 3080</Modelo>
+        <Especificaciones>10GB GDDR6X</Especificaciones>
+    </producto>
+    <producto>
+        <ID>4</ID>
+        <Tipo>Disco Duro</Tipo>
+        <Marca>Western Digital</Marca>
+        <Modelo>WD Blue 1TB</Modelo>
+        <Especificaciones>SATA, 7200 RPM</Especificaciones>
+    </producto>
+    <producto>
+        <ID>5</ID>
+        <Tipo>Placa Base</Tipo>
+        <Marca>ASUS</Marca>
+        <Modelo>ROG Strix Z390-E</Modelo>
+        <Especificaciones>Socket LGA1151, ATX</Especificaciones>
+    </producto>
+</productos>

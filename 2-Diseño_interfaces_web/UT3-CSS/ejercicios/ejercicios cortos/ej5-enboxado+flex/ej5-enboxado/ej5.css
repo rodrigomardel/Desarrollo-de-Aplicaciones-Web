@@ -1,0 +1,45 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  padding: 10px;
+}
+/* section.container {
+  width: 1200px;
+  margin: auto;
+}
+article.item {
+  width: 350px;
+  display: inline-block;
+  max-width: 50%;
+  margin: 0 10px 10px 0;
+} */
+article.item h3 {
+  font-size: 1.5rem;
+  padding: 10px 0 20px;
+}
+article.item p {
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+/*Alinear articulos con flex*/
+section.container {
+display: flex;
+/* flex-direction: column; */
+/* flex-direction: row-reverse; */
+}
+
+article{
+  width: 33%;
+  margin: 10px;
+}

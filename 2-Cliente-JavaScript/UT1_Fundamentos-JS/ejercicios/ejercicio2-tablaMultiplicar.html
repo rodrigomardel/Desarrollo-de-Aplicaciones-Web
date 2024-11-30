@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio2-RMD-20240916</title>
+  </head>
+  <body>
+    <script>
+      let multiplicando, producto;
+
+      multiplicando = prompt("Escriba el multiplicando deseado");
+
+      if (
+        isNaN(multiplicando) == false &&
+        multiplicando != null &&
+        multiplicando != ""
+      ) {
+        for (let i = 0; i <= 10; i++) {
+          producto = multiplicando * i;
+          console.log(`${multiplicando} x ${i} = ${producto}`);
+        }
+      } else {
+        alert("Debe introducir un valor válido");
+      }
+    </script>
+  </body>
+</html>

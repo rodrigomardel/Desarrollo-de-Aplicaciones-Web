@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ13-RMD-20241003</title>
+  </head>
+  <body>
+    <script>
+      /*
+        13.	Contar letras
+        Escribe una función contarBs que tome una cadena como argumento, y devuelva el número de “B” mayúsculas que hay en la cadena.
+        A continuación, escribe una función contarCaracter, similar a contarBs, pero que su segundo argumento indica
+        el carácter que se quiere contar (en lugar de contar “B” mayúsculas).
+      */
+
+      let textoPrueba = "BarBacoa";
+
+      function contarBs(texto) {
+        let numBes = 0;
+
+        for (let caracter of texto) {
+          if (caracter === "B") {
+            numBes++;
+          }
+        }
+        let resultado = `El texto introducido contiene ${numBes} «B»`;
+        return resultado;
+      }
+
+      console.log(contarBs(textoPrueba));
+
+      function contarCaracter(texto, caracter) {
+        let numCaracter = 0;
+
+        for (let car of texto) {
+          if (car == caracter) {
+            numCaracter++;
+          }
+        }
+        let resultado = `El texto introducido contiene ${numCaracter} «${caracter}»`;
+        return resultado;
+      }
+
+      console.log(contarCaracter(textoPrueba, "a"));
+    </script>
+  </body>
+</html>

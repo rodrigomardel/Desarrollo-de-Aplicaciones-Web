@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+  <pedido id="P-01" fecha="04/10/2023" idCliente="C-33">
+    <referencia>R-01</referencia>
+    <descripcion>Pedido de neumáticos</descripcion>
+    <unidadesPedidas>150</unidadesPedidas>
+    <factura id="F-01">
+       <nombreEmpresa>Bridgestone</nombreEmpresa>
+       <direccion>C/ La Bureba, 33</direccion>
+       <nombreCiudad>Burgos</nombreCiudad>
+       <codigoPostal>09007</codigoPostal>
+    </factura>
+    <envio  href="F-01">E-01</envio>
+  </pedido>
+  <pedido id="P-02" fecha="05/10/2023" idCliente="C-21">
+    <referencia>R-02</referencia>
+    <descripcion>Pedido galletas</descripcion>
+    <unidadesPedidas>1400</unidadesPedidas>
+    <factura id="F-02">
+       <nombreEmpresa>Florbu</nombreEmpresa>
+       <direccion>C/ Villalonquejar</direccion>
+       <nombreCiudad>Burgos</nombreCiudad>
+       <codigoPostal>09003</codigoPostal>
+    </factura>
+    <envio  href="F-02">E-02</envio>
+  </pedido>
+</pedidos>

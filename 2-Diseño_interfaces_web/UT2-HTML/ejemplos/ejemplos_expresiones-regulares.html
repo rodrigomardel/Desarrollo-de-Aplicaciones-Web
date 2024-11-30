@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get">
+        <p>
+            Primera letra de la frase en mayúsculas:
+            <input type="text" pattern="[A-Z].*" title="Primera letra de la frase en mayúsculas"  name="frase" id="frase">
+            <button type="submit">Enviar</button>
+        </p>
+
+        <p>
+            Validar Números.
+            Tres números consecutivos:
+            <input type="text" pattern="[0-9]{3}" name="number" id="number">
+            <button type="submit">Enviar</button>
+        </p>
+
+        <p>
+            Debe contener la palabra IES en mitad de la frase en mayúsculas:
+            <input type="text" pattern=".*IES.*">
+            <button type="submit">Enviar</button>
+        </p>
+
+        <p>
+            Look a head.
+            Cuando detecte una mayúscula el patrón salta.
+            <input type="text" pattern="(?=.*[A-Z])(?=.*\d).*">
+            <!-- (?=.*[A-Z]) Cuando encuentre una letra mayúscula, lo detecta pero no lo consume, necesita después la condición -->
+            <!-- (?=.*[A-Z])[0-9] Cuando encuentre una letra mayúscula, debe haber luego un número -->
+        </p>
+
+    </form>
+</body>
+</html>

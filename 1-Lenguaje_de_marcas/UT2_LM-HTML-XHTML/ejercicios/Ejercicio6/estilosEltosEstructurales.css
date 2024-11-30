@@ -1,0 +1,32 @@
+body *{
+                margin:10px;
+                padding:10px;
+            }
+            header, footer { 
+                background-color: #ffc0ad; 
+                text-align: center; 
+            }
+            nav {
+                background-color: #fdffa0;
+                text-align: center; 
+            }
+            nav ul { 
+                list-style-type: none;
+            }
+            nav li { 
+                display: inline; margin:10px;
+            }
+            #row{
+                display:flex;
+            }
+            main {
+                background-color: #024b8e; 
+                flex:70%;
+            }
+            article {
+                background-color: #d6eaf7; 
+            }
+            aside {
+                background-color: #1cffc6; 
+                flex: 30%;
+            }

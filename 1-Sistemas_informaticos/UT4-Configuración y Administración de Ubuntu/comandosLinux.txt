@@ -1,0 +1,79 @@
+--Ayuda--
+
+	--help nombre_comando -> (para obtner ayuda sobre los comandos que no aparecen con help podemos utilizar man e info)
+		-d aporta una descripción detallada.
+		-m cambia el formato de la salida a un estilo parecido al de los manuales (man pages)
+		-s proporciona una descripción muy breve y sintética
+	man e info obtenemos ayuda sobre los comandos que no aparecen en la lista obtenida con help
+	
+		
+	SUDO -> permite ejecutar una orden como super usuario u otro usuario (con “sudo –u usuario”).
+	
+	poweroff y halt -> detienen el sistema.
+	reboot -> reinicia el sistema.
+	shutdown -> se puede configurar para detener o reiniciar y se puede programar.
+	
+	apt -> gestion de los paquetes instalables disponibles en los repositorios.
+		sudo apt install [programa] Instalar un programa
+		apt search [programa] Para buscar un paquete
+		apt depends [programa] Para listar dependencias
+		sudo apt remove [progrma] Para desinstalar un paquete
+		
+	dpkg -> programa base para manejar paquetes Debian
+		-l lista los paquetes (Ej. dpkg –l a* Lista los paquetes que empiecen por a)
+		
+	pwd -> Indica la ruta absoluta hasta el directorio actual
+	
+	cd -> Permite cambiar de directorio. El carácter "~“ se refiere al directorio personal y se consigue con la combinación de teclas ALT GR + Ñ.
+	
+	ls -> Listar ficheros y directorios.
+	
+	touch -> cambia las fechas del último acceso y de última modificación de un archivo existente. 
+	
+	mkdir -> permite crear directorios.
+	 -p  crea los directorios intermedios, si no existen
+	 
+	CP ->  copia de archivos y directorios
+	
+	rm -> El comando rm (remove) borra los archivos pasados como argumento.
+	rmdir -> El comando rmdir (remove directory), borra los directoriospasados como argumento.
+	
+	mv -> El comando mv (move) permite mover y renombrar archivos o directorios.
+	
+	more -> visualiza el contenido de un fichero de forma paginada. 
+	cat -> permite mostrar el contenido de un fichero, no muestra la salida paginada.
+	
+	less o head/tail  ->  visualiza el contenido de archivos de texto.
+		A diferencia de more, no necesita leer el archivo completo antes
+		de empezar. Eso le permite ser más rápido. Ejemplo de uso:
+		• Comandos head y tail: visualiza el contenido de ficheros.
+			• head: muestra por defecto las 10 primeras líneas del fichero
+			• tail: muestra las 10 últimas líneas del fichero.
+			
+	SORT -> ordenar las líneas de los archivos de entrada a partir de unos criterios de ordenación.
+			
+	TAR ->  empaquetar y extraer ficheros, es una herramienta de archivado.
+	
+	GZIP -> permite comprimir uno o varios ficheros.
+	GUNZIP -> permite descomprimir uno o varios ficheros.
+	
+	FILE -> muestra el tipo de fichero
+	
+
+----	
+	NOMENCLATURA DE PARTICIONES
+		Las primeras letras hacen referencia al fichero periférico de disco:
+		• hda: Dispositivo maestro en el bus IDE 1.
+		• hdb: Dispositivo esclavo en el bus IDE 1.
+		• hdc: Dispositivo maestro en el bus IDE 2.
+		• hdd: Dispositivo esclavo en el bus IDE 2.
+		• sda: Dispositivo serie en el bus serial 1 (SCSI o SATA)
+		• sdb: Dispositivo serie en el bus serial 2 (SCSI o SATA)
+
+		Se enumeran de 1 a n siendo:
+		• Particiones de la 1 a la 3: PRIMARIAS
+		• Partición 4: EXTENDIDA
+		• Particiones de la 5 en adelante: LÓGICAS
+
+	
+

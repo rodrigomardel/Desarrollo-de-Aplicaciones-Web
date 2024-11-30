@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Entidad general externa -->
+<!DOCTYPE titulo [
+    <!ELEMENT titulo (texto)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ENTITY escritor SYSTEM "escritor.txt">
+]>
+<titulo>
+    <texto>&escritor;</texto>
+</titulo>

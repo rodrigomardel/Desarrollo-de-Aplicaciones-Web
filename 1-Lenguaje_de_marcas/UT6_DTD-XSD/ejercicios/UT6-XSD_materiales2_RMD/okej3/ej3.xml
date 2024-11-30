@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej3.xsd">
+    <producto nombre="Producto A" categoria="mesa" numpart="123" fabrica="Palencia" inventario="enstock">
+       <especificacion peso="20kg" potencia="500W"/>
+       <opcion adaptador="incluido"/>
+       <precio moneda="euro">100.00</precio>
+       <nota>Este producto es muy resistente.</nota>
+    </producto>
+    <producto nombre="Producto B" categoria="herramienta" numpart="456" fabrica="09" inventario="enstock">
+        <especificacion peso="15kg" potencia="300W"/>
+        <opcion adaptador="opcional"/>
+        <precio moneda="euro">75.00</precio>
+        <detalles>Esta silla es perfecta para interiores modernos.</detalles>
+    </producto>
+ </catalogo>

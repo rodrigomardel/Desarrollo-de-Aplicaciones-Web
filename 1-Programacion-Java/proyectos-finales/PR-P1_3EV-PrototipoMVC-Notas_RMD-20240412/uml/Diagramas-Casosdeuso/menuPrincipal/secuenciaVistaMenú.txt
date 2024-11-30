@@ -1,0 +1,24 @@
+@startuml
+skinparam actorStyle Hollow
+skinparam style strictuml
+
+actor Usuario as U1
+collections "Vista Menú" as L1 
+control Control as C1
+
+U1 ->> C1 : Iniciar programa
+L1 <<- C1 : Crear menú
+L1 <<-- C1 : Mostrar título 
+U1 <<-- L1
+L1 <<-- C1: Mostrar menú
+U1 <<-- L1
+L1 <<- C1: Pedir opción
+activate L1
+U1 <- L1: Preguntar texto
+U1 ->> L1 : Texto
+L1 ->> L1 : Validar entrada
+L1 ->> C1 : Opción
+deactivate L1
+
+
+@enduml

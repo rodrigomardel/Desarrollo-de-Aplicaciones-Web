@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE sistemaSolar [ 
+  <!ELEMENT sistemaSolar (cuerpo*)> 
+  <!ELEMENT cuerpo ((planeta|satelite|asteroide)+)> 
+  <!ELEMENT planeta (#PCDATA)> 
+  <!ELEMENT satelite (#PCDATA)> 
+  <!ELEMENT asteroide (#PCDATA)> 
+]> 
+ <!-- cuerpo solo puede contener uno de los tres elementos declarados (una o más veces) 
+    y asteroide no está declarado como elemento de sistemaSolar -->
+<sistemaSolar> 
+  <cuerpo> 
+    <planeta>Tierra</planeta> 
+  </cuerpo> 
+</sistemaSolar>

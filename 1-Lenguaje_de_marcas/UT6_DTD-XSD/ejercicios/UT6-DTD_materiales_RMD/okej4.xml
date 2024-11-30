@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plantas [
+	<!ELEMENT plantas (arbol+,flor*)>
+		<!ELEMENT arbol (#PCDATA)>
+		<!ELEMENT flor (#PCDATA)>
+]>
+<plantas>
+	<arbol>Castaño</arbol>
+	<arbol>Pino</arbol>
+	<arbol>Platanero</arbol>
+	<flor>Violeta</flor>
+	<flor>Lila</flor>
+</plantas>

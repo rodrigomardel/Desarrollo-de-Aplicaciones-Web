@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<evento xmlns:par="http://www.evento.com/par"
+xmlns:inv="http://www.evento.com/inv">
+  <par:participantes>
+          <par:pais>
+              <par:nombre>Francia</par:nombre>
+              <par:capital>París</par:capital>
+          </par:pais>
+  </par:participantes>
+  <inv:inversiones>
+          <inv:empresa>
+              <inv:nombre>ABC Industries</inv:nombre>
+              <inv:capital>5,000,000</inv:capital>
+          </inv:empresa>
+  </inv:inversiones>
+</evento>

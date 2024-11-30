@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns:msg='http://www.prueba.com/msg' 
+                  xmlns:po='http://www.prueba.com/po'>
+  <emisor>Roberto Delgado</emisor>             
+  <fechaEnvio>11/10/2023</fechaEnvio>
+  <destino>Vitoria</destino>
+  <texto>
+    <msg:coleccionAdjuntos>
+      <msg:descripcion></msg:descripcion>
+      <msg:item>
+        <po:ordenPedido>
+            <po:pedido id="P-01" fecha="04/10/2023" idCliente="C-33">
+            <po:referencia>R-01</po:referencia>
+            <po:descripcion>Pedido de neumáticos</po:descripcion>
+            <po:unidadesPedidas>150</po:unidadesPedidas>
+            <po:factura id="F-01">
+               <po:nombreEmpresa>Bridgestone</po:nombreEmpresa>
+               <po:direccion>C/ La Bureba, 33</po:direccion>
+               <po:nombreCiudad>Burgos</po:nombreCiudad>
+               <po:codigoPostal>09007</po:codigoPostal>
+            </po:factura>
+            <po:envio  href="F-01">E-01</po:envio>
+            </po:pedido>
+          </po:ordenPedido>      
+      </msg:item>
+    </msg:coleccionAdjuntos>
+  </texto>
+</mensaje>                

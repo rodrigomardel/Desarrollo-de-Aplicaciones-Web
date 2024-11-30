@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej4.css" type="text/css"?>
+<centros>
+  <ies>
+    <nombreCentro>IES Abastos</nombreCentro>
+    <web>http://www.iesabastos.org</web>
+    <ciclos>
+      <ciclo id="ASIR">
+        <nombre>Administración de Sistemas Informáticos en Red</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2009</decretoTitulo>
+      </ciclo>
+      <ciclo id="DAM">
+        <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2010</decretoTitulo>
+      </ciclo>
+      <ciclo id="DAW">
+        <nombre>Desarrollo de Aplicaciones Web</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2010</decretoTitulo>
+      </ciclo>
+      <ciclo id="SMR">
+        <nombre>Sistemas Microinformáticos y Redes</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2008</decretoTitulo>
+      </ciclo>
+    </ciclos>
+  </ies>
+  <ies>
+    <nombreCentro>IES Almenara</nombreCentro>
+    <web>http://www.iesalmenara.org</web>
+    <ciclos>
+      <ciclo id="ELE">
+        <nombre>Electricidad</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2007</decretoTitulo>
+      </ciclo>
+      <ciclo id="EIM">
+        <nombre>Instalaciones de Telecomunicaciones</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2006</decretoTitulo>
+      </ciclo>
+      <ciclo id="SMX">
+        <nombre>Sistemas de Microinformática y Redes</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2005</decretoTitulo>
+      </ciclo>
+      <ciclo id="GME">
+        <nombre>Gestión Administrativa</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2008</decretoTitulo>
+      </ciclo>
+    </ciclos>
+  </ies>
+  <ies>
+    <nombreCentro>IES Bosc</nombreCentro>
+    <web>http://www.iesbosc.org</web>
+    <ciclos>
+      <ciclo id="FOL">
+        <nombre>Formación y Orientación Laboral</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2006</decretoTitulo>
+      </ciclo>
+      <ciclo id="AF">
+        <nombre>Actividades Físicas y Deportivas</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2007</decretoTitulo>
+      </ciclo>
+      <ciclo id="AG">
+        <nombre>Agraria</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2005</decretoTitulo>
+      </ciclo>
+      <ciclo id="AAEE">
+        <nombre>Animación de Actividades Físicas y Deportivas</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2008</decretoTitulo>
+      </ciclo>
+    </ciclos>
+  </ies>
+  <ies>
+    <nombreCentro>IES Almenara</nombreCentro>
+    <web>http://www.iesalmenara.org</web>
+    <ciclos>
+      <ciclo id="ELE">
+        <nombre>Electricidad</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2007</decretoTitulo>
+      </ciclo>
+      <ciclo id="EIM">
+        <nombre>Instalaciones de Telecomunicaciones</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2006</decretoTitulo>
+      </ciclo>
+      <ciclo id="SMX">
+        <nombre>Sistemas de Microinformática y Redes</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2005</decretoTitulo>
+      </ciclo>
+      <ciclo id="GME">
+        <nombre>Gestión Administrativa</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2008</decretoTitulo>
+      </ciclo>
+    </ciclos>
+  </ies>
+  <ies>
+    <nombreCentro>IES Pinar</nombreCentro>
+    <web>http://www.iespinar.org</web>
+    <ciclos>
+      <ciclo id="IF">
+        <nombre>Instalaciones Frigoríficas y de Climatización</nombre>
+        <grado>Medio</grado>
+        <decretoTitulo>2011</decretoTitulo>
+      </ciclo>
+      <ciclo id="QA">
+        <nombre>Química Ambiental</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2012</decretoTitulo>
+      </ciclo>
+      <ciclo id="IAE">
+        <nombre>Instalaciones Automáticas y Electrónicas</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2010</decretoTitulo>
+      </ciclo>
+      <ciclo id="DAI">
+        <nombre>Diseño en Arquitectura Interior</nombre>
+        <grado>Superior</grado>
+        <decretoTitulo>2013</decretoTitulo>
+      </ciclo>
+    </ciclos>
+  </ies>
+</centros>

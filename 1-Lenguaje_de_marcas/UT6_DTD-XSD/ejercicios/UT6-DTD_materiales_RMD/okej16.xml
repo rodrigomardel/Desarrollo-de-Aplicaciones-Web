@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE relacion [
+	<!ELEMENT relacion (persona+)>
+		<!ELEMENT persona (nombre, email, parentesco)>
+		<!ATTLIST persona 
+			sexo (hombre | mujer) #IMPLIED
+			carnet ID #REQUIRED>
+			<!ELEMENT nombre (#PCDATA)>
+			<!ELEMENT email (#PCDATA)>
+			<!ELEMENT parentesco EMPTY>
+			<!ATTLIST parentesco
+				padre IDREFS #IMPLIED
+				hermano IDREF #IMPLIED>		
+]>
+<relacion>
+	<persona sexo="hombre" carnet="A1111">
+		<nombre>Luis Martin</nombre>
+		<email>luis@hotmail.com</email>
+		<parentesco padre="B2222 C3333"/>
+	</persona>
+	<persona sexo="hombre" carnet="B2222">
+		<nombre>Rodrigo Martin</nombre>
+		<email>rodrigo@hotmail.com</email>
+		<parentesco  hermano="C3333"/>
+	</persona>
+	<persona carnet="C3333">
+		<nombre>Raul Martin</nombre>
+		<email>raul@hotmail.com</email>
+		<parentesco  hermano="B2222"/>
+	</persona>
+</relacion>

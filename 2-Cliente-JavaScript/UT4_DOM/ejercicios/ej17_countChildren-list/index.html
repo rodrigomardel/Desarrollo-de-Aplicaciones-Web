@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul>
+      <li>
+        Animals
+        <ul>
+          <li>
+            Mammals
+            <ul>
+              <li>Cows</li>
+              <li>Donkeys</li>
+              <li>Dogs</li>
+              <li>Tigers</li>
+            </ul>
+          </li>
+          <li>
+            Other
+            <ul>
+              <li>Snakes</li>
+              <li>Birds</li>
+              <li>Lizards</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Fishes
+        <ul>
+          <li>
+            Aquarium
+            <ul>
+              <li>Guppy</li>
+              <li>Angelfish</li>
+            </ul>
+          </li>
+          <li>
+            Sea
+            <ul>
+              <li>Sea trout</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script>
+      /*
+    Hay un árbol organizado como ramas ul/li.
+    Escribe el código que agrega a cada <li> el número de sus descendientes. 
+    No cuentes las hojas (nodos sin hijos).
+    */
+
+      function contarHijos(lista) {
+        let arrayLis = Array.from(lista.children);
+        let existeNumero = false;
+
+        arrayLis.forEach((li, index) => {
+          let numHijosLis = arrayLis[index].querySelectorAll("li").length;
+          console.log(numHijosLis);
+
+          let ul = arrayLis[index].querySelector("ul");
+
+          if (ul) {
+            let resultado = `[${numHijosLis}]`;
+            arrayLis[index].firstChild.nodeValue += resultado; //agregamos el número
+            existeNumero = true; //controla que se han encontrado resultados
+            contarHijos(ul); //cuenta hijos del ul
+          }
+        });
+      }
+
+      let lista = document.body.getElementsByTagName("ul")[0];
+      contarHijos(lista);
+    </script>
+  </body>
+</html>

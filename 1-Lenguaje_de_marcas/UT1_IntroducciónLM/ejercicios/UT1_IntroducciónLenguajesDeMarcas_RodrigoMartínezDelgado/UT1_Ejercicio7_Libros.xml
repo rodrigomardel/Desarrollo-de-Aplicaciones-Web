@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+  <libro>
+    <titulo>Los pilares de la tierra</titulo>
+    <autor>
+      <nombre>Ken Follett</nombre>    
+    </autor>
+    <isbn>13</isbn>
+    <precio>25,95€</precio>
+  </libro>
+  <libro>
+    <titulo>El camino del Norte</titulo>
+    <autor>
+      <nombre>Juan Rueda</nombre>
+      <nombre>Pilar González</nombre>     
+    </autor>
+    <isbn>13</isbn>
+    <precio>20,95€</precio>
+  </libro>
+  <libro>
+    <titulo>El principito</titulo>
+    <autor>
+      <nombre>Antoine de Saint-Exupéry</nombre>    
+    </autor>
+    <precio>9,95€</precio>
+   </libro> 
+  <libro>
+    <titulo>Nacidos para correr</titulo>
+      <autor>
+      <nombre>Christopher McDougall</nombre>    
+    </autor>
+    <isbn>13</isbn>
+    <precio>20,95€</precio>
+    <precio>24,95€</precio>
+  </libro>
+  <libro>
+    <titulo>Manolito gafotas</titulo>
+    <autor>
+      <nombre>Elvira Lindo</nombre>    
+    </autor>
+    <isbn>22</isbn>
+  </libro>
+</libros>

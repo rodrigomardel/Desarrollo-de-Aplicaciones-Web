@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cliente [
+    <!ELEMENT cliente (nombre, apellidos)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellidos (#PCDATA)>
+<!ENTITY contenido "<nombre> Rodrigo </nombre>
+    <apellidos> Martínez Delgado </apellidos>">        
+]>
+
+<cliente>
+    &contenido;
+</cliente>

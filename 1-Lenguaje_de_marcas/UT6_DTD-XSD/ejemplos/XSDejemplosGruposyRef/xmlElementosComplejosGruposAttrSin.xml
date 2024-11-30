@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<familias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xmlElementosComplejosGruposAttrSin--EJEXAMEN.xsd">
+    <familia id="1">
+        <padre dni="12345678X" nombre="Juan" edad="40" nacionalidad="Española"/>
+        <madre dni="23456789Y" nombre="María" edad="38" nacionalidad="Mexicana"/>
+        <hijo dni="34567890Z" nombre="Pedro" edad="15" nacionalidad="Española"/>
+        <hijo dni="45678901A" nombre="Luisa" edad="12" nacionalidad="Española"/>
+    </familia>
+    <familia id="2">
+        <padre dni="98765432B" nombre="David" edad="35" nacionalidad="Española"/>
+        <madre dni="87654321C" nombre="Sophie" edad="33" nacionalidad="Española"/>
+    </familia>
+</familias>
+<!--  Qué pasa si el hijo puede o no tener DNI pero los
+     padres lo tienen obligatoriamente?-->
+     <!-- no nos vale reusar el tipo complejo -->
