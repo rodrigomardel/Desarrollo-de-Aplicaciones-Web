@@ -7,7 +7,7 @@ Prácticas, ejercicios y conceptos del Ciclo Formativo de Grado Superior Desarro
 ### Primer curso
 
 - [Bases de Datos](./1-BBDD-SQL/)
-- [Lenguajes de Marcas y Sistemas de Gestión de Información](./1-Lenguaje_de_marcas/)
+- [Lenguajes de Marcas](./1-Lenguaje_de_marcas/)
 - [Programación](./1-Programacion-Java/)
 - [Sistemas Informáticos](./1-Sistemas_informaticos/)
 
