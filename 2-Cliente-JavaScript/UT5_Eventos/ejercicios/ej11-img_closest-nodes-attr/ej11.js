@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   galeriaUl.addEventListener("click", cambioImagen);
 
   function cambioImagen(event) {
-    let linkImgTarget = event.target.closest("a");
+    let linkImgTarget = event.target.closest("img");
 
     if (linkImgTarget) {
-      imagenPrincipal.src = linkImgTarget.childNodes[0].src;
+      imagenPrincipal.src = linkImgTarget.parentNode.href;
       event.preventDefault();
     }
   }
