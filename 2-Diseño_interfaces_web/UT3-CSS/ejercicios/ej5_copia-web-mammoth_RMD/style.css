@@ -1,0 +1,129 @@
+/*ALL DOCUMENT*/
+:root {
+  font-size: 16px;
+}
+.boxed {
+  max-width: 1170px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*HEADER*/
+header div.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(121, 111, 111);
+}
+header img.logo-img {
+  width: 275px;
+  height: 42px;
+}
+header form input {
+  width: 445px;
+  height: 41px;
+}
+header div.icons-user {
+  display: flex;
+}
+header div.icons-user img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+header nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  font-size: 0.75rem;
+}
+header nav li.nav-black-friday {
+  color: red;
+}
+/*MAIN-SECTION*/
+main div.title-black-friday {
+  display: flex;
+  justify-content: center;
+  height: 225px;
+}
+main div.black-friday {
+  background-color: black;
+  padding: 1rem;
+}
+main section.products-black-friday ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main section.products-black-friday ul li {
+  flex-basis: 200px; /*tamaño base antes de aplicar cierta distribución*/
+  flex-grow: 1;
+  max-width: 300px;
+}
+main section.products-black-friday ul li p {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+/*MAIN-PRODUCTS*/
+section.section--brands ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(4, 350px);
+  grid-auto-flow: column;
+  gap: 15px;
+}
+section.section--brands ul li div {
+  width: 100%;
+  height: 100%;
+}
+/*FOOTER*/
+footer {
+  background-color: rgb(0, 0, 0);
+}
+footer div.footer--row {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(240, 231, 231, 0.447);
+  color: white;
+  padding-top: 10px;
+}
+footer .btn-icon {
+  display: flex;
+}
+footer .btn-icon div {
+  padding: 10px;
+}
+div.footer--col img {
+  padding: 10px;
+}
+.footer-links {
+  list-style: none;
+}
+.footer-links {
+  color: white;
+  text-decoration: none;
+  padding-left: 0px;
+}
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-links li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.footer-links li a:visited {
+  color: orange;
+}
