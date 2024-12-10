@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de variables | responsive</title>
+    <style>
+      :root {
+        --color_fuente: rgb(98, 120, 216);
+        --color_primario: rebeccapurple;
+        --color_secundario: orange;
+        --tamano_desktop: 1200px;
+        --tamano_tablet: 950px;
+        --tamano_movil: 650px;
+      }
+      main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto, auto;
+        display: grid;
+      }
+      body {
+        margin: 0;
+        color: var(--color_fuente);
+        max-width: var(--tamano_desktop);
+        margin: auto;
+      }
+      h1 {
+        color: var(--color_primario);
+      }
+      p {
+        color: var(--color_primario);
+      }
+      .importante {
+        --color_primario: red;
+      }
+      .tres_columnas {
+        display: none;
+      }
+      /*referente al navegador
+      @media not (condicion1) and (condicion2) {
+      }*/
+      @media (width<950px) {
+        h1 {
+          color: var(--color_secundario);
+        }
+        main {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto, auto, auto;
+        }
+        .tres_columnas {
+          display: block;
+        }
+      }
+
+      @media (width<650px) {
+        h1 {
+          color: var(--color_secundario);
+        }
+        main {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto, auto;
+        }
+        .tres_columnas {
+          display: none;
+        }
+      }
+
+      @media (width<525px) {
+        h1 {
+          color: var(--color_secundario);
+        }
+        main {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+        .tres_columnas {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+
+      <div>
+        <h1 class="importante">Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+      <div>
+        <h1>Titulo</h1>
+        <p>
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+      <div class="tres_columnas">
+        <h1>Titulo</h1>
+        <p class="importante">
+          Lorem ipsum dolor se sienta amet, consectetur adipiscing elit. En quis
+          nulla velit. Nunc iaculis a diam sit amet congue. Aene eget risus se
+          sienta un cometa augue ornare fringilla ac en nunc. Fusce eu dui et
+          ligula maximus pulvinar ut en nulla. Proin tincidunt turpis ac erat
+          porttitor, eu mollis justa placerat. Etiam faucibus suscipit est, vel
+          blandit elit vulputate eu. Donec nec aliquet mauris. En quis ante a
+          sem convallis viverra luctus id ligula. Nullam eget pulvinar ex.
+          Vivamus no suscipit augue. Vestibulum eget sodales nisi.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
