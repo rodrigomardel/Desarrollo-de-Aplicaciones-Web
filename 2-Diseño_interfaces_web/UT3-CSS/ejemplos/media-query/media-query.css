@@ -1,0 +1,151 @@
+/*COMMON*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1240px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*HEADER*/
+.menu_movil {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  justify-content: right;
+  gap: 35px;
+  list-style: none;
+  padding: 15px 15px;
+  background-color: rebeccapurple;
+  color: white;
+}
+.articulos {
+  display: flex;
+  justify-content: space-between;
+}
+.articulos article {
+  width: 33%;
+  padding: 10px;
+}
+
+/*MAIN*/
+main {
+  margin: 25px 0 25px 0;
+}
+main h1 {
+  font-size: 3rem;
+  padding: 15px 0;
+  text-align: center;
+}
+body section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px 25px;
+  padding: 10px;
+}
+body section div:last-child {
+  display: none;
+}
+
+/*FOOTER*/
+footer {
+  margin: 25px 0;
+}
+footer .links {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 30px;
+  justify-content: space-around;
+  background-color: rebeccapurple;
+  padding: 10px;
+}
+footer .links div {
+  display: flex;
+  flex-direction: column;
+}
+footer .links a {
+  color: white;
+  align-self: center;
+}
+footer .legal {
+  background-color: blueviolet;
+  color: white;
+}
+
+/*MEDIAS*/
+/*DESKTOP <950PX*/
+@media (width<950px) {
+  body section {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    column-gap: 25px;
+  }
+  body section div:last-child {
+    display: block;
+  }
+}
+
+/*DESKTOP&TABLE <800PX*/
+@media (width<800px) {
+  .articulos article {
+    width: 50%;
+  }
+  body main div.articulos article:last-child {
+    display: none;
+  }
+  body section {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    column-gap: 25px;
+  }
+  body section div:last-child {
+    display: none;
+  }
+}
+
+/*MOBILE <700PX*/
+@media (width<700px) {
+  .menu_movil {
+    display: block;
+    background-color: rebeccapurple;
+  }
+  header nav ul {
+    display: none;
+  }
+  footer .links {
+    grid-template-columns: repeat(2, 40%);
+    gap: 30px;
+  }
+}
+
+/*MOBILE <400PX*/
+@media (width<400px) {
+  .menu_movil {
+    display: block;
+    background-color: rebeccapurple;
+  }
+  .articulos {
+    flex-direction: column;
+  }
+  .articulos article {
+    width: 100%;
+  }
+  body section {
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    column-gap: 25px;
+  }
+  footer .links {
+    grid-template-columns: 100%;
+    gap: 30px;
+  }
+  body section div:last-child {
+    display: block;
+  }
+}
