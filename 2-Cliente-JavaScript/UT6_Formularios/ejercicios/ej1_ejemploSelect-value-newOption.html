@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo select</title>
+  </head>
+  <body>
+    <div>
+      <select id="genres">
+        <option value="rock">Rock</option>
+        <option value="blues" selected>Blues</option>
+      </select>
+    </div>
+    <div>
+      <p>
+        <label for="nuevo">Nuevo</label
+        ><input type="text" name="nuevo" id="nuevo" />
+      </p>
+      <p>
+        <input type="button" value="Añadir género" id="annadir" />
+      </p>
+    </div>
+
+    <script>
+      // Cuando cambie el valor de la opción seleccionada
+      // - muestra por consola el valor y el texto del option seleccionado
+
+      let selectGenero = document.getElementById("genres");
+
+      selectGenero.addEventListener("change", () => {
+        for (let option of selectGenero.options) {
+          if (option.selected) {
+            console.log(
+              "value: " + option.value + " | text: " + option.textContent
+            );
+          }
+        }
+      });
+
+      // Cuando haga clic en el botón añadir género
+      // - Añade un nuevo option con el texto del input nuevo
+      //   y el value será el texto en minúsculas
+      // - Seleccionalo en el select
+
+      let botonAñadir = document.getElementById("annadir");
+
+      botonAñadir.addEventListener("click", () => {
+        let inputText = document.getElementById("nuevo");
+
+        if (inputText.value === "") {
+          alert("Debe introducir un nuevo género");
+        } else {
+          let newOption = new Option(
+            inputText.value,
+            inputText.value.toLowerCase()
+          );
+          let opcionesSelect = selectGenero.options;
+          opcionesSelect.add(newOption);
+          inputText.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
