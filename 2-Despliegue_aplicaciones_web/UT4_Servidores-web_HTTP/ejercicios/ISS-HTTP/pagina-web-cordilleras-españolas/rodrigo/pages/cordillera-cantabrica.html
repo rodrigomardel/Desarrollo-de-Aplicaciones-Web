@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cordillera Cantábrica</title>
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/cordillera-cantabrica.css" />
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="./cordillera-cantabrica.html">Cordillera Cantábrica</a>
+          </li>
+          <li><a href="./sierra-morena.html">Sierra Morena</a></li>
+          <li><a href="./sistema-iberico.html">Sistema Ibérico</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Cordillera Cantábrica</h1>
+      <div class="images">
+        <img
+          src="../assets/img/cordillera-cantabrica/picos-de-europa-2775457_1920-636796030.jpg"
+          alt="Image 1"
+        />
+        <img
+          src="../assets/img/cordillera-cantabrica/picos-de-europa.jpeg"
+          alt="Image 2"
+        />
+        <img
+          src="../assets/img/cordillera-cantabrica/potes-in-los-picos-de-europa-noord-spanje_16977_xl-50198217.jpg"
+          alt="Image 3"
+        />
+      </div>
+    </main>
+    <footer>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Unos datos curiosos..."
+        data-bs-content="La cordillera Cantábrica es un sistema montañoso localizado en el norte de la península ibérica que discurre paralelo al mar Cantábrico. Ubicada en España, tiene una longitud de unos 480 kilómetros (dirección oeste-este) y una media de 100 km de anchura (dirección norte-sur), que en algunos tramos se engruesa hasta alcanzar los 120 km y en otros puntos no supera los 65 km. Se trata de la cadena montañosa más occidental de Europa."
+      >
+        Click para más Información
+      </button>
+      <script>
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+        const popoverList = [...popoverTriggerList].map(
+          (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
+      </script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistemas Ibérico</title>
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/sistema-iberico.css" />
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="./cordillera-cantabrica.html">Cordillera Cantábrica</a>
+          </li>
+          <li><a href="./sierra-morena.html">Sierra Morena</a></li>
+          <li><a href="./sistema-iberico.html">Sistema Ibérico</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Sistema Ibérico</h1>
+      <div class="images">
+        <img
+          src="../assets/img/sistema-iberico/Bell-Tower-Benidorm-Sistema-Iberico-Spain-1155951416.jpg"
+          alt="Image 7"
+        />
+        <img
+          src="../assets/img/sistema-iberico/Sistema-Iberico-Spain-Castillo-de-Castro-3514228755.jpg"
+          alt="Image 9"
+        />
+        <img
+          src="../assets/img/sistema-iberico/bosque-sistema-iberico.jpg"
+          alt="Image 8"
+        />
+      </div>
+    </main>
+    <footer>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Unos datos curiosos..."
+        data-bs-content="El sistema Ibérico es un sistema montañoso de altitud media ubicado en el interior de la península ibérica, en España. Algunos de sus picos más altos son el Moncayo (2315 m s. n. m.),1​ su cumbre de mayor altitud, el monte San Lorenzo (2271 m s. n. m.),2​ el pico de Urbión (2228 m s. n. m.),3​el pico San Millán (2131 m s. n. m.), el pico Pancrudo (2079 m s. n. m.), el pico de Peñarroya (2028 m s. n. m.),4​ el pico de Javalambre (2019 m s. n. m.)5​ o el de Peñagolosa (1815 m s. n. m.).6​ En ellos nacen ríos como el Duero, el Tajo, el Turia, el Júcar o el Cabriel. Este sistema separa la Meseta Central de la depresión del Ebro, condicionando los climas de ambas regiones y de la serranía Celtibérica."
+      >
+        Click para más Información
+      </button>
+      <script>
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+        const popoverList = [...popoverTriggerList].map(
+          (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
+      </script>
+    </footer>
+  </body>
+</html>

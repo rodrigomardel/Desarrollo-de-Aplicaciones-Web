@@ -1,0 +1,147 @@
+/* common.css */
+
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+/* Estilo para el header y navegación */
+header {
+  background: #4caf50;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Estilo para el main */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(234, 233, 165, 0.459);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4caf50;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px #d2ab0d; /* Sombra dorada */
+  letter-spacing: 2px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.images img {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  background: #4caf50;
+  color: white;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.custom-popover .popover-header {
+  padding: 10px;
+  background-color: #4e73df;
+  color: white;
+  font-weight: bold;
+}
+.custom-popover .popover-body {
+  padding: 10px;
+  background-color: #f8f9fc;
+  padding: 1rem;
+  border: 1px solid #dde2e6;
+}
+.btn-secondary {
+  background: linear-gradient(145deg, #ccdc84, #b7a92e);
+  border: 1px solid black;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(145deg, #84dc93, #3cb72e);
+  border-color: #4f5b63;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 125, 255, 0.5);
+}
