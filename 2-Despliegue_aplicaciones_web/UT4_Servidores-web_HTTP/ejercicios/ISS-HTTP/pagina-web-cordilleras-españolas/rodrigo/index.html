@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cordilleras Españolas</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap/scss/_component-examples.scss"
+    />
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li>
+            <a href="./pages/cordillera-cantabrica.html"
+              >Cordillera Cantábrica</a
+            >
+          </li>
+          <li><a href="./pages/sierra-morena.html">Sierra Morena</a></li>
+          <li><a href="./pages/sistema-iberico.html">Sistema Ibérico</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Cordilleras Españolas</h1>
+      <div class="images">
+        <img
+          src="./assets/img/cordilleras-españolas-index/accidentes-geograficos.jpg"
+          alt="Image 1"
+        />
+        <img
+          src="./assets/img/cordilleras-españolas-index/relieve2-868404803.jpg"
+          alt="Image 3"
+        />
+        <img
+          src="./assets/img/cordilleras-españolas-index/cordilleras-de-espana-y-picos-760600491.jpg"
+          alt="Image 2"
+        />
+      </div>
+    </main>
+    <footer>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Relieve de España"
+        data-bs-content="El relieve de España se caracteriza por ser bastante elevado, con una altitud media de 660 metros sobre el nivel del mar, bastante montañoso si lo comparamos con el resto de países de Europa y solo superado por Suiza, Austria y los microestados de Andorra y Liechtenstein. "
+      >
+        Click para más Información
+      </button>
+      <script>
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+        const popoverList = [...popoverTriggerList].map(
+          (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
+      </script>
+    </footer>
+  </body>
+</html>

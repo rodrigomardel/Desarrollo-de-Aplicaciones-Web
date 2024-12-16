@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierra Morena</title>
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/sierra-morena.css" />
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="./cordillera-cantabrica.html">Cordillera Cantábrica</a>
+          </li>
+          <li><a href="./sierra-morena.html">Sierra Morena</a></li>
+          <li><a href="./sistema-iberico.html">Sistema Ibérico</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Sierra Morena</h1>
+      <div class="images">
+        <img
+          src="../assets/img/sierra-morena/sierra-morena-1.jpg"
+          alt="Image 5"
+        />
+        <img
+          src="../assets/img/sierra-morena/agua-sierra-morena-2469359669.jpg"
+          alt="Image 4"
+        />
+        <img
+          src="../assets/img/sierra-morena/sierra-morena-cordoba.jpg"
+          alt="Image 6"
+        />
+      </div>
+    </main>
+    <footer>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Unos datos curiosos..."
+        data-bs-content="Sierra Morena es una cordillera del sur de la península ibérica, que separa la Meseta Central de la depresión del Guadalquivir. Geológicamente es el borde de la meseta fracturado y levantado por el empuje de las fuerzas alpinas sobre el zócalo herciniano de la Meseta. En esta predominan las fallas, a veces una falla única, otras veces un sistema de fallas escalonadas. Sierra Morena sería un horst limitado por fallas, o en otros casos limitada por pliegues muy estirados formando pliegues-fallas."
+      >
+        Click para más Información
+      </button>
+      <script>
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+        const popoverList = [...popoverTriggerList].map(
+          (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
+      </script>
+    </footer>
+  </body>
+</html>

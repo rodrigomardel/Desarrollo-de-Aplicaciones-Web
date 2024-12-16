@@ -1,0 +1,28 @@
+h1 {
+  font-size: 2.5rem !important;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #ffd700; /* Sombra dorada */
+  color: rgb(48, 136, 217) !important;
+}
+main {
+  background: rgba(67, 149, 226, 0.182);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+.images img {
+  border: 3px solid #003366; /* Borde azul oscuro */
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 51, 102, 0.5); /* Sombra azul */
+}
