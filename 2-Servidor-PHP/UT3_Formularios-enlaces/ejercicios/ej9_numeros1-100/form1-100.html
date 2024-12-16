@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ9-20241216-RMD</title>
+  </head>
+  <body>
+    <form action="./procesamiento.php" method="post">
+      <fieldset>
+        <legend>Calcular resultado</legend>
+        <p>
+          <label for="numero1">Introduzca el primer número:</label>
+          <input
+            id="numero1"
+            type="text"
+            name="numero1"
+            placeholder="Introduzca un número menor que 100"
+            size="30"
+          />
+        </p>
+        <p>
+          <label for="numero1">Introduzca el segundo número:</label>
+          <input
+            id="numero2"
+            type="text"
+            name="numero2"
+            placeholder="Introduzca un número menor que 100"
+            size="30"
+          />
+        </p>
+        <p>
+          <label for="operacion">¿Qué operación desea realizar?</label>
+          <select name="operacion" id="operacion">
+            <option value="suma">+</option>
+            <option value="resta">-</option>
+            <option value="multiplicacion">×</option>
+            <option value="division">÷</option>
+          </select>
+        </p>
+        <p>
+          <input type="submit" name="enviar" value="Calcular" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
