@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inscripción</title>
+    <style>
+      h2 {
+        color: rgb(97, 22, 122);
+        text-align: center;
+      }
+      table {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .botones {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+    Diseña una aplicación web para capturar a través de un formulario información de un alumno:
+          − Ciclo (SMR, ASIR, DAW, DAM). Utiliza un control tipo select.
+          − Curso (Primero, Segundo). Utiliza un control tipo radio
+          − Otros (Delegado, Menor de edad, Transporte escolar). Utiliza un control tipo checkbox
+
+          El tratamiento será sencillo: si todos los controles no están vacíos, mostrar los datos seleccionados a través del método estático visualizar() de la clase DatosAlumno que deberás diseñar.           
+    -->
+
+    <form action="./procesamiento.php" method="post">
+      <h2>
+        CIFP JUAN DE COLONIA <br />
+        DATOS ALUMNO
+      </h2>
+      <table>
+        <tr>
+          <td>
+            <!-- Select Ciclo -->
+            <label for="ciclo">Ciclo:</label>
+            <select name="ciclo" id="ciclo">
+              <option value="SMR">SMR</option>
+              <option value="ASIR">ASIR</option>
+              <option value="DAW">DAW</option>
+              <option value="DAM">DAM</option>
+            </select>
+          </td>
+
+          <!-- Radio Curso -->
+          <td>
+            <label>Curso:</label><br />
+            <input type="radio" name="curso" id="primero" value="Primero" />
+            <label for="primero">Primero</label><br />
+            <input type="radio" name="curso" id="segundo" value="Segundo" />
+            <label for="segundo">Segundo</label><br /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <!-- Checkbox Otros -->
+            <label>Opciones:</label><br />
+            <input
+              type="checkbox"
+              name="opciones[delegado]"
+              id="delegado"
+              value="Delegado"
+            />
+            <label for="delegado">Delegado</label><br />
+            <input
+              type="checkbox"
+              name="opciones[menorDeEdad]"
+              id="menor"
+              value="Menor de Edad"
+            />
+            <label for="menor">Menor de Edad</label><br />
+            <input
+              type="checkbox"
+              name="opciones[transporteEscolar]"
+              id="transporte"
+              value="Transporte Escolar"
+            />
+            <label for="transporte">Transporte Escolar</label><br /><br />
+
+            <tr class="botones">
+              <td colspan="2">
+                <!-- Botones -->
+                <button type="reset" name="reset">Eliminar Datos</button>
+                <button type="submit" name="enviar">Seguir</button>
+              </td>
+            </tr>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
