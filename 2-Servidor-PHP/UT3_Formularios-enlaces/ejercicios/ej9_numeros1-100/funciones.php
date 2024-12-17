@@ -13,18 +13,24 @@ function validarNumero($numero){
 
 /*Calcula la operacion de dos números dados*/
 function operaciones($numero1, $numero2, $operacion){
-    switch ($operacion) {
+    $resultado = "";
+    switch ($operacion) {  
         case 'suma':
-            return $numero1 + $numero2;
+            $resultado = $numero1 + $numero2;
+            break;  
         case 'resta':
-            return $numero1 - $numero2;
+            $resultado = $numero1 - $numero2;
+            break;
         case 'multiplicacion':
-            return  $numero1 * $numero2;
+            $resultado = $numero1 * $numero2;
+            break;
         case 'division':
-            return  $numero1 / $numero2;
+            $resultado = $numero1 / $numero2;
+            break;
         default:
             return null;
     }
+    return $resultado;
 }
 
 ?>

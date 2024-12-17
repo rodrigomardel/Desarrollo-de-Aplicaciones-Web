@@ -10,7 +10,6 @@ $numero1 = $_POST['numero1'];
 $numero2 = $_POST['numero2'];
 $enviado = $_POST['enviar'];
 $operacion = $_POST['operacion'];
-$resultado = $_POST['resultado'];
 
 if(isset($enviado)){
     // Validar que los números son válidos        
@@ -21,16 +20,16 @@ if(isset($enviado)){
             if ($operacion === 'division' && $numero2 == 0) {
                 echo "<a href='./form1-100.html'>No se puede dividir entre cero. Intentelo de nuevo</a>";
             } else {
-                $resultado = operaciones($numero1, $numero2, $operacion);
-                echo "<h4 style='color: rebeccapurple'>El resultado es: ".$resultado."</h4>";
+                $_POST['resultado'] = operaciones($numero1, $numero2, $operacion);
+                echo "<h4 style='color: rebeccapurple'>El resultado es: ".$_POST['resultado']."</h4>";
                 exit();
             }
 
         } else{
-            echo "<a href='./form1-100.html'>Debe introducir un número menor que 100</a>";
+            echo "<p color='yellow'> ** Introduzca un números menores que 100 **</p><a href='./form1-100.html'>Click para volver al formulario</a>";
         }
     } else {
-        echo "<a href='./form1-100.html'>Debe introducir algún valor</a>";
+        echo "<p color='yellow'> ** Debe introducir ambos valores **</p><a href='./form1-100.html'>Click para volver al formulario</a>";
     }
 }
 
