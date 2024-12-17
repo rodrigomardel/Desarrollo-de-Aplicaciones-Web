@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="my.css" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <ul>
+      <li>Clica el div para editar.</li>
+      <li>Enter o blur guarda el resultado.</li>
+    </ul>
+
+    Se permite HTML.
+
+    <div id="view" class="view">Text</div>
+
+    <script>
+      /*
+      Crea un div que se vuelva textarea cuando es clicado.
+      El textarea permite editar HTML en <div>
+      Cuando el usuario presiona Enter o se pierde el foco, el <textarea> se vuelve <div> de nuevo, y su contenido se vuelve el HTML del <div>.
+      Nota: <textarea> debe tener class="edit"
+      my.css tiene styles que lo hacen del mismo tamaño que div
+      */
+
+      let body = document.body;
+      let div = document.getElementById("view");
+      let textarea;
+
+      div.addEventListener("click", (e) => {
+        if (!textarea) {
+          textarea = document.createElement("textarea");
+          textarea.addEventListener("blur", mostrarDiv);
+          textarea.addEventListener("keydown", (e) => {
+            if (event.code == "Enter") {
+              mostrarDiv();
+            }
+          });
+          body.append(textarea);
+        }
+        textarea.value = e.target.textContent;
+        e.target.style.display = "none";
+        textarea.style.display = "block";
+        textarea.focus();
+      });
+
+      function mostrarDiv() {
+        div.innerHTML = textarea.value;
+        div.style.display = "block";
+        textarea.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
