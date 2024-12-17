@@ -33,6 +33,10 @@ header nav ul {
   width: 33%;
   padding: 10px;
 }
+header nav input#menu_ch {
+  display: none;
+}
+:has
 
 /*MAIN*/
 main {
@@ -107,14 +111,36 @@ footer .legal {
   body section div:last-child {
     display: none;
   }
-}
-
-/*MOBILE <700PX*/
-@media (width<700px) {
   .menu_movil {
     display: block;
     background-color: rebeccapurple;
   }
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  nav:has(input#menu_ch:checked) ul {
+    display: flex;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(51, 153, 146);
+    color: white;
+    /* gap: 10px; */
+    position: fixed;
+    width: 50%;
+    height: 100%;
+  }
+  header nav ul li {
+    padding: 10px 0;
+    border-bottom: white solid 1px;
+  }
+}
+
+/*MOBILE <700PX*/
+@media (width<700px) {
   header nav ul {
     display: none;
   }
