@@ -1,0 +1,7 @@
+En base a la actividad anterior adapta el CSS para que se visualice correctamente en
+
+    Pantalla de PC
+    Tablet
+    Teléfono móvil.
+
+Debe tener al menos tres breakpoints.
