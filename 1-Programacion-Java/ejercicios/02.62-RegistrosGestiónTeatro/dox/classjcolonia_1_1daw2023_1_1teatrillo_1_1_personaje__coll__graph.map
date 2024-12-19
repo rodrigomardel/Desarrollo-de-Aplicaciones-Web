@@ -1,7 +1,0 @@
-<map id="jcolonia.daw2023.teatrillo.Personaje" name="jcolonia.daw2023.teatrillo.Personaje">
-<area shape="rect" id="Node000001" title="Sujeto que interactúa saludando al resto de personajes, contabilizando el número de frases." alt="" coords="69,272,289,533"/>
-<area shape="rect" id="Node000002" href="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_actor.html" title="Individuo del que almacenamos datos de identificación básicos: nombre e identificador." alt="" coords="5,5,199,224"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,238,147,271,142,273,133,239"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="223,80,290,149"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,165,217,273,212,272,241,163"/>
-</map>

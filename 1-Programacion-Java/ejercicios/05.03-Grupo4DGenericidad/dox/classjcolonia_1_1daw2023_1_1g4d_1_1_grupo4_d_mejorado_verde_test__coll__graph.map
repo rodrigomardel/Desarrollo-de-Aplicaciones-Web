@@ -1,9 +1,0 @@
-<map id="jcolonia.daw2023.g4d.Grupo4DMejoradoVerdeTest" name="jcolonia.daw2023.g4d.Grupo4DMejoradoVerdeTest">
-<area shape="rect" id="Node000001" title="Ampliación de las prubeas realizadas en Grupo4DTest usando la clase Grupo4DMejorado." alt="" coords="141,705,445,1308"/>
-<area shape="rect" id="Node000002" href="$classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d_mejorado.html" title="Conjunto de cuatro números decimales, facilita el acceso a esos cuatro valores en forma de lista («ar..." alt="" coords="115,401,471,641"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,641,295,688,290,688,290,641"/>
-<area shape="rect" id="Node000003" href="$classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d.html" title="Conjunto de cuatro números decimales." alt="" coords="5,5,308,352"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,365,248,401,243,403,229,367"/>
-<area shape="rect" id="Node000004" href="$interfacejcolonia_1_1daw2023_1_1g4d_1_1_sumable.html" title="Ampliación para la realizar operaciones." alt="" coords="333,112,525,245"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="400,260,343,402,338,400,395,258"/>
-</map>

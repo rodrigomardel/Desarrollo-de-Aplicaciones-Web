@@ -1,7 +1,0 @@
-<map id="Gráfico de jerarquía de clases" name="Gráfico de jerarquía de clases">
-<area shape="rect" id="Node000000" href="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_actor.html" title="Individuo del que almacenamos datos de identificación básicos: nombre e identificador." alt="" coords="5,5,207,32"/>
-<area shape="rect" id="Node000001" href="$classjcolonia_1_1daw2023_1_1teatrillo_1_1_personaje.html" title="Sujeto que interactúa saludando al resto de personajes, contabilizando el número de frases." alt="" coords="255,31,483,57"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="223,27,254,30,254,36,222,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="68,56,144,83"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="159,62,254,52,255,58,159,67"/>
-</map>

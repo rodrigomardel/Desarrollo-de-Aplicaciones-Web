@@ -1,7 +1,0 @@
-<map id="jcolonia.daw2023.g4d.Grupo4DMejorado" name="jcolonia.daw2023.g4d.Grupo4DMejorado">
-<area shape="rect" id="Node000001" title="Conjunto de cuatro números decimales, facilita el acceso a esos cuatro valores en forma de lista («ar..." alt="" coords="115,400,471,640"/>
-<area shape="rect" id="Node000002" href="$classjcolonia_1_1daw2023_1_1g4d_1_1_grupo4_d.html" title="Conjunto de cuatro números decimales." alt="" coords="5,5,308,352"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,365,248,399,243,401,229,367"/>
-<area shape="rect" id="Node000003" href="$interfacejcolonia_1_1daw2023_1_1g4d_1_1_sumable.html" title="Ampliación para la realizar operaciones." alt="" coords="333,112,525,245"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="399,260,343,401,338,399,394,258"/>
-</map>

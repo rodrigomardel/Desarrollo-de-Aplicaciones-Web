@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"jcolonia.daw2023.g4d"}];updateSearchResults();
