@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestiones Expresiones Regulares</title>
+  </head>
+  <body>
+    <script>
+      /*2.	Escribe una expresión regular para validar que una cadena contiene una hora. La hora puede estar en formato horas:minutos u horas-minutos. Tanto las horas como los minutos tienen dos dígitos: 09:00 o 21:30.
+NO es necesario validar si la hora y los minutos son correctos (es decir, si la hora está entre 00 y 23, o los minutos entre 00 y 59). Se supone que están bien.*/
+
+      console.log("Ejercicio 2 - Horas");
+
+      let hora = /^[0-9]{2}:[0-9]{2}$/.test("09:00");
+      console.log(hora);
+      let hora1 = /^[0-9]{2}:[0-9]{2}$/.test("21:30");
+      console.log(hora1);
+
+      /*3.	Escribe una expresión regular para validar una cadena en la que tiene que haber tres puntos contiguos.*/
+
+      console.log("Ejercicio 3 - Puntos");
+
+      let puntos = /^\.\.\.$/.test("...");
+      console.log(puntos);
+
+      /*4.	Escribe una expresión regular para validar colores HTML escritos como #ABCDEF: primero # y luego 6 caracteres hexadecimales (en mayúsculas o minúsculas).*/
+
+      console.log("Ejercicio 4 - Colores");
+
+      let coloresHTML = /^#[0-9A-F]{6}$/i.test("#ABCDEF");
+      console.log(coloresHTML);
+
+      /*5.	La Dirección MAC de una interfaz de red consiste en 6 números hexadecimales de dos dígitos separados por dos puntos (se admiten mayúsculas y minúsculas). Por ejemplo: '01:32:54:67:89:AB'.
+Escribe una expresión regular que verifique si una cadena es una Dirección MAC.*/
+
+      console.log("Ejercicio 5 - Dirección MAC");
+
+      let mac = /^([0-9A-F]{2}:){5}[0-9A-Fa]{2}$/.test("01:32:54:67:89:AB");
+      console.log(mac);
+
+      /*6.	Escribe una expresión regular para validar colores hexadecimales escritos como #abc o #abcdef. Es decir, # seguido por 3 o 6 dígitos hexadecimales.
+Ejemplo de colores correctos: #3f3, #AA00ef; #abcd"*/
+
+      console.log("Ejercicio 6 - Colores Hexadecimales");
+
+      let hexColorRegex = /^#([0-9A-F]{3}|[0-9A-F]{6})$/i;
+
+      console.log(hexColorRegex.test("#3f3"));
+      console.log(hexColorRegex.test("#AA00ef"));
+      console.log(hexColorRegex.test("#abcd"));
+
+      /*7.	Escribe una expresión regular que valide si una cadena es una de las siguientes palabras: Java, JavaScript, PHP, C, C++ (en mayúsculas o minúsculas).
+       */
+
+      console.log("Ejercicio 7 - Validar Lenguajes");
+
+      let languageRegex = /^(java(script)?|php|c(\+\+)?)$/i;
+
+      console.log(languageRegex.test("Java"));
+      console.log(languageRegex.test("JavaScript"));
+      console.log(languageRegex.test("PHP"));
+      console.log(languageRegex.test("C"));
+      console.log(languageRegex.test("C++"));
+    </script>
+  </body>
+</html>

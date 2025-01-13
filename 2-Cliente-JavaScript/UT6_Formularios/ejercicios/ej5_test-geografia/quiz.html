@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestionario de Geografía</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      form {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        p {
+          text-align: center;
+        }
+      }
+      h1 {
+        margin-bottom: 20px;
+        color: #2c3e50;
+        font-size: 20px;
+      }
+      .pregunta {
+        margin-bottom: 15px;
+      }
+      .pregunta p {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #34495e;
+      }
+      .pregunta input {
+        margin-bottom: 5px;
+      }
+      .pregunta label {
+        margin-left: 5px;
+        color: #555;
+        font-size: 14px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      .resultado {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #27ae60;
+        text-align: center;
+      }
+      .pregunta.no-contestada {
+        border: 1px solid red;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .pregunta.correcta p {
+        color: green;
+      }
+      .pregunta.incorrecta p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" id="form_geografia">
+      <h1>Cuestionario de Geografía</h1>
+
+      <div class="pregunta">
+        <p>1. ¿Cuál es la capital de Francia?</p>
+        <input type="radio" name="q1" value="Berlín" id="q1a" />
+        <label for="q1a">Berlín</label><br />
+        <input type="radio" name="q1" value="Madrid" id="q1b" />
+        <label for="q1b">Madrid</label><br />
+        <input type="radio" name="q1" value="París" id="q1c" />
+        <label for="q1c">París</label>
+      </div>
+
+      <div class="pregunta">
+        <p>2. ¿En qué continente se encuentra Australia?</p>
+        <input type="radio" name="q2" value="Asia" id="q2a" />
+        <label for="q2a">Asia</label><br />
+        <input type="radio" name="q2" value="Europa" id="q2b" />
+        <label for="q2b">Europa</label><br />
+        <input type="radio" name="q2" value="Oceanía" id="q2c" />
+        <label for="q2c">Oceanía</label>
+      </div>
+
+      <div class="pregunta">
+        <p>3. ¿Cuál es el río más largo del mundo?</p>
+        <input type="radio" name="q3" value="Amazonas" id="q3a" />
+        <label for="q3a">Amazonas</label><br />
+        <input type="radio" name="q3" value="Nilo" id="q3b" />
+        <label for="q3b">Nilo</label><br />
+        <input type="radio" name="q3" value="Yangtsé" id="q3c" />
+        <label for="q3c">Yangtsé</label>
+      </div>
+
+      <div class="pregunta">
+        <p>4. ¿Cuál es el desierto más grande del mundo?</p>
+        <input type="radio" name="q4" value="Sahara" id="q4a" />
+        <label for="q4a">Sahara</label><br />
+        <input type="radio" name="q4" value="Desierto Antártico" id="q4b" />
+        <label for="q4b">Desierto Antártico</label><br />
+        <input type="radio" name="q4" value="Desierto Arábigo" id="q4c" />
+        <label for="q4c">Desierto Arábigo</label>
+      </div>
+
+      <div class="pregunta">
+        <p>5. ¿Qué país tiene la mayor población?</p>
+        <input type="radio" name="q5" value="India" id="q5a" />
+        <label for="q5a">India</label><br />
+        <input type="radio" name="q5" value="China" id="q5b" />
+        <label for="q5b">China</label><br />
+        <input type="radio" name="q5" value="Estados Unidos" id="q5c" />
+        <label for="q5c">Estados Unidos</label>
+      </div>
+
+      <button type="submit">Enviar respuestas</button>
+
+      <div class="resultado"></div>
+      <script src="./quiz.js"></script>
+    </form>
+  </body>
+</html>
