@@ -5,14 +5,13 @@ require_once('./f_rodrigomd1.php');
 
 /**Información para el usuario.*/
 $mensaje_usuario = "";
-/**Precio introducido.*/
-$precio_input = $_POST["input_precio"];
 /**Libro con su precio correspondiente.*/
 $libro_precio_final = "";
 
 
 /**Control que valida el formulario y muestra la salida en el navegador.*/
 if (isset($_POST["enviar"])) {
+    $precio_input = $_POST["input_precio"];
 
     if(validar_precio($precio_input, $mensaje_usuario)){
         $libro_precio_final = new Libro( $_POST["titulo_libro"], $precio_input);
@@ -110,7 +109,7 @@ if (isset($_POST["enviar"])) {
             <!-- PRECIO -->
                 <td >
                     <label for="precio">Precio:</label>
-                    <input type="text" name="input_precio" id="precio" value='<?php echo htmlspecialchars($precio_input)?>'><span class="precio_obligatorio">* obligatorio </span><br><?php echo $mensaje_usuario ?>
+                    <input type="text" name="input_precio" id="precio"><span class="precio_obligatorio">* obligatorio </span><br><?php echo $mensaje_usuario ?>
                 </td>
              </tr>
              <!-- DESCUENTO -->
