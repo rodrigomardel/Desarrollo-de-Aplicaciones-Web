@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expresiones regulares</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+      }
+      label {
+        margin: 10px 0 5px;
+      }
+      input {
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Breaking Bad</h1>
+
+    <form id="formBreakingBad">
+      <label for="fecha">Fecha de creación (dd/mm/aaaa):</label>
+      <span></span>
+      <input type="text" id="fecha" name="fecha" />
+
+      <label for="cocinero">Cocinero (ej. WW$1234):</label>
+      <span></span>
+      <input type="text" id="cocinero" name="cocinero" />
+
+      <label for="destinatario">Destinatario (ej. NM_alburquerque:1234):</label>
+      <span></span>
+      <input type="text" id="destinatario" name="destinatario" />
+
+      <label for="gramos">Gramos (100-5000):</label>
+      <span></span>
+      <input type="text" id="gramos" name="gramos" />
+
+      <label for="cuenta">Número de cuenta (ej. AB12-123456789012-1234):</label>
+      <span></span>
+      <input type="text" id="cuenta" name="cuenta" />
+
+      <label for="cuentaSinGuiones">Número de cuenta (sin guiones):</label>
+      <input id="cuentaSinGuiones" name="cuentaSinGuiones" readonly />
+
+      <button type="submit">Enviar</button>
+    </form>
+    <script src="./ej6_expReg.js"></script>
+  </body>
+</html>
