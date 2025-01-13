@@ -86,13 +86,25 @@ form.addEventListener("submit", (e) => {
     }
   });
 
-  asignarErrores();
+  asignarMensajes();
 
   // asignar los mensajes de error a los spans correspondientes
-  function asignarErrores() {
+  function asignarMensajes() {
     errores.forEach((error, index) => {
       spans[index].style.color = "red";
       spans[index].textContent = error;
+
+      //si no ningún error muestra mensaje de éxito
+      if (errores.every((error) => error === "")) {
+        // comprobar si el mensaje ya existe (evita duplicados)
+        if (!document.getElementById("mensajeExito")) {
+          let mensajeExito = document.createElement("span");
+          mensajeExito.id = "mensajeExito";
+          mensajeExito.style.color = "green";
+          mensajeExito.textContent = "¡Formulario enviado correctamente!";
+          form.appendChild(mensajeExito);
+        }
+      }
     });
   }
 });
