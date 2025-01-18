@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let inputUrl = document.getElementById("url");
   let boton = document.getElementById("mostrar");
 
+  textArea.value = "";
+
   //carga url
   inputUrl.value = window.location;
 
@@ -20,13 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function cargarContenido() {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "./hola.txt");
+    let url = inputUrl.value;
+
+    xhr.open("GET", url);
 
     xhr.addEventListener("load", () => {
       if (xhr.status != 200) {
-        textArea.textContent = `Error ${xhr.status}: ${xhr.statusText}`;
+        textArea.value = `Error ${xhr.status}: ${xhr.statusText}`;
       } else {
-        textArea.textContent = xhr.response;
+        textArea.value = xhr.response;
       }
     });
 
