@@ -1,0 +1,76 @@
+/* Estilo general para la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Fondo claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal del formulario */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Máximo ancho del formulario */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo para el título */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los campos de entrada */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+/* Efecto de enfoque en los inputs */
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo para el botón de envío */
+button {
+  width: 50%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+  background-color: #0056b3;
+}
