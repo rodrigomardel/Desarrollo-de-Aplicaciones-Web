@@ -9,7 +9,7 @@ let selectDestino;
 
 document.addEventListener("DOMContentLoaded", inicio);
 
-/** Después de cargar del DOM llama al servidor para obtener los datos del origen y destinos */
+/** Llamada al servidor para obtener los datos de los viajes */
 function inicio() {
   let url = new URL("./viajes.json", window.location.href);
   document.querySelector("[type='submit']");
@@ -26,11 +26,11 @@ function inicio() {
     });
 }
 
-/** Muestra los datos de los origenes */
+/** Mostrar datos de los origenes */
 function mostrarOrigenes(datos) {
   selectOrigen = document.getElementById("origen");
 
-  // Creación opciones de los origenes
+  // Creación opciones de origenes
   datos.forEach((viaje) => {
     opcionOrigen = new Option(viaje.ORIGEN, viaje.ORIGEN);
     selectOrigen.append(opcionOrigen);
@@ -39,24 +39,23 @@ function mostrarOrigenes(datos) {
   // Agregar destinos del origen por defecto
   mostrarDestinos(datos);
 
-  // Evento para mostrar los destinos del origen correspondiente
+  // Muestra destino del origen correspondiente
   selectOrigen.addEventListener("change", (e) => {
     mostrarDestinos(datos);
   });
 }
 
-/** Muestra los datos de los destinos */
+/** Mostrar datos de los destinos */
 function mostrarDestinos(datos) {
   selectDestino = document.getElementById("destino");
   let origenSeleccionado = selectOrigen.value;
 
-  // Limpiar destino anteriores
+  // Limpiar destinos anteriores
   selectDestino.innerHTML = "";
 
-  // Buscamos el origen seleccionado en los datos y mostramos sus destinos
+  // Agregar destinos del origen
   datos.forEach((viaje) => {
     if (viaje.ORIGEN === origenSeleccionado) {
-      // Añade las opciones de destino al select
       viaje.DESTINOS.DESTINO.forEach((destino) => {
         let opcionDestino = new Option(destino, destino);
         selectDestino.append(opcionDestino);
