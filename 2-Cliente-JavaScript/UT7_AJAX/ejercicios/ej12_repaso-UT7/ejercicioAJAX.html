@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ej 2</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        width: 25%;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 0.3em;
+        caption-side: bottom;
+      }
+      caption {
+        padding: 0.3em;
+        color: #fff;
+        background: #000;
+      }
+      th {
+        background: #eee;
+      }
+    </style>
+    <script src="ejercicioAJAX.js"></script>
+  </head>
+  <body>
+    <h1>Centros Integrados de Formación Profesional (Burgos)</h1>
+    <select id="cifp" name="cifp">
+      <option value="0">Seleccione un CIFP</option>
+      <option value="9012096">CIFP JUAN DE COLONIA</option>
+      <option value="09012187">CIFP SANTA CATALINA</option>
+      <option value="09012229">CIFP RÍO EBRO</option>
+    </select>
+    <h2>Ciclos del CIFP</h2>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Ciclo</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <h2>Datos del ciclo seleccionado</h2>
+    <div id="datos"></div>
+  </body>
+</html>
