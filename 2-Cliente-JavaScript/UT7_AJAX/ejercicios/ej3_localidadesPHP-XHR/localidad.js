@@ -6,30 +6,41 @@ Qué debe hacer la página:
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-  let localidadUsuario = document.getElementById("localidad");
+  let pResultado = document.getElementById("resultado");
 
+  let localidadUsuario = document.getElementById("localidad");
   localidadUsuario.addEventListener("keydown", comprobarLocalidad);
 
   function comprobarLocalidad(e) {
     if (e.key === "Enter") {
-      let url =
-        "./arraylocalidades.php?localidadUsuario=" + localidadUsuario.value;
+      let localidad = localidadUsuario.value;
+      // let url = "./arraylocalidades.php?localidadUsuario=" + localidadUsuario.value;
+      // version equivalente a la línea de arriba usando objeto URL
+      let url = new URL("./arraylocalidades.php", window.location.href);
+      url.searchParams.set("localidadUsuario", localidad);
+
       let xhr = new XMLHttpRequest();
 
-      xhr.responseType = "txt";
+      xhr.responseType = "text";
       xhr.open("GET", url);
 
       xhr.addEventListener("load", () => {
         if (xhr.status != 200) {
           alert(`Error ${xhr.status}: ${xhr.statusText}`);
         } else {
-          document.getElementById("resultado").innerText = xhr.response;
+          // Tratamiento respuesta
+          console.log(xhr.response);
+          if (xhr.response == "S") {
+            pResultado.style.color = "green";
+            pResultado.textContent = `La localidad ${localidad} está incluida`;
+          } else {
+            pResultado.style.color = "red";
+            pResultado.textContent = `La localidad ${localidad} NO está incluida`;
+          }
         }
       });
 
       xhr.send();
-
-      console.log(localidadUsuario.value);
     }
   }
 });
