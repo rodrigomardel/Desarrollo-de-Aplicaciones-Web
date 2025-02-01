@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      /*Los bordes por defecto en bootstrap no tiene comportamiento responsive, habría que modificar el SASS*/
+      @media (width<=768px) {
+        .media-border {
+          border-right: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--------------------------------- INICIO MODAL -------------------------------->
+
+    <div class="row">
+      <div class="col">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+        >
+          <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-md-down"
+          >
+            <div class="modal-content">
+              <!--------------------------------- MODAL HEADER -------------------------------->
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <strong>Elige cómo navegar en elDiario.es</strong>
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!--------------------------------- MODAL BODY -------------------------------->
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <!--------------------------------- FILA ACEPTAR/RECHAZAR -------------------------------->
+                  <div class="row">
+                    <div
+                      class="media-border col-md-6 border-top border-bottom border-end pb-4"
+                    >
+                      <h4 class="text-center border-bottom p-2">
+                        NAVEGA SIN PUBLICIDAD DESDE 1€/SEMANA
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                      <a href="#" class="btn btn-outline-primary d-block"
+                        >Rechazar cookies desde 1€</a
+                      >
+                    </div>
+                    <div
+                      class="col-md-6 border-top border-bottom order-first order-md-last pb-4"
+                    >
+                      <h4 class="text-center border-bottom p-2">
+                        NAVEGA GRATIS CON PUBLICIDAD
+                      </h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen
+                        book.
+                      </p>
+                      <div>
+                        <a href="#" class="btn btn-primary d-block"
+                          >Aceptar cookies</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------- FILA CONFIGURAR -------------------------------->
+                  <div class="row col-md-12 mt-3">
+                    <p>
+                      Phasellus tincidunt est sit amet tortor mattis interdum.
+                      Mauris a scelerisque lacus. Integer tempor, sem et
+                      malesuada volutpat, enim velit lobortis risus, vel iaculis
+                      urna orci eu orci. Proin pellentesque, magna vitae
+                      sagittis mattis, lacus lectus dapibus nunc, id mollis
+                      libero mauris at mi. Morbi sed elit semper, luctus elit
+                      eget, convallis dui. Sed gravida quam quis velit
+                      vulputate, et elementum eros vestibulum. Phasellus a felis
+                      congue, <a href="">"vestibulum"</a> mi laoreet, efficitur
+                      felis. Suspendisse potenti.
+                    </p>
+                    <div class="text-center mb-3">
+                      <a href="#" class="btn btn-primary px-4">CONFIGURAR</a>
+                      <p class="mt-3">
+                        Sed gravida quam quis velit vulputate, et elementum eros
+                        vestibulum. Phasellus a felis congue,
+                        <strong>vestibulum</strong> mi laoreet, efficitur felis.
+                        Suspendisse potenti.
+                      </p>
+                      <p>
+                        <strong>YA SOY SOCIO. </strong>
+                        <a
+                          href=""
+                          class="primary link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          >INICIAR SESION</a
+                        >
+                      </p>
+                      <p>
+                        <strong>
+                          Phasellus tincidunt est sit amet tortor mattis
+                          interdum. Mauris a scelerisque lacus.
+                        </strong>
+                        Integer tempor, sem et malesuada volutpat, enim velit
+                        lobortis risus, vel iaculis urna orci eu orci. Proin
+                        pellentesque, magna vitae sagittis mattis, lacus lectus
+                        dapibus nunc, id mollis libero mauris at mi. Morbi sed
+                        elit semper, luctus elit eget, convallis dui. Sed
+                        gravida quam quis velit vulputate, et elementum eros
+                        vestibulum.
+                      </p>
+                      <a
+                        href=""
+                        class="primary text-decoration-none link-underline-hover"
+                        >VER NUESTROS 760 SOCIOS ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
