@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="./actualizar.php" method="post">
+        <h2>Actualizar Edad</h2>
+        <div class="input-group">
+          <label for="id_al">ID-Alumno</label>
+          <input
+            type="text"
+            id="id_al"
+            name="id_al"
+            placeholder="Ingresa el identificador del Alumno"
+          />
+        </div>
+        <div class="input-group">
+          <label for="edad">Nueva Edad</label>
+          <input
+            type="text"
+            id="edad"
+            name="edad"
+            placeholder="Ingresa la edad"
+          />
+        </div>
+        <button type="submit" name="enviar">Insertar</button>
+        <p></p>
+      </form>
+    </div>
+  </body>
+</html>

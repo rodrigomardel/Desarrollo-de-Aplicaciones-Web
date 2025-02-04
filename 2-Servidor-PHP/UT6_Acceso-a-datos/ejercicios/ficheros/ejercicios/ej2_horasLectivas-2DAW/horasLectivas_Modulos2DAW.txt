@@ -1,0 +1,5 @@
+Horas lectivas DWEC: 8
+Horas lectivas DWES: 9
+Horas lectivas DAW: 4
+Horas lectivas DIW: 6
+Horas lectivas EIE: 3

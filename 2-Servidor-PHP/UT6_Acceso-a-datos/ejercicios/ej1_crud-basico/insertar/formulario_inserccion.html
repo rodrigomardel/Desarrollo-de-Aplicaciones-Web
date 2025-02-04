@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      h2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="./insertar.php" method="post">
+        <h2>Insertar Alumno</h2>
+        <div class="input-group">
+          <label for="id_al">ID-Alumno</label>
+          <input
+            type="text"
+            id="id_al"
+            name="id_al"
+            placeholder="Ingresa el identificador del Alumno"
+          />
+        </div>
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa el nombre"
+          />
+        </div>
+        <div class="input-group">
+          <label for="edad">Edad</label>
+          <input
+            type="text"
+            id="edad"
+            name="edad"
+            placeholder="Ingresa la edad"
+          />
+        </div>
+        <div class="input-group">
+          <label for="id_curso">ID-Curso</label>
+          <input
+            type="text"
+            id="id_curso"
+            name="id_curso"
+            placeholder="Ingresa el identificador del Curso"
+          />
+        </div>
+        <button type="submit" name="enviar">Insertar</button>
+        <p></p>
+      </form>
+    </div>
+  </body>
+</html>

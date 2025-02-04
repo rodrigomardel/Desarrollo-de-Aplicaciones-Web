@@ -1,0 +1,3 @@
+controlador.php
+recoge los datos del formulario
+peticion al metodo de consultas

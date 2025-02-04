@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="./borrar.php" method="post">
+        <h2>Borrar Alumno</h2>
+        <div class="input-group">
+          <label for="id_al">ID-Alumno</label>
+          <input
+            type="text"
+            id="id_al"
+            name="id_al"
+            placeholder="Ingresa el identificador del Alumno"
+          />
+        </div>
+        <button type="submit" name="enviar">Borrar</button>
+      </form>
+    </div>
+  </body>
+</html>

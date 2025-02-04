@@ -1,0 +1,2 @@
+recogida de la base de datos seleccionda y la consulta a realizar
+muestra de los resultados

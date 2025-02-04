@@ -1,0 +1,2 @@
+conexion a la bbdd
+ejecuta metodo y obtener la consulta a la bbdd
