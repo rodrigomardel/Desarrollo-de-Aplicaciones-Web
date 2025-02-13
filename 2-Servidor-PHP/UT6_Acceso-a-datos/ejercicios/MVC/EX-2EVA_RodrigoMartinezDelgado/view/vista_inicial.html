@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3a0f8f;
+        margin-bottom: 20px;
+      }
+
+      table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 80%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+        background-color: #87cdee;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #dce356;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      select {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GESTIÓN DE ACOGIDA DE MASCOTAS. CyL</h1>
+    <form method="POST" action="./controller/controlador_inicial.php">
+      <table>
+        <tr>
+          <td>
+            <button name="insertar" type="submit">Ingresar mascota</button>
+          </td>
+          <td>
+            <button name="actualizar" type="submit">Acoger mascota</button>
+          </td>
+          <td>
+            <p>Posibles consultas</p>
+            <p>
+              <select name="consultas">
+                <option value="localidad">Localidad de los centros</option>
+                <option value="especies">
+                  Nombre y especie de todas las mascotas registradas
+                </option>
+                <option value="numeroPerros">
+                  Nº de perros actualmente en los centros
+                </option>
+                <option value="numeroGatos">
+                  Nº de gatos actualmente en los centros
+                </option>
+              </select>
+              <button name="continuar" type="submit">Seguir</button>
+            </p>
+          </td>
+          <td>
+            <button name="salir" type="submit">SALIR</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
