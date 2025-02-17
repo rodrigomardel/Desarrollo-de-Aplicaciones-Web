@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3a0f8f;
+        margin-bottom: 20px;
+      }
+
+      form {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 80%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+        background-color: #dce356;
+        padding: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MASCOTA ACOGIDA POR UNA FAMILIA</h1>
+    <form action="ctller_actualizar.php" method="post">
+      <p>
+        <label for="idMascota">Indentificador mascota:</label>
+        <input type="text" name="idMascota" id="idMascota" />
+      </p>
+      <button name="aceptar" type="submit">Aceptar</button>
+      <button name="limpiar" type="reset">Limpiar</button>
+    </form>
+  </body>
+</html>
