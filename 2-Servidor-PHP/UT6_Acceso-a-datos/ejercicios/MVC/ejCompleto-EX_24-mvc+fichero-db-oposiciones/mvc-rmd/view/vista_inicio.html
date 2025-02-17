@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>OPOSICIONES PROFESORADO</h1>
+    <form method="POST" action="./controller/controlador_inicio.php">
+      <table>
+        <tr>
+          <td>
+            <p>
+              <select name="consultas">
+                <option value="subsanaciones">Realizar subsanaciones</option>
+                <option value="plaza">Opositores con plaza</option>
+                <option value="bolsa">Opositores en la bolsa de trabajo</option>
+                <option value="noApto">Opositores NO aptos</option>
+              </select>
+              <button name="continuar" type="submit">Continuar</button>
+            </p>
+          </td>
+          <td>
+            <p>
+              <button name="insertar" type="submit">Nuevo Opositor</button>
+            </p>
+            <p>
+              <button name="borrar" type="submit">Borrar Opositor</button>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

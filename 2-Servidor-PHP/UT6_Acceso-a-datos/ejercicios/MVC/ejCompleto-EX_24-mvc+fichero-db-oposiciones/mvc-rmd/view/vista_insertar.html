@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <a href="../index.php">
+      <button name="home" type="submit">👩‍🎓 Home</button>
+    </a>
+    <h1>INSERTAR DATOS OPOSITOR</h1>
+    <form action="../controller/ctller_insertar_opositor.php" method="post">
+      <p>
+        <label for="codOpo">Código opositor:</label>
+        <input type="text" name="codOpo" id="codOpo" />
+      </p>
+      <p>
+        <label for="notaT">Calificación teoría:</label>
+        <input type="text" name="notaT" id="notaT" />
+      </p>
+      <p>
+        <label for="notaP">Calificación práctica:</label>
+        <input type="text" name="notaP" id="notaP" />
+      </p>
+      <button name="insertar" type="submit">Insertar</button>
+    </form>
+  </body>
+</html>
