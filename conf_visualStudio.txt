@@ -30,7 +30,7 @@ settings.json
           // "punctuation.definition.comment.end.documentation"
         ],
         "settings": {
-          "foreground": "#f707e3e3"
+          "foreground": "#ffba00"
         }
       },
       {
