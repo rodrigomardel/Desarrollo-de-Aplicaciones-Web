@@ -1,0 +1,67 @@
+CTRL+SHIFT+P
+settings.json
+
+{
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "javascript.suggest.completeFunctionCalls": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // "comment",
+          // "comment.block.documentation",
+          // "comment.block.documentation.js",
+          // "comment.line.double-slash.js",
+          // "storage.type.class.jsdoc",
+          "entity.name.type"
+          // "meta.function-call.js",
+          // "new.expr.js",
+          // "meta.var.expr.js"
+          // "source.js"
+          // "variable.other.jsdoc",
+          // "punctuation.definition.comment",
+          // "punctuation.definition.comment.begin.documentation",
+          // "punctuation.definition.comment.end.documentation"
+        ],
+        "settings": {
+          "foreground": "#f707e3e3"
+        }
+      },
+      {
+        "scope": [
+          // "comment",
+          // "comment.block.documentation",
+          // "comment.block.documentation.js",
+          // "comment.line.double-slash.js",
+          // "storage.type.class.jsdoc",
+          "support.type.property-name.css",
+          "keyword.operator.pattern.css"
+          // "variable.other.jsdoc",
+          // "punctuation.definition.comment",
+          // "punctuation.definition.comment.begin.documentation",
+          // "punctuation.definition.comment.end.documentation"
+        ],
+        "settings": {
+          "foreground": "#ccf4d3c8"
+        }
+      }
+    ]
+  },
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Monokai Dimmed"
+}
+
+
+
+Configuracion extension Material Icon Theme:
+Settings > Edit in settings.json
+
+"material-icon-theme.folders.associations": {
+"DWECliente": "Javascript"
+}
